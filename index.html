@@ -9,17 +9,63 @@
 </head>
 
 <body>
- <header x-data="{isOpen:1}">
+ <header x-data="{isOpen:0}">
     <img>
     <h1><T1>TENGU</T1><T2>ROAD</T2></h1>
     <img>
     <h4>Rechercher</h4>
     <button @click="isOpen =1">
-        <img>
+        <img x-show="isOpen ===1"/>
+    </button>
+    <button @click="isOpen =2">
+        <img x-show="isOpen ===2"/>
     </button>
  </header>
- <main>
 
+ <main>
+    <img>
+    <img>
+    <img>
+    <img>
+    <button @click="isOpen =3">
+        <img x-show="isOpen ===3">
+    </button>
+    <h2>Nos derniers artilces</h2>
+    <div>
+        <img/>
+        <h2></h2>
+        <h3></h3>
+    </div>
+    <div>
+        <img/>
+        <h2></h2>
+        <h3></h3>
+    </div>
+    <div>
+        <img/>
+        <h2></h2>
+        <h3></h3>
+    </div>
+    <div>
+        <img/>
+        <h2></h2>
+        <h3></h3>
+    </div>
+    <div>
+        <img/>
+        <h2></h2>
+        <h3></h3>
+    </div>
+    <div>
+        <img/>
+        <h2></h2>
+        <h3></h3>
+    </div>
+    <div>
+        <img/>
+        <h2></h2>
+        <h3></h3>
+    </div>
  </main>
  <footer>
 
