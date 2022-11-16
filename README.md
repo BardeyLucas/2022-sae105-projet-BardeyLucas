@@ -1,7 +1,7 @@
 - NOM : Bardey
 - PRÉNOM : Lucas
 - URL du site : 
-- URL FIGMA :
+- URL FIGMA : https://www.figma.com/file/EN4wAtCYg2SUFaapOcoN1a/Maquettes-projet-individuel-2.0-%E2%80%94-lucas-BARDEY%C2%A7?node-id=2%3A17&t=X95i55eGfRohzzhi-1
 
 # Structure de départ pour le projet individuel.
 
