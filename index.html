@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{isOpen: 0}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,72 +10,94 @@
 
 <body>
  <header x-data="{isOpen:0}">
-    <img src="./public/img/icones/LOGO ICONE.png"/>
-    <h1><T1>TENGU</T1><T2>ROAD</T2></h1>
+    <img src="./public/img/icones/LOGO_ICONE.png"/>
+    <h1><T1>TENGU</T1>  <T2>ROAD</T2></h1>
     <img>
     <h4>Rechercher</h4>
-    <button @click="isOpen =1">
-        <img src="./public/img/icones/France.webp" x-show="isOpen ===1"/>
+    <button>
+        <img src="./public/img/icones/France.webp"/>
     </button>
-    <button @click="isOpen =2">
-        <img src="./public/img/icones/Agrendissement.png" x-show="isOpen ===2"/>
+    <button @click="isOpen 1">
+        <img src="./public/img/icones/Agrendissement.png" x-show="isOpen ===1"/>
     </button>
+    <img src="./public/img/icones/profil.png"/>
+    <p></p>
+    <img src="./public/img/icones/Property1=LOW.png"/>
+    <p></p>
+    <img src="./public/img/icones/Parametre.png"/>
+    <p></p>
+    <img src="./public/img/icones/Aide.png"/>
+    <p></p>
  </header>
 
  <main>
     <img src="./public/img/icones/ZOOM.png"/>
     <img src="./public/img/icones/UNZOOM.png"/>
     <img src="./public/img/icones/Property 1=LIGHT.png"/>
-    <button @click="isOpen =3">
-        <img src="./public/img/icones/Agrendissement.png" x-show="isOpen ===3"/>
+    <button @click="isOpen =2">
+        <img src="./public/img/icones/Agrendissement.png" x-show="isOpen ===2"/>
     </button>
     <h2>Nos derniers artilces</h2>
     <div>
+        <a>
         <img src="./public/img/carte.webp"/>
         <h2>TeamLab Borderles</h2>
         <h3>Musée d'art numérique</h3>
+        </a>
     </div>
     <div>
+        <a>
         <img src="./public/img/TeamLab.webp"/>
         <h2>Démon slayer</h2>
         <h3>Litérature japonaise</h3>
+        </a>
     </div>
     <div>
+        <a>
         <img src="./public/img/Demon.webp"/>
         <h2>Le voyage de chihiro</h2>
         <h3>Animation japonaise</h3>
+        </a>
     </div>
     <div>
+        <a>
         <img src="./public/img/chihiro.webp"/>
         <h2>Hayao Miyazaki</h2>
         <h3>Filmographie de l'auteur</h3>
+        </a>
     </div>
     <div>
+        <a>
         <img src="./public/img/Miyazaki.webp"/>
         <h2>Natsuyume noisy</h2>
         <h3>Musique JPOP</h3>
+        </a>
     </div>
     <div>
+        <a>
         <img src="./public/img/Franco_Japonais.webp"/>
         <h2>Les lien franco japonais</h2>
         <h3>édition spécial: les manga</h3>
+        </a>
     </div>
     <div>
+        </a>
         <img src="./public/img/chihiro.webp"/>
         <h2>Les dégat climatique au japon</h2>
         <h3>Resource sur l'écologie</h3>
+        </a>
     </div>
  </main>
  <footer>
     <p>Service client</p>
     <p>Nous contacter</p>
     <p>Nos réseau</p>
-    <img/><img/><img/>
+    <img src="./public/img/icones/Youtube.png"/><img src="./public/img/icones/Instagram.png"/><img src="./public/img/icones/tweeter.png"/><img src="./public/img/icones/Facebook.png"/>
     <p>A propos</p>
     <p>Section autres projets</p>
     <p>Réaliser par BARDEY Lucas du groupe A1</p>
     <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</p>
-    <img>
+    <img src="./public/img/icones/Frame6.png"/>
  </footer>
 </body>
 </html>
