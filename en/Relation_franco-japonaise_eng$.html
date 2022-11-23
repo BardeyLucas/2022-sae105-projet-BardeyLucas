@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{isOpen: 0}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tengu-road/FR-JAP-Relationship.com</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body>
+    <header x-data="{isOpen:0}">
+        <img src="../public/img/icones/LOGO_ICONE.png"/>
+        <h1><T1>TENGU</T1>  <T2>ROAD</T2></h1>
+        <img>
+        <h4>Search</h4>
+        <button>
+            <img src="../public/img/icones/France.webp"/>
+        </button>
+        <button @click="isOpen 1">
+            <img src="../public/img/icones/Agrendissement.png" x-show="isOpen ===1"/>
+        </button>
+        <div>
+            <ul>
+                <li><img src="../public/img/icones/profil.png"/><img src="../public/img/icones/Parametre.png"/><img src="../public/img/icones/Property1=LOW.png"/><img src="../public/img/icones/Aide.png"/><img src="../public/img/icones/CROIX.png"/></li>
+                <li><p>Porfil</p><p>Position sharing</p><p>Parameter</p><p>Help</p></li>
+            </ul>
+        </div>
+     </header>
+    <main>
+
+    </main>
+    <footer>
+        <p>Service client</p>
+        <p>Contacted us</p>
+        <p>Our network</p>
+        <img src="../public/img/icones/Youtube.png"/><img src="../public/img/icones/Instagram.png"/><img src="../public/img/icones/tweeter.png"/><img src="../public/img/icones/Facebook.png"/>
+        <p>about</p>
+        <p>other project section</p>
+        <p>Directed by BARDEY Lucas from group A1</p>
+        <p>Project carried out as part of an educational exercise at the MMi department in Montbéliard</p>
+        <img src="../public/img/icones/Frame6.png"/>
+     </footer>
+</body>
+</html>
