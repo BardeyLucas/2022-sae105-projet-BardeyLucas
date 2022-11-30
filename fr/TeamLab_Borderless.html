@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" x-data="{isOpen: 0}">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,72 +8,84 @@
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
-    <header x-data="{isOpen:0}">
-        <img src="../public/img/icones/LOGO_ICONE.png"/>
-        <h1><T1>TENGU</T1>  <T2>ROAD</T2></h1>
-        <img>
+    <header>
+        <a href="../index.html"><img src="../public/img/icones/LOGO_ICONE.png" alt="icones du site"/></a>
+        <h1>TENGU ROAD</h1>
+        <!--<img>-->
         <h4>Rechercher</h4>
         <a href="../en/TeamLab_Borderless_eng.html">
-            <img src="../public/img/icones/France.webp"/>
+            <img src="../public/img/icones/France.webp" alt="changement de langue"/>
         </a>
-        <button @click="isOpen 1">
-            <img src="../public/img/icones/Agrendissement.png" x-show="isOpen ===1"/>
+        <button>
+            <img src="../public/img/icones/Agrendissement.png" alt="ouvrir le menu principal"/>
         </button>
         <div>
             <ul>
-                <li><img src="../public/img/icones/profil.png"/><img src="../public/img/icones/Parametre.png"/><img src="../public/img/icones/Property1=LOW.png"/><img src="../public/img/icones/Aide.png"/><img src="../public/img/icones/CROIX.png"/></li>
+                <li><img src="../public/img/icones/profil.png" alt="profil"/><img src="../public/img/icones/Parametre.png" alt="paramétre"/><img src="../public/img/icones/Property1=LOW.png" alt="commande vocal"/><img src="../public/img/icones/Aide.png" alt="aide"/><img src="../public/img/icones/CROIX.png" alt="fermeture du menu principale"/></li>
                 <li><p>Porfil</p><p>Partage de position</p><p>Paramétre</p><p>Aide</p></li>
             </ul>
         </div>
      </header>
     <main>
-        <h2>TEAMLAB borderless (tokyo)</h2>
-        <p>Entre architecture et art numérique, bienvenu dans les musées du future</p>
-    <img src="../public/img/Teamlab/lamp.webp"/>
-    <legend>La piéce de la foret de lampes de teamlab borderless</legend>
-    <p>Teamlab borderless est un musée d’art moderne interactif créé par le collectif teamlab, situé à tokyo dans l’arrondis-sement de Koto et inauguré le 21 juin 2018.
-        Il est devenu en à peine quelque mois l’un des plus grands et réputés sites touristiques de la baie de Tokyo.
-        Sa réputation est telle qu’il est même devenu dès 2019 le musée le plus visité au monde avec 2,2 million de personnes d'après le guinness.</p>
-        <h3>Mais comment est ce que ça fonctionne ?</h3>
-        <img src="../public/img/Teamlab/ext.webp"/>
-        <legend>Entrée de teamLab Planets à Tokyo</legend>
-        <p>-Pour commencer, au niveaux des places, il vas falloir les prendre avec des mois d’avance car les places sont limité et sa popularité gigantesque.
-
-            -Après pour pouvoir interagir avec tout le contenus des salles, ils est conseillé d’utiliser l'application teamlab car elle ajoute de nouvelles fonctionnalité à l'exposition.
-            
-            -Et pour finir il est préconisé d'éviter les jupes et de prendre une tenus claire car les salles composant le bâtiment on pour la plupart des miroire au sol et car les habilles claire permets une meilleur réflexion de la lumière.</p>
-        <img src="../public/img/Transition.webp"/>
-        <h3>Mais qu’est-ce que teamlab ?</h3>
-        <p>Teamlab est une organisation créée en 2001 à tokyo et est composée d'experts de différents corps de métier tels que des artistes, programmeurs, ingénieurs, animateurs 3D, mathématiciens et architectes. 
-            Ce collectif a pour but de dépasser les limites de cet art en mélangeant nature et création artificielle.</p>
-        <img src="../public/img/Teamlab/sintiment.webp"/>
-        <legend>La pièce des reflets</legend>  
-        <h3>Est-ce accessible ?</h3>  
-        <p>-Cette exposition possède malheureusement des salles inaccessibles au personnes à mobilité réduite.
-            -L’exposition sera aussi à éviter pour les épiléptique et les personne en cas de fragilité auditive.
-            -Et les chien d'assistance seront aussi interdit.</p>
-            <img src="../public/img/Teamlab/mur.webp"/>
-            <legend>La piéce du monde de cristal</legend>
-            <h3>Mot de la fin</h3>
-            <p>Ce lieux a la fois inventif et merveilleux et saura ravir les petits comme les plus grand par sa richesse son esthétisme et son ludisme, et le seul point noir a se musée et son manque d’accessibilté pour certain handicape courant.</p>
-            <img src="../public/img/Teamlab/cascade.webp"/>
-            <legend>La piéce de la cascade</legend>
-            <p>Pour commender ces places, rendez vous ici</p>
-            <p>Et si le TeamLab Borderless (tokyo) vous a plus, alors regarder notre article sur  8 autre musée d’art numérique et lumineux</p>
-            <img src="../public/img/Teamlab/champi.webp"/>
-            <h2>Autre lieux</h2>
-            <h4>Frise</h4>
+        <section>
+            <h2>TEAMLAB borderless (tokyo)</h2>
+            <p>Entre architecture et art numérique, bienvenu dans les musées du future</p>
+            <img src="../public/img/Teamlab/lamp.webp" alt="La piéce de la foret de lampes de teamlab borderless"/>
+            <h5>La piéce de la foret de lampes de teamlab borderless</h5>
+            <p>Teamlab borderless est un musée d’art moderne interactif créé par le collectif teamlab, situé à tokyo dans l’arrondis-sement de Koto et inauguré le 21 juin 2018.
+                Il est devenu en à peine quelque mois l’un des plus grands et réputés sites touristiques de la baie de Tokyo.
+                Sa réputation est telle qu’il est même devenu dès 2019 le musée le plus visité au monde avec 2,2 million de personnes d'après le guinness.</p>
+            <article>
+                <h3>Mais comment est ce que ça fonctionne ?</h3>
+                <img src="../public/img/Teamlab/ext.webp" alt="Entrée de teamLab Planets à Tokyo"/>
+                <h5>Entrée de teamLab Planets à Tokyo</h5>
+                <p>-Pour commencer, au niveaux des places, il vas falloir les prendre avec des mois d’avance car les places sont limité et sa popularité gigantesque.
+                    -Après pour pouvoir interagir avec tout le contenus des salles, ils est conseillé d’utiliser l'application teamlab car elle ajoute de nouvelles fonctionnalité à l'exposition.
+                    -Et pour finir il est préconisé d'éviter les jupes et de prendre une tenus claire car les salles composant le bâtiment on pour la plupart des miroire au sol et car les habilles claire permets une meilleur réflexion de la lumière.</p>
+            </article>
+        </section>
+        <img src="../public/img/Transition.webp" alt="Transition"/>
+        <section>
+            <article>
+                <h3>Mais qu’est-ce que teamlab ?</h3>
+                <p>Teamlab est une organisation créée en 2001 à tokyo et est composée d'experts de différents corps de métier tels que des artistes, programmeurs, ingénieurs, animateurs 3D, mathématiciens et architectes. 
+                    Ce collectif a pour but de dépasser les limites de cet art en mélangeant nature et création artificielle.</p>
+                <img src="../public/img/Teamlab/sintiment.webp" alt="La pièce des reflets"/>
+                <h5>La pièce des reflets</h5> 
+            </article> 
+            <article>
+                <h3>Est-ce accessible ?</h3>  
+                <p>-Cette exposition possède malheureusement des salles inaccessibles au personnes à mobilité réduite.
+                    -L’exposition sera aussi à éviter pour les épiléptique et les personne en cas de fragilité auditive.
+                    -Et les chien d'assistance seront aussi interdit.</p>
+                <img src="../public/img/Teamlab/mur.webp" alt="La piéce du monde de cristal"/>
+                <h5>La piéce du monde de cristal</h5>
+            </article>
+            <article>
+                <h3>Mot de la fin</h3>
+                <p>Ce lieux a la fois inventif et merveilleux et saura ravir les petits comme les plus grand par sa richesse son esthétisme et son ludisme, et le seul point noir a se musée et son manque d’accessibilté pour certain handicape courant.</p>
+                <img src="../public/img/Teamlab/cascade.webp" alt="La piéce de la cascade"/>
+                <h5>La piéce de la cascade</h5>
+                <p>Pour commender ces places, rendez vous ici</p>
+                <p>Et si le TeamLab Borderless (tokyo) vous a plus, alors regarder notre article sur  8 autre musée d’art numérique et lumineux</p>
+            </article>
+            <article>
+                <img src="../public/img/Teamlab/champi.webp" alt="Autre lieux"/>
+                <h2>Autre lieux</h2>
+                <h4>Frise</h4>
+            </article>
+        </section>
     </main>
     <footer>
         <p>Service client</p>
         <p>Nous contacter</p>
         <p>Nos réseau</p>
-        <img src="../public/img/icones/Youtube.png"/><img src="../public/img/icones/Instagram.png"/><img src="../public/img/icones/tweeter.png"/><img src="../public/img/icones/Facebook.png"/>
+        <img src="../public/img/icones/Youtube.png" alt="logo youtube"/><img src="../public/img/icones/Instagram.png" alt="logo instagrame"/><img src="../public/img/icones/tweeter.png" alt="logo tweeter"/><img src="../public/img/icones/Facebook.png" alt="logo facebook"/>
         <p>A propos</p>
         <p>Section autres projets</p>
         <p>Réaliser par BARDEY Lucas du groupe A1</p>
         <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</p>
-        <img src="../public/img/icones/Frame6.png"/>
+        <img src="../public/img/icones/Frame6.png" alt="logo du MMI franche compté"/>
      </footer>
 </body>
 </html>

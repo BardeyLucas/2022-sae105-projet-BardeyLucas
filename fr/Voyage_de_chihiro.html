@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" x-data="{isOpen: 0}">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,69 +8,83 @@
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
-    <header x-data="{isOpen:0}">
-        <img src="../public/img/icones/LOGO_ICONE.png"/>
-        <h1><T1>TENGU</T1>  <T2>ROAD</T2></h1>
-        <img>
+    <header>
+        <a href="../index.html"><img src="../public/img/icones/LOGO_ICONE.png" alt="icones du site"/></a>
+        <h1>TENGU ROAD</h1>
+        <!--<img>-->
         <h4>Rechercher</h4>
         <a href="../en/Voyage_de_chihiro_eng.html">
-            <img src="../public/img/icones/France.webp"/>
+        <img src="../public/img/icones/France.webp" alt="changement de langue"/>
         </a>
-        <button @click="isOpen 1">
-            <img src="../public/img/icones/Agrendissement.png" x-show="isOpen ===1"/>
+        <button>
+            <img src="../public/img/icones/Agrendissement.png" alt="ouvrir le menu principal"/>
         </button>
         <div>
             <ul>
-                <li><img src="../public/img/icones/profil.png"/><img src="../public/img/icones/Parametre.png"/><img src="../public/img/icones/Property1=LOW.png"/><img src="../public/img/icones/Aide.png"/><img src="../public/img/icones/CROIX.png"/></li>
+                <li><img src="../public/img/icones/profil.png" alt="profil"/><img src="../public/img/icones/Parametre.png" alt="paramétre"/><img src="../public/img/icones/Property1=LOW.png" alt="commande vocal"/><img src="../public/img/icones/Aide.png" alt="aide"/><img src="../public/img/icones/CROIX.png" alt="fermeture du menu principale"/></li>
                 <li><p>Porfil</p><p>Partage de position</p><p>Paramétre</p><p>Aide</p></li>
             </ul>
         </div>
      </header>
     <main>
-        <h2>LE VOYAGE DE CHIHIRO</h2>
-        <p>Un voyage attendrissant au royaume des yokai.</p>
-        <img src="../public/img/Voyage-de-chihiro/chihiro.webp" />
-        <legend>L’affiche promotionelle du film, le voyage de chihiro</legend>
-        <p>Le voyage de chihiro est un film d’animation japonaise du studio ghibli réalisé par hayao miyazaki et sortie le 20 juillet 2001, il touche pour thème: Drame, fantasy, aventure et il fut jusqu’en 2020 le plus grand succès de l’histoire du cinéma japonais avec 23 millions de spectateur au japon et 274 millions de dollars de recette et ils reçus même un oscar du meilleur film d’animation et l’ours d’or du meilleur film en 2002.</p>
-        <h3>Synopsis</h3>
-        <p>Le film raconte l’histoire de Chihiro, une fillette qui en se rendant avec ses parents vers sa nouvelle maison se retrouve a passé un mystérieux tunnel, au bout, ils y découvrent un parc à thème abandonné. En s’y baladent, c’est parents trouvent un restaurant bien garnis et se dise qu’il peuvent y manger temps qu’il en paye la consommation ensuite, en désaccord avec ça, la petite chihiro part explorer le village jusqu'à rencontré un jeune homme qui lui conseillera de partir avant le coucher du soleil, mais a son retour ses parents furent transformé en porc et les ombre se mirent à prendre vie. Qui sont ces êtres surnaturels et comment pourrait-elle sauver ces parents ? Seuls sont voyages vous l’apprendra.</p>
-        <img src="../public/img/Voyage-de-chihiro/Duo.webp"/>
-        <legend>Extrait du film, le voyage de chihiro</legend>
-        <img src="../public/img/Transition.webp"/>
-        <h3>Distribution</h3>
-        <p>Réalisation : Hayao Miyazaki
-            Scénario : Hayao Miyazaki
-            Musique : Joe Hisaishi
-            Directeur de l'animation : Masashi Andō
-            Photographie : Atsushi Okui
-            Montage : Takeshi Seyama
-            Producteur : Toshio Suzuki
-            </p>
-        <h3>Est-ce accessible ?</h3>
-        <p>Le film est conseillé au jeunes a partir de 8 ans
-            et il semble être accessible à toute à chacun.</p>
-        <img src="../public/img/Voyage-de-chihiro/Pond.webp"/>
-        <legend>Extrait du film, le voyage de chihiro</legend> 
-        <h3>Conclusion</h3>
-        <p>Ce film est un chef d'œuvre du passé qui n’a point vieilli d’une ride et qui plaira surement a vos enfant alors proposer le leurs sans hésiter, un tel chef d'œuvre fera forcément mouche.</p>
-        <img src="../public/img/Voyage-de-chihiro/Train.webp" />
-        <legend>Extrait du film, le voyage de chihiro</legend>
-        <p>Si vous voulez plus d’information le grand hauteur hayao miyazaki,
-            Lisez nos autres derniers articles sur cette hauteur célèbre !</p>
-        <img src="../public/img/Voyage-de-chihiro/Miyazaki.webp" />
-        <h2>Hayao Miyazaki</h2>
-        <h4>Filmographie de l’auteur</h4>
+        <section>
+            <h2>LE VOYAGE DE CHIHIRO</h2>
+            <p>Un voyage attendrissant au royaume des yokai.</p>
+            <img src="../public/img/Voyage-de-chihiro/chihiro.webp" alt="L’affiche promotionelle du film, le voyage de chihiro"/>
+            <h5>L’affiche promotionelle du film, le voyage de chihiro</h5>
+            <p>Le voyage de chihiro est un film d’animation japonaise du studio ghibli réalisé par hayao miyazaki et sortie le 20 juillet 2001, il touche pour thème: Drame, fantasy, aventure et il fut jusqu’en 2020 le plus grand succès de l’histoire du cinéma japonais avec 23 millions de spectateur au japon et 274 millions de dollars de recette et ils reçus même un oscar du meilleur film d’animation et l’ours d’or du meilleur film en 2002.</p>
+            <article>
+                <h3>Synopsis</h3>
+                <p>Le film raconte l’histoire de Chihiro, une fillette qui en se rendant avec ses parents vers sa nouvelle maison se retrouve a passé un mystérieux tunnel, au bout, ils y découvrent un parc à thème abandonné. En s’y baladent, c’est parents trouvent un restaurant bien garnis et se dise qu’il peuvent y manger temps qu’il en paye la consommation ensuite, en désaccord avec ça, la petite chihiro part explorer le village jusqu'à rencontré un jeune homme qui lui conseillera de partir avant le coucher du soleil, mais a son retour ses parents furent transformé en porc et les ombre se mirent à prendre vie. Qui sont ces êtres surnaturels et comment pourrait-elle sauver ces parents ? Seuls sont voyages vous l’apprendra.</p>
+                <img src="../public/img/Voyage-de-chihiro/Duo.webp" alt="Extrait du film, le voyage de chihiro"/>
+                <h5>Extrait du film, le voyage de chihiro</h5>
+            </article>
+        </section>
+        <img src="../public/img/Transition.webp" alt="transition"/>
+        <section>
+            <article>
+                <h3>Distribution</h3>
+                <p>Réalisation : Hayao Miyazaki
+                    Scénario : Hayao Miyazaki
+                    Musique : Joe Hisaishi
+                    Directeur de l'animation : Masashi Andō
+                    Photographie : Atsushi Okui
+                    Montage : Takeshi Seyama
+                    Producteur : Toshio Suzuki
+                </p>
+            </article>
+            <article>
+                <h3>Est-ce accessible ?</h3>
+                <p>Le film est conseillé au jeunes a partir de 8 ans
+                    et il semble être accessible à toute à chacun.</p>
+                <img src="../public/img/Voyage-de-chihiro/Pond.webp" alt="Extrait du film, le voyage de chihiro"/>
+                <h5>Extrait du film, le voyage de chihiro</h5> 
+            </article>
+            <article>
+                <h3>Conclusion</h3>
+                <p>Ce film est un chef d'œuvre du passé qui n’a point vieilli d’une ride et qui plaira surement a vos enfant alors proposer le leurs sans hésiter, un tel chef d'œuvre fera forcément mouche.</p>
+                <img src="../public/img/Voyage-de-chihiro/Train.webp" alt="Extrait du film, le voyage de chihiro"/>
+                <h5>Extrait du film, le voyage de chihiro</h5>
+                <p>Si vous voulez plus d’information le grand hauteur hayao miyazaki,
+                    Lisez nos autres derniers articles sur cette hauteur célèbre !</p>
+            </article>
+            <article>
+                <img src="../public/img/Voyage-de-chihiro/Miyazaki.webp" alt="miyazaki"/>
+                <h2>Hayao Miyazaki</h2>
+                <h4>Filmographie de l’auteur</h4>
+            </article>
+        </section>
     </main>
     <footer>
         <p>Service client</p>
         <p>Nous contacter</p>
         <p>Nos réseau</p>
-        <img src="../public/img/icones/Youtube.png"/><img src="../public/img/icones/Instagram.png"/><img src="../public/img/icones/tweeter.png"/><img src="../public/img/icones/Facebook.png"/>
+        <img src="../public/img/icones/Youtube.png" alt="logo youtube"/><img src="../public/img/icones/Instagram.png" alt="logo instagrame"/><img src="../public/img/icones/tweeter.png" alt="logo tweeter"/><img src="../public/img/icones/Facebook.png" alt="logo facebook"/>
         <p>A propos</p>
         <p>Section autres projets</p>
         <p>Réaliser par BARDEY Lucas du groupe A1</p>
         <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</p>
-        <img src="../public/img/icones/Frame6.png"/>
+        <img src="../public/img/icones/Frame6.png" alt="logo du MMI franche compté"/>
      </footer>
 </body>
 </html>

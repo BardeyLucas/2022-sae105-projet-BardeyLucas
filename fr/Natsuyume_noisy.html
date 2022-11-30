@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" x-data="{isOpen: 0}">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,57 +8,71 @@
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
-    <header x-data="{isOpen:0}">
-        <img src="../public/img/icones/LOGO_ICONE.png"/>
-        <h1><T1>TENGU</T1>  <T2>ROAD</T2></h1>
-        <img>
+    <header>
+        <a href="../index.html"><img src="../public/img/icones/LOGO_ICONE.png" alt="icones du site"/></a>
+        <h1>TENGU ROAD</h1>
+        <!--<img>-->
         <h4>Rechercher</h4>
         <a href="../en/Natsuyume_noisy_eng.html">
-            <img src="../public/img/icones/France.webp"/>
+            <img src="../public/img/icones/France.webp" alt="changement de langue"/>
         </a>
-        <button @click="isOpen 1">
-            <img src="../public/img/icones/Agrendissement.png" x-show="isOpen ===1"/>
+        <button>
+            <img src="../public/img/icones/Agrendissement.png" alt="ouvrir le menu principal"/>
         </button>
         <div>
             <ul>
-                <li><img src="../public/img/icones/profil.png"/><img src="../public/img/icones/Parametre.png"/><img src="../public/img/icones/Property1=LOW.png"/><img src="../public/img/icones/Aide.png"/><img src="../public/img/icones/CROIX.png"/></li>
+                <li><img src="../public/img/icones/profil.png" alt="profil"/><img src="../public/img/icones/Parametre.png" alt="paramétre"/><img src="../public/img/icones/Property1=LOW.png" alt="commande vocal"/><img src="../public/img/icones/Aide.png" alt="aide"/><img src="../public/img/icones/CROIX.png" alt="fermeture du menu principale"/></li>
                 <li><p>Porfil</p><p>Partage de position</p><p>Paramétre</p><p>Aide</p></li>
             </ul>
         </div>
      </header>
     <main>
-        <h2>NATSUME NOISY</h2>
-        <p>Quand les plus beau moments aurais mérité d'être figé dans le temps</p>
-        <img src="../public/img/Natsume-noisy/Clip.png" />
-        <legend>Extrait du clip officel natsume noisy</legend>
-        <p>Natsume noisy est une musique de J-pop parue le 10/08/2022, interprétée par la chanteuse Asaka et créée et écrite par shikura chiyomaru. Cette musique a été réalisée pour servir de second générique à la série time shadow en même temps que Voice et dreamer aussi réaliser par le même duo pour servir de musique de fond, time shadow étant une série de genres drame/mystère/romance/surnaturelle et de thèmes crime/famille/voyage temporel.</p>
-        <h3>Mais qui sont asaka et shikura chiyomaru ?</h3>
-        <img src="../public/img/Natsume-noisy/ASAKA.png"/>
-        <legend>Photographie de la chanteuse Asaka</legend>
-        <p>Asaka est une chanteuse de pop, Choriste et Parolière japonaise de 23 ans, appartenant au groupe “Okunai Katsudou Circle”, et passionné de cosplay et d’animé, elle a réalisé 2 albums “HEART TOUCH” et “19BOX” mais,aussi 10 autres musiques.</p>
-        <img src="../public/img/Natsume-noisy/SHIKURA.png"/>
-        <legend>Photographie du compositeur  shikura chiyomaru</legend>
-        <p>De son côté shikura chiyomaru est un Auteur, Compositeur, Musicien, Parolier japonais de 52 ans, faisant partie de l’agence MAGES et du groupe DystopiaGround. Il est principalement connu pour avoir réalisé plusieurs génériques et ost pour la série des steins gate.</p>
-        <img src="../public/img/Transition.webp">
-        <h3>accessible</h3>
-        <p>Oui pour toute les personne entendante</p>
-        <p>Marketing</p>
-        <p>De nos jours, beaucoup de groupe de musique du style J Pop promeuvent leurs album en réalisant pour les studio d’animation, des musique de générique ou d'ambiance, dans le cas de notre musique, celui ci a était donc réaliser comme étant l’un des générique de l’adaptation animé de time shadow, malheureusement, d’un point de vue mondial, ce choix fut une grande erreur car la série n’a été diffusée qu’au japon. </p>
-        <h3>Conclusion</h3>
-        <p>natsume noisy pourra plaire à toute à chacun mais seul les fan de time shadow pouvons vraiment attiré par la musique car elle n’a pas était créer par un groupe de musique mais uniquement par un duo, lui donnant comme seul possibilité d'affect, son lien avec cette série </p>
-        <img src="../public/img/Natsume-noisy/Time-shadow.png"/>
-        <legend>L’affiche promotionelle de la série time shadow</legend>
+        <section>
+            <article>
+            <h2>NATSUME NOISY</h2>
+                <p>Quand les plus beau moments aurais mérité d'être figé dans le temps</p>
+                <img src="../public/img/Natsume-noisy/Clip.png" alt="Extrait du clip officel natsume noisy"/>
+                <h5>Extrait du clip officel natsume noisy</h5>
+                <p>Natsume noisy est une musique de J-pop parue le 10/08/2022, interprétée par la chanteuse Asaka et créée et écrite par shikura chiyomaru. Cette musique a été réalisée pour servir de second générique à la série time shadow en même temps que Voice et dreamer aussi réaliser par le même duo pour servir de musique de fond, time shadow étant une série de genres drame/mystère/romance/surnaturelle et de thèmes crime/famille/voyage temporel.</p>
+            </article>
+            <article>
+                <h3>Mais qui sont asaka et shikura chiyomaru ?</h3>
+                <img src="../public/img/Natsume-noisy/ASAKA.png" alt="Photographie de la chanteuse Asaka"/>
+                <h5>Photographie de la chanteuse Asaka</h5>
+                <p>Asaka est une chanteuse de pop, Choriste et Parolière japonaise de 23 ans, appartenant au groupe “Okunai Katsudou Circle”, et passionné de cosplay et d’animé, elle a réalisé 2 albums “HEART TOUCH” et “19BOX” mais,aussi 10 autres musiques.</p>
+                <img src="../public/img/Natsume-noisy/SHIKURA.png" alt="Photographie du compositeur  shikura chiyomaru"/>
+                <h5>Photographie du compositeur  shikura chiyomaru</h5>
+                <p>De son côté shikura chiyomaru est un Auteur, Compositeur, Musicien, Parolier japonais de 52 ans, faisant partie de l’agence MAGES et du groupe DystopiaGround. Il est principalement connu pour avoir réalisé plusieurs génériques et ost pour la série des steins gate.</p>
+            </article>
+        </section>
+        <img src="../public/img/Transition.webp" alt="transition"/>
+        <section>
+            <article>
+                <h3>Est-ce accessible ?</h3>
+                <p>Oui pour toute les personne entendante</p>
+            </article>
+            <article>
+                <p>Marketing</p>
+                <p>De nos jours, beaucoup de groupe de musique du style J Pop promeuvent leurs album en réalisant pour les studio d’animation, des musique de générique ou d'ambiance, dans le cas de notre musique, celui ci a était donc réaliser comme étant l’un des générique de l’adaptation animé de time shadow, malheureusement, d’un point de vue mondial, ce choix fut une grande erreur car la série n’a été diffusée qu’au japon. </p>
+            </article>
+            <article>
+                <h3>Conclusion</h3>
+                <p>natsume noisy pourra plaire à toute à chacun mais seul les fan de time shadow pouvons vraiment attiré par la musique car elle n’a pas était créer par un groupe de musique mais uniquement par un duo, lui donnant comme seul possibilité d'affect, son lien avec cette série </p>
+                <img src="../public/img/Natsume-noisy/Time-shadow.png" alt="L’affiche promotionelle de la série time shadow"/>
+                <h5>L’affiche promotionelle de la série time shadow</h5>
+            </article>
+        </section>
     </main>
     <footer>
         <p>Service client</p>
         <p>Nous contacter</p>
         <p>Nos réseau</p>
-        <img src="../public/img/icones/Youtube.png"/><img src="../public/img/icones/Instagram.png"/><img src="../public/img/icones/tweeter.png"/><img src="../public/img/icones/Facebook.png"/>
+        <img src="../public/img/icones/Youtube.png" alt="logo youtube"/><img src="../public/img/icones/Instagram.png" alt="logo instagrame"/><img src="../public/img/icones/tweeter.png" alt="logo tweeter"/><img src="../public/img/icones/Facebook.png" alt="logo facebook"/>
         <p>A propos</p>
         <p>Section autres projets</p>
         <p>Réaliser par BARDEY Lucas du groupe A1</p>
         <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</p>
-        <img src="../public/img/icones/Frame6.png"/>
+        <img src="../public/img/icones/Frame6.png" alt="logo du MMI franche compté"/>
      </footer>
 </body>
 </html>
