@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{isOpen: 0}">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,100 +9,105 @@
 </head>
 
 <body>
- <header x-data="{isOpen:0}">
-    <img src="./public/img/icones/LOGO_ICONE.png"/>
-    <h1><T1>TENGU</T1>  <T2>ROAD</T2></h1>
-    <img>
+ <header>
+    <a href="../index.html"><img src="../public/img/icones/LOGO_ICONE.png" alt="icones du site"/></a>
+    <h1>TENGU ROAD</h1>
+    <!--<img>-->
     <h4>Rechercher</h4>
     <a href="./en/acceuil_eng.html">
-        <img src="./public/img/icones/France.webp"/>
+        <img src="./public/img/icones/France.webp" alt="changement de langue"/>
     </a>
-    <button @click="isOpen 1">
-        <img src="./public/img/icones/Agrendissement.png" x-show="isOpen ===1"/>
+    <button>
+        <img src="./public/img/icones/Agrendissement.png" alt="ouvrir le menu principal"/>
     </button>
     <div>
         <ul>
-            <li><img src="./public/img/icones/profil.png"/><img src="./public/img/icones/Parametre.png"/><img src="./public/img/icones/Property1=LOW.png"/><img src="./public/img/icones/Aide.png"/><img src="./public/img/icones/CROIX.png"/></li>
+            <li><img src="./public/img/icones/profil.png" alt="profil"/><img src="./public/img/icones/Parametre.png" alt="paramétre"/><img src="./public/img/icones/Property1=LOW.png" alt="commande vocal"/><img src="./public/img/icones/Aide.png" alt="aide"/><img src="./public/img/icones/CROIX.png" alt="fermeture du menu principale"/></li>
             <li><p>Porfil</p><p>Partage de position</p><p>Paramétre</p><p>Aide</p></li>
         </ul>
     </div>
  </header>
 
  <main>
-    <img src="./public/img/icones/ZOOM.png"/>
-    <img src="./public/img/icones/UNZOOM.png"/>
-    <img src="./public/img/icones/Property1=LIGHT.png"/>
-    <button @click="isOpen =2">
-        <img src="./public/img/icones/Agrendissement.png" x-show="isOpen ===2"/>
+    <img src="./public/img/icones/ZOOM.png" alt="zoom"/>
+    <img src="./public/img/icones/UNZOOM.png" alt="unzoom"/>
+    <img src="./public/img/icones/Property1=LIGHT.png" alt="commande vocal"/>
+    <button>
+        <img src="./public/img/icones/Agrendissement.png" alt="ouvrir le menu de la carte"/>
     </button>
-    <li>
-        <ul><img src="./public/img/icones/RESTEAURANT.png"/><img src="./public/img/icones/Store.png"/><img src="./public/img/icones/Hotel.png"/><img src="./public/img/icones/Property1=LIGHT.png"/><img src="./public/img/icones/CROIX.png"/></ul>
-        <ul><p>Réstaurant</p><p>Magazin</p><p>Hotel</p><p>Navigation vocal</p></ul>
-        <ul><img src="./public/img/icones/ACTIVITY.png"/><img src="./public/img/icones/Médecine.png"/><img src="./public/img/icones/Parking.png"/><img src="./public/img/icones/profil.png"/><img src="./public/img/icones/Property1=LIGHT.png"/></ul>
-        <ul><p>Activité</p><p>Point médicaux</p><p>Parking</p><p>Profil</p><p>Partage de position</p></ul>
-    <li>
-    <img src="./public/img/TransitionBis.webp" />
+    <section>
+    <ul>
+        <li><img src="./public/img/icones/RESTEAURANT.png" alt="restaurant"/><img src="./public/img/icones/Store.png" alt="magazin"/><img src="./public/img/icones/Hotel.png" alt="hotel"/><img src="./public/img/icones/Property1=LIGHT.png" alt="commande vocal"/><img src="./public/img/icones/CROIX.png" alt="quitter le menu de la carte"/></li>
+        <li><p>Réstaurant</p><p>Magazin</p><p>Hotel</p><p>Navigation vocal</p></li>
+        <li><img src="./public/img/icones/ACTIVITY.png" alt="activité"/><img src="./public/img/icones/Médecine.png" alt="lieux médicaux"/><img src="./public/img/icones/Parking.png" alt="parking"/><img src="./public/img/icones/profil.png" alt="profil"/><img src="./public/img/icones/Property1=LOW.png" alt="partager sa position"/></li>
+        <li><p>Activité</p><p>Point médicaux</p><p>Parking</p><p>Profil</p><p>Partage de position</p></li>
+    </ul>
+        <img src="public/img/carte.webp" alt="carte géographique"/>
+    </section>
+    <img src="./public/img/TransitionBis.webp" alt="transition"/>
+    <section>
     <h2>Nos derniers artilces</h2>
     <div>
         <a href="./fr/TeamLab_Borderless.html">
-        <img src="./public/img/TeamLab.webp"/>
+        <img src="./public/img/TeamLab.webp" alt="image de teamlab"/>
         <h2>TeamLab Borderles</h2>
         <h3>Musée d'art numérique</h3>
         </a>
     </div>
     <div>
-        <a>
-        <img src="./public/img/Demon.webp"/>
+        <a href="./fr/Démon_slayer.html">
+        <img src="./public/img/Demon.webp" alt="image demon slayer"/>
         <h2>Démon slayer</h2>
         <h3>Litérature japonaise</h3>
         </a>
     </div>
     <div>
         <a href="./fr/Voyage_de_chihiro.html">
-        <img src="./public/img/chihiro.webp"/>
+        <img src="./public/img/chihiro.webp" alt="image du voyage de chihiro"/>
         <h2>Le voyage de chihiro</h2>
         <h3>Animation japonaise</h3>
         </a>
     </div>
     <div>
-        <a>
-        <img src="./public/img/Miyazaki.webp"/>
+        <a href="./fr/Miyazaki.html">
+        <img src="./public/img/Miyazaki.webp" alt="image de miyazaki"/>
         <h2>Hayao Miyazaki</h2>
         <h3>Filmographie de l'auteur</h3>
         </a>
     </div>
     <div>
-        <a>
-        <img src="./public/img/time_shadow.webp"/>
+        <a href="./fr/Natsuyume_noisy.html">
+        <img src="./public/img/time_shadow.webp" alt="image de la série lié a la musique natsuyume noisy"/>
         <h2>Natsuyume noisy</h2>
         <h3>Musique JPOP</h3>
         </a>
     </div>
     <div>
-        <a>
-        <img src="./public/img/Franco_Japonais.webp"/>
+        <a href="./fr/Relation_franco-japonaise.html">
+        <img src="./public/img/Franco_Japonais.webp" alt="image relation franco japoanise"/>
         <h2>Les lien franco japonais</h2>
         <h3>édition spécial: les manga</h3>
         </a>
     </div>
     <div>
-        </a>
-        <img src=""/>
+        <a href="./fr/Dégat_climatique.html">
+        <!--<img src="" alt=""/>-->
         <h2>Les dégat climatique au japon</h2>
         <h3>Resource sur l'écologie</h3>
         </a>
     </div>
+</section>
  </main>
  <footer>
     <p>Service client</p>
     <p>Nous contacter</p>
     <p>Nos réseau</p>
-    <img src="./public/img/icones/Youtube.png"/><img src="./public/img/icones/Instagram.png"/><img src="./public/img/icones/tweeter.png"/><img src="./public/img/icones/Facebook.png"/>
+    <img src="./public/img/icones/Youtube.png" alt="logo youtube"/><img src="./public/img/icones/Instagram.png" alt="logo instagrame"/><img src="./public/img/icones/tweeter.png" alt="logo tweeter"/><img src="./public/img/icones/Facebook.png" alt="logo facebook"/>
     <p>A propos</p>
     <p>Section autres projets</p>
     <p>Réaliser par BARDEY Lucas du groupe A1</p>
     <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</p>
-    <img src="./public/img/icones/Frame6.png"/>
+    <img src="./public/img/icones/Frame6.png" alt="logo du MMI franche compté"/>
  </footer>
 </body>
 </html>
