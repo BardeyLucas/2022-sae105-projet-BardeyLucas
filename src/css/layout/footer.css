@@ -1,0 +1,6 @@
+footer{
+    background-color: var(--couleur-fonce);
+}
+footer>p{
+    color: var(--texte-sombre)
+}

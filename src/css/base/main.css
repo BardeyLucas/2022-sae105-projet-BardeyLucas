@@ -1,0 +1,13 @@
+h2, h3, h4, h5, p{
+    color: var(--texte-claire);
+}
+.main__haut{
+background-color: var(--rouge-claire);
+}
+.main__bas{
+background-color: var(--rouge-fonce);
+}
+.transition{
+    display: flex;
+    width: 100%;
+}
