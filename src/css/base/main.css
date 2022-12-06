@@ -1,6 +1,25 @@
+body{
+    margin: 0;
+}
+section{
+
+}
 .section__haut{
 background-color: var(--rouge-claire);
 }
 .section__bas{
 background-color: var(--rouge-fonce);
+}
+.main__transition{
+    width: 100%;
+}
+button{
+    background-color: var(--rouge-claire);
+}
+a{
+    text-decoration: none;
+    color: var(--title_);
+}
+h3{
+    color: var(--texte-semi-claire);
 }

@@ -1,3 +1,23 @@
 header{
     background-color: var(--header);
+    color: white;
+}
+header>button{
+    
+    background-color: var(--header);
+}
+h4{
+    color: var(--texte-sombre);
+}
+.header__langue
+{
+
+}
+.header__agrandi
+{
+
+}
+.header__icones
+{
+    
 }

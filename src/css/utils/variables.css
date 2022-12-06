@@ -4,7 +4,7 @@
 --couleur-fonce: rgba(24, 0, 0, 1);
 --rouge-claire: rgba(144, 0, 0, 1);
 --rouge-fonce: rgba(80, 0, 0, 1);
---texte-sombre-pour-fond-sombre: rgba(118, 102, 102, 1);
+--texte-sombre: rgba(118, 102, 102, 1);
 --header: rgba(160, 0, 0, 1);
 --texte-semi-claire: rgba(235, 214, 214, 1);
 --texte-claire: rgba(255, 246, 246, 1);
@@ -12,7 +12,7 @@
 --color-of-element: rgba(30, 30, 30, 1);
 --article-de-presentation: rgba(144, 0, 0, 0.800000011920929);
 --text-of-legend: rgba(186, 152, 152, 1);
---title: rgba(255, 254, 254, 1);
+--title_: rgb(255, 255, 255, 1);
 
 /* Text-size styles */
 /* base size: basic-text (15px) */
