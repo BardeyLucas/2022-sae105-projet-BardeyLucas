@@ -1,0 +1,6 @@
+.section__haut{
+background-color: var(--rouge-claire);
+}
+.section__bas{
+background-color: var(--rouge-fonce);
+}
