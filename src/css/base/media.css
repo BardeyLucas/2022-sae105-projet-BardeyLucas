@@ -2,7 +2,7 @@
     position: relative;
     width: 86.94px;
     left: 55px;
-    top: 82px; 
+    top: 55px; 
     transform: translate(-50%, -50%)
 }
 h1{
@@ -11,16 +11,21 @@ h1{
     text-align: center;
 }
 .header__language{
-    width: 40px;
-    height: 30px;
     position:relative;
     left: 315px;
-    top: -232px;
+    top: -245px;
+}
+.language__image{
+ width: 40px;    
 }
 .header__open{
     position: relative;
-    top: 100px;
+    left: 270px;
+    top: -202px;
 }
-.header__icones{
-
+.open__image{ 
+width: 40px;
+}
+header>div>ul>li>img{
+width: 40px;
 }

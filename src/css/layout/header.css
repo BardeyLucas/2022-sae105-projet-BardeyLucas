@@ -10,7 +10,18 @@ header{
 }
 button{
     background-color: var(--header);
+    /*border: none;*/
 }
-button>img{
-    transform: translate(0%, 2%);
+header>button>img{
+    transform: translate(0%, 4.5%);
+    margin: -5px;
+    margin-top: -5px;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.header__menu{
+    background-color: var(--rouge-claire);
+    width: 375px;
+    height: 100px;
+    top: 200px;
 }
