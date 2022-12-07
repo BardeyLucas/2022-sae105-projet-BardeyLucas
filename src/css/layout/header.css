@@ -1,3 +1,16 @@
 header{
     background-color: var(--header);
+    width: 375px;
+    height: 132px;
+}
+.header__top{
+    background-color: var(--rouge-fonce);
+    width: 375px;
+    height: 32px;
+}
+button{
+    background-color: var(--header);
+}
+button>img{
+    transform: translate(0%, 2%);
 }

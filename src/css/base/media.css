@@ -1,3 +1,26 @@
-.logo{
- width: 20%;
+.header__logo{
+    position: relative;
+    width: 86.94px;
+    left: 55px;
+    top: 82px; 
+    transform: translate(-50%, -50%)
+}
+h1{
+    position: relative;
+    top: -119px;
+    text-align: center;
+}
+.header__language{
+    width: 40px;
+    height: 30px;
+    position:relative;
+    left: 315px;
+    top: -232px;
+}
+.header__open{
+    position: relative;
+    top: 100px;
+}
+.header__icones{
+
 }

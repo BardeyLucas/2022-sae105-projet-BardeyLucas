@@ -6,7 +6,7 @@ section{
 
 }
 
-button{
+section>button{
     background-color: var(--rouge-claire);
 }
 a{
