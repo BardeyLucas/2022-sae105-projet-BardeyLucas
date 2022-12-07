@@ -13,7 +13,7 @@ h1{
 .header__language{
     position:relative;
     left: 315px;
-    top: -245px;
+    top: -205px;
 }
 .language__image{
  width: 40px;    
@@ -21,7 +21,7 @@ h1{
 .header__open{
     position: relative;
     left: 270px;
-    top: -202px;
+    top: -162px;
 }
 .open__image{ 
 width: 40px;

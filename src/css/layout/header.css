@@ -20,8 +20,27 @@ header>button>img{
     margin-right: -8px;
 }
 .header__menu{
-    background-color: var(--rouge-claire);
+    background-color: var(--header);
     width: 375px;
     height: 100px;
-    top: 200px;
+    border-top: -100px;
+    z-index: 2;
+}
+.menu__contru{
+    display: grid; 
+    justify-content: center;
+    grid-template-columns: 73.5px 73.5px 73.5px 73.5px 73.5px;
+}
+div>img{
+    width: 40px;
+    margin-top:20px;
+}
+div>p{
+    transform: translate(-11%, 0%);
+    text-align: center;
+    margin: 0px;
+    margin-top: 5px;
+    width: 50px;
+    font-size: 10px;
+    color: var(--texte-claire);
 }

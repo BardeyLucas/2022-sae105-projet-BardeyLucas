@@ -22,3 +22,6 @@ background-color: var(--rouge-claire);
 .main__bas{
 background-color: var(--rouge-fonce);
 }
+ul{
+    list-style-type: none;
+}
