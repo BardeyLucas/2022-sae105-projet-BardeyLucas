@@ -1,4 +1,30 @@
 footer{
+    width: 375px;
+    height: 220px;
     background-color: var(--couleur-fonce);
     color: var(--texte-sombre);
+    font-size: 11px;
+}
+.footer__bar{
+    position: relative;
+    top: 14px;
+    left :20px;
+    border-top: solid var(--texte-sombre) 1px;
+    border-bottom: solid var(--texte-sombre) 1px;
+    width: 272px;
+}
+footer>p{
+    margin: 0;
+}
+footer>div>p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.footer__corectif{
+    position: relative;
+    left :20px;
+    margin-top: 20px;
+}
+div>div>p{
+    vertical-align: baseline;
 }

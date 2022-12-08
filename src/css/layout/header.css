@@ -38,7 +38,7 @@ div>img{
     width: 40px;
     margin-top:20px;
 }
-div>p{
+li>div>p{
     transform: translate(-11%, 0%);
     text-align: center;
     margin: 0px;
