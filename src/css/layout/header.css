@@ -2,16 +2,50 @@ header{
     background-color: var(--header);
     width: 375px;
     height: 132px;
+    display: flex;
 }
+
 .header__top{
+    gap: 5px;
     background-color: var(--rouge-fonce);
     width: 375px;
     height: 32px;
+}
+.header__logo{
+    width: 86.94px;
+    left: 55px;
+    top: 55px; 
+    transform: translate(-50%, -50%)
+}
+h1{
+    top: -119px;
+    text-align: center;
+}
+.header__language{
+    left: 315px;
+    top: -205px;
+}
+.language__image{
+ width: 40px;  
 }
 button{
     background-color: var(--header);
     /*border: none;*/
 }
+/*
+/*
+.header__open{
+    position: relative;
+    left: 270px;
+    top: -162px;
+}
+.open__image{ 
+width: 40px;
+}
+header>div>ul>li>img{
+width: 40px;
+}
+
 header>button>img{
     transform: translate(0%, 4.5%);
     margin: -5px;

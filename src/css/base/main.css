@@ -5,6 +5,10 @@ body{
 section{
 
 }
+P{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
 
 section>button{
     background-color: var(--rouge-claire);

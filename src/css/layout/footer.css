@@ -11,14 +11,21 @@ footer{
     left :20px;
     border-top: solid var(--texte-sombre) 1px;
     border-bottom: solid var(--texte-sombre) 1px;
+    width: 335px;
+}
+.footer__text{
     width: 272px;
+}
+.footer__bar>p{
+    position: relative;
+    margin-top: 10px;
 }
 footer>p{
     margin: 0;
 }
 footer>div>p{
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 .footer__corectif{
     position: relative;
@@ -26,5 +33,13 @@ footer>div>p{
     margin-top: 20px;
 }
 div>div>p{
-    vertical-align: baseline;
+    margin-top: 5px;
+    
+}
+div>div>p+p{
+    margin-top: -13px;
+    float: left;
+    margin-left: 55px;
+    
+    
 }
