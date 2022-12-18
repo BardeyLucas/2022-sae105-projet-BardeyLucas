@@ -13,7 +13,7 @@ P{
 section>button{
     background-color: var(--rouge-claire);
 }
-a{
+h2{
     text-decoration: none;
     color: var(--title_);
 }
@@ -28,4 +28,8 @@ background-color: var(--rouge-fonce);
 }
 ul{
     list-style-type: none;
+}
+.main__transition{
+    width:100%;
+    margin-bottom: 0;
 }
