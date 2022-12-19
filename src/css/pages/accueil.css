@@ -1,12 +1,22 @@
-.main__haut>ul>li>img{
+.carte__menu{
+    background-color: var(--rouge-claire);
+    width: calc(90% - 10px);
+    height: 100px;
+    margin-left: calc(5% + 5px);
+    z-index: 2;
+    transform: translate(0, 50px);
+    border: solid var(--rouge-fonce) 5px;
+}
+.carte__menu>ul>li>img{
     width: 20px;
 }
-.main__haut>ul>li>p{
+.carte__menu>ul>li>p{
     color: rgb(256,256,256);
     font-weight: bold;
 }
 .main__carte{
     width: 90%;
+    margin-top: -65px;
     margin-left: 5%;
     border: solid var(--couleur-fonce) 5px;
 }

@@ -7,7 +7,6 @@ header{
     background-color: var(--rouge-fonce);
     width: 100%;
     height: 32px;
-    
 }
 button{
     background-color: var(--header);
@@ -34,19 +33,14 @@ header>button>img{
 .header__menu>div{
     text-align: center;
 }
-.menu__texte{
-    
-}
 div>img{
     width: 40px;
     margin-top:20px;
 }
 li>div>p{
-
     text-align: center;
     margin: 0px;
     margin-top: 5px;
-
     font-size: 10px;
     color: var(--texte-claire);
 }
