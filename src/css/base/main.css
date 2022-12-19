@@ -1,11 +1,9 @@
 
 body{
     margin: 0;
+    text-decoration: none;
 }
-section{
-
-}
-P{
+p{
     margin-block-start: 0em;
     margin-block-end: 0em;
 }
@@ -14,7 +12,6 @@ section>button{
     background-color: var(--rouge-claire);
 }
 h2{
-    text-decoration: none;
     color: var(--title_);
 }
 h3{
@@ -33,5 +30,5 @@ ul{
 }
 .main__transition{
     width:100%;
-    margin-bottom: 0;
+    margin: 0;
 }

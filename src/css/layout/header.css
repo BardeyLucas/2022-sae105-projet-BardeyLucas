@@ -23,6 +23,7 @@ header>button>img{
 .header__menu{
     position: relative;
     display: grid;
+    color: rgb(256, 256, 256);
     top: -181px;
     background-color: var(--header);
     width: 100%;
