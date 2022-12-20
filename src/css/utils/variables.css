@@ -18,10 +18,10 @@
 
 /* base size: basic-text (15px) */
 --search: 1.07rem;
---legend: 0.8rem;
---main-title: 1.33rem;
---basic-text: 1rem;
---subtitle: 1rem;
+--legend: 0.6rem;
+--main-title: 1.1rem;
+--basic-text: 0.9rem;
+--subtitle: 0.8rem;
 --micro-text: 0.4rem;
 --footer-text: 0.73rem;
 --text-frise-20: 2.13rem;
