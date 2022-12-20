@@ -11,26 +11,25 @@
 </head>
 <body>
     <header>
-        <a href="../index.html"><img src="../public/img/icones/LOGO_ICONE.png" alt="icones du site"/></a>
-        <h1>TENGU ROAD</h1>
-        <!--<img>-->
-        <h4>Rechercher</h4>
-        <a href="../en/Voyage_de_chihiro_eng.html">
-        <img src="../public/img/icones/France.webp" alt="changement de langue"/>
+        <div class="header__top"></div>
+        <a href="../index.html"><img class="header__logo" src="../public/img/icones/LOGO_ICONE.png" alt="icones du site"/></a>        <h1>TENGU<br/>ROAD</h1>
+        <a class="header__language" href="../en/Voyage_de_chihiro_eng.html">
+        <img class="language__image" src="../public/img/icones/France.webp" alt="changement de langue"/>
         </a>
-        <button>
-            <img src="../public/img/icones/Agrendissement.png" alt="ouvrir le menu principal"/>
+        <button class="header__open">
+            <img class="open__image" src="../public/img/icones/Agrendissement.png" alt="ouvrir le menu principal"/>
         </button>
-        <div>
-            <ul>
-                <li><img src="../public/img/icones/profil.png" alt="profil"/><img src="../public/img/icones/Parametre.png" alt="paramétre"/><img src="../public/img/icones/Property1=LOW.png" alt="commande vocal"/><img src="../public/img/icones/Aide.png" alt="aide"/><img src="../public/img/icones/CROIX.png" alt="fermeture du menu principale"/></li>
-                <li><p>Porfil</p><p>Partage de position</p><p>Paramétre</p><p>Aide</p></li>
-            </ul>
+        <div class="header__menu">
+            <div><img src="../public/img/icones/profil.png" alt="profil"/><p>Porfil</p></div>
+            <div><img src="../public/img/icones/Parta_de_position.png" alt="commande vocal"/><p>Paramétre</p></div>
+            <div><img src="../public/img/icones/Parametre.png" alt="paramétre"/><p>Partage de position</p></div>
+            <div><img src="../public/img/icones/Aide.png" alt="aide"/><p>Aide</p></div>
+            <div><img src="../public/img/icones/CROIX.png" alt="fermeture du menu principale"/></div>
         </div>
      </header>
     <main>
         <section class="main__haut">
-            <h2>LE VOYAGE DE CHIHIRO</h2>
+            <h2 class="article__title">LE VOYAGE DE CHIHIRO</h2>
             <p>Un voyage attendrissant au royaume des yokai.</p>
             <img src="../public/img/Voyage-de-chihiro/chihiro.webp" alt="L’affiche promotionelle du film, le voyage de chihiro"/>
             <h5>L’affiche promotionelle du film, le voyage de chihiro</h5>
@@ -78,15 +77,18 @@
         </section>
     </main>
     <footer>
-        <p>Service client</p>
-        <p>Nous contacter</p>
-        <p>Nos réseau</p>
-        <img src="../public/img/icones/Youtube.png" alt="logo youtube"/><img src="../public/img/icones/Instagram.png" alt="logo instagrame"/><img src="../public/img/icones/tweeter.png" alt="logo tweeter"/><img src="../public/img/icones/Facebook.png" alt="logo facebook"/>
-        <p>A propos</p>
-        <p>Section autres projets</p>
-        <p>Réaliser par BARDEY Lucas du groupe A1</p>
-        <p>Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</p>
-        <img src="../public/img/icones/Frame6.png" alt="logo du MMI franche compté"/>
-     </footer>
+        <div class="footer__bar">
+          <p>Service client</p>
+          <p>Nous contacter</p>
+        </div>
+        <p class="footer__corectif">Nos réseau</p>
+        <img class="footer__corectif" src="../public/img/icones/Youtube.png" alt="logo youtube"/><img class="footer__corectif" src="../public/img/icones/Instagram.png" alt="logo instagrame"/><img class="footer__corectif" src="../public/img/icones/tweeter.png" alt="logo tweeter"/><img class="footer__corectif" src="../public/img/icones/Facebook.png" alt="logo facebook"/>
+        <div class="footer__bar">
+            <div class="bar__parametre"><p>A propos</p><p>Section autres projets</p></div>
+            <p>Réaliser par Lucas Bardey du groupe A1</p>
+            <p class="footer__text">Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</p>
+            <img src="../public/img/icones/Frame6.png" alt="logo du MMI franche compté"/>
+        </div>
+    </footer>
 </body>
 </html>

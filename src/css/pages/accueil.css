@@ -1,23 +1,69 @@
 .carte__menu{
+    display: grid;
     background-color: var(--rouge-claire);
-    width: calc(90% - 10px);
-    height: 100px;
-    margin-left: calc(5% + 5px);
-    z-index: 2;
-    transform: translate(0, 50px);
-    border: solid var(--rouge-fonce) 5px;
+    border: solid var(--rouge-fonce) 3px;
+    transform: translate( calc(10% - 1px) , 131px);
+    width: 50.5%;
+    height: 50px;
+    grid-template-columns: 25% 25% 25% 25%;
+    z-index: 1 ;
 }
-.carte__menu>ul>li>img{
+.carte__menu>div>p{
+margin-top: -18px;
+text-align: center;
+font-size: var(--menu-texte);
+}
+
+.carte__menu>div>img{
+    width: 20px;
+    transform: translate(0, -16px);
+    margin-left:  30%;
+}
+.carte__menu>div>button{
+    width: 20px;
+    height: 20px;
+    border: none;
+    padding: 0;
+    transform: translate(0, 5px);
+    margin-left:  30%;
+}
+.carte__menu>div>button>img{
     width: 20px;
 }
-.carte__menu>ul>li>p{
+.carte__menu--open{
+    background-color: var(--rouge-claire);
+
+    width: calc(90% - 10px);
+    height: 100px;
+    margin-left: calc(5%);
+    z-index: 2;
+    margin-top: -110px;
+    transform: translate(0, 185px);
+    border: solid var(--rouge-fonce) 5px;
+}
+.menu__ligne{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    margin-left: 5%;
+    margin-top: -15px;
+}
+.carte__menu>div>div{
+    width: 0;
+}
+.carte__menu>div>div>img{
+    width: 20px;
+}
+.carte__menu>div>div>p{
     color: rgb(256,256,256);
     font-weight: bold;
+    font-size: var(--menu-texte);
+    width: 50px;
+    text-align: center;
 }
 .main__carte{
     width: 90%;
-    margin-top: -65px;
-    margin-left: 5%;
+    margin-top: 70px;
+    margin-left: calc(5% - 5px);
     border: solid var(--couleur-fonce) 5px;
 }
 .articles__img {
@@ -25,7 +71,7 @@
     width: 90%;
     }
 .main__bas>h2 {
-    margin-top: -60px;
+    margin-top: -20px;
     text-align: center;
 }
 .main__bas>div>a>div{
@@ -43,20 +89,27 @@
 }
 .main__bas>div>a>div>h2{
     margin: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    font-size: var(--main-title);
 }
 .main__bas>div>a>div>h3{
     margin: 0px;
+    font-size: var(--basic-text);
 }
 #articles__img--test{
-    height: 75.223vh;
+    height: 200px;
 }
-
 #main__img--corectif1{
-    transform: translate(0%, 27%);
+    width: 12.53px;
+    margin-left: 3.735px;
+    margin-right: 3.735px;
+    margin-left: 35%;
 }
 #main__img--corectif2{
-    width: 13px;
-    margin-left: 3.5px;
-    margin-right: 3.5px;
+    transform: translate(0%, -31%);
+}
+#main__img--corectif4{
+    width: 25.06px;
+    margin-left: 7px;
+    margin-right: 7px;
 }

@@ -30,3 +30,6 @@ ul{
     width:100%;
     margin: 0;
 }
+main>section>p , main>section>article>p {
+    color: RED;
+}

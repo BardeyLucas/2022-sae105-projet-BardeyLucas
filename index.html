@@ -9,7 +9,6 @@
     <script defer src="https://unpkg.com/alpinejs"></script>
     <link rel="stylesheet" href="./src/css/style.css" />
 </head>
-
 <body>
 <header>
     <div class="header__top"></div>
@@ -31,20 +30,24 @@
  </header>
  <main>
     <section class="main__haut">
-    <img src="./public/img/icones/ZOOM.png" alt="zoom"/>
-    <img src="./public/img/icones/UNZOOM.png" alt="unzoom"/>
-    <img src="./public/img/icones/Property1=LIGHT.png" alt="commande vocal"/>
-    <button>
-        <img src="./public/img/icones/Agrendissement.png" alt="ouvrir le menu de la carte"/>
-    </button>
-    <div class="carte__menu">
-    <ul>
-        <li><img src="./public/img/icones/RESTEAURANT.png" alt="restaurant"/><img src="./public/img/icones/Store.png" alt="magazin"/><img id="main__img--corectif1" src="./public/img/icones/Hotel.png" alt="hotel"/><img id="main__img--corectif2" src="./public/img/icones/Property1=LIGHT.png" alt="commande vocal"/><img src="./public/img/icones/CROIX.png" alt="quitter le menu de la carte"/></li>
-        <li><p>Réstaurant</p><p>Magazin</p><p>Hotel</p><p>Navigation vocal</p></li>
-        <li><img src="./public/img/icones/ACTIVITY.png" alt="activité"/><img src="./public/img/icones/Médecine.png" alt="lieux médicaux"/><img src="./public/img/icones/Parking.png" alt="parking"/><img src="./public/img/icones/profil.png" alt="profil"/><img src="./public/img/icones/Property1=LOW.png" alt="partager sa position"/></li>
-        <li><p>Activité</p><p>Point médicaux</p><p>Parking</p><p>Profil</p><p>Partage de position</p></li>
-    </ul>
-    </div>
+        <div class="carte__menu">
+            <div><img src="./public/img/icones/ZOOM.png" alt="zoom"/><p>zoom+</p></div>
+            <div><img src="./public/img/icones/UNZOOM.png" alt="unzoom"/><p>zoom-</p></div>
+            <div><img id="main__img--corectif1" src="./public/img/icones/Property1=LIGHT.png" alt="commande vocal"/><p>navigation vocal</p></div>
+            <div>
+                <button>
+                <img src="./public/img/icones/Agrendissement.png" alt="ouvrir le menu de la carte"/>
+                </button>
+            </div>
+        </div>
+        <div class="carte__menu--open">
+            <div class="menu__ligne">
+                <div><img src="./public/img/icones/RESTEAURANT.png" alt="restaurant"/><p>Réstaurant</p></div><div><img id="main__img--corectif2" src="./public/img/icones/Store.png" alt="magazin"/><p>Magazin</p></div><div><img id="main__img--corectif3" src="./public/img/icones/Hotel.png" alt="hotel"/><p>Hotel</p></div><div><img id="main__img--corectif4" src="./public/img/icones/Property1=LIGHT.png" alt="commande vocal"/><p>Navigation vocal</p></div><div><img src="./public/img/icones/CROIX.png" alt="quitter le menu de la carte"/></div>
+            </div>
+            <div class="menu__ligne">
+                <div><img src="./public/img/icones/ACTIVITY.png" alt="activité"/><p>Activité</p></div><div><img src="./public/img/icones/Médecine.png" alt="lieux médicaux"/><p>Point médicaux</p></div><div><img src="./public/img/icones/Parking.png" alt="parking"/><p>Parking</p></div><div><img src="./public/img/icones/profil.png" alt="profil"/><p>profil</p></div><div><img src="./public/img/icones/Property1=LOW.png" alt="partager sa position"/><p>Partage de position</p></div>
+            </div>
+        </div>
         <img class="main__carte" src="public/img/carte.webp" alt="carte géographique"/>
     </section>
     <img class="main__transition" src="./public/img/TransitionBis.webp" alt="transition"/>
@@ -53,10 +56,10 @@
     <div>
         <a href="./fr/TeamLab_Borderless.html">
         <img class="articles__img" src="./public/img/TeamLab.webp" alt="image de teamlab"/>
-        <div>
+    <div>
         <h2>TeamLab Borderles</h2>
         <h3>Musée d'art numérique</h3>
-        </div>
+    </div>
         </a>
     </div>
     <div>
@@ -115,7 +118,6 @@
     </div>
 </section>
 <footer>
-    
     <div class="footer__bar">
       <p>Service client</p>
       <p>Nous contacter</p>
