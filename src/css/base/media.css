@@ -4,7 +4,10 @@
     left: 55px;
     top: 55px; 
     transform: translate(-50%, -50%);
+    z-index: 2;
 }
+
+
 h1{
     position: relative;
     top: -119px;

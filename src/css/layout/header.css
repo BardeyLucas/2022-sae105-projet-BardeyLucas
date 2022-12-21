@@ -37,10 +37,10 @@ div>img{
     width: 40px;
     margin-top:20px;
 }
-li>div>p{
+.header__menu>div>p{
     text-align: center;
     margin: 0px;
     margin-top: 5px;
-    font-size: 10px;
-    color: var(--texte-claire);
+    font-size: var(--menu-texte);
+    color: FFF;
 }

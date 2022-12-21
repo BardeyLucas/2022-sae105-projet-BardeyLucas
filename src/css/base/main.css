@@ -40,8 +40,8 @@ main>section>p , main>section>article>p {
 main>section>h4{
     color: var(--texte-semi-claire);
     text-align: center;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
     font-size: var(--subtitle);
 }
 main>section>article>h4{
