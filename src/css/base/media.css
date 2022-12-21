@@ -16,17 +16,19 @@ h1{
     transform: translate(0%, -25%);
 }
 .header__language{
+    display: block;
     position:relative;
     left: Calc(100% - 60px);
     top: -235px;
+    width: 40px;
 }
 .language__image{
  width: 40px;    
 }
 .header__open{
     position:relative;
-    left: Calc(100% - 104px);
-    top: -190px;
+    left: Calc(100% - 60px);
+    top: -230px;
 }
 .open__image{ 
 width: 40px;
