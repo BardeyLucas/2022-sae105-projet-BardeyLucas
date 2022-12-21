@@ -28,8 +28,14 @@
     margin-left: 15%;
     margin-top: 20px;
 }
-.img__miserable{
+.img__les-miserable{
     width: 70%;
     margin-left: 15%;
     margin-top: 20px;
+}
+.article__parametre>p{
+    margin-bottom: 10px;
+}
+.article__parametre>p+p{
+    padding-bottom: 10px;
 }
