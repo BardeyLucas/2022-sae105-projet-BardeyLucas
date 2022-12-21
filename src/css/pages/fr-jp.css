@@ -39,3 +39,11 @@
 .article__parametre>p+p{
     padding-bottom: 10px;
 }
+.text_corectif{
+    margin-top: 10px;
+    width: 72%;
+}
+#natsuyume__parametre>article>h3{
+    text-align: center;
+    margin-right: 5%;
+}

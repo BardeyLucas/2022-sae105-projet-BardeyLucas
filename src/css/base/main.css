@@ -12,9 +12,11 @@ section>button{
 }
 h2{
     color: var(--title_);
+    margin-left: 5%;
+    margin-right: 5%;
 }
 h3{
-    color: var(--texte-semi-claire);
+    color: var(--title_);
     }
 .main__haut{
 background-color: var(--rouge-claire);
@@ -33,13 +35,13 @@ ul{
     padding-bottom: 20px;
     background-color: var(--rouge-fonce);
 }
-main>section>p , main>section>article>p {
+main>section>p , main>section>article>p , main>section>article>ul>p {
     color: var(--texte-claire);
     font-size: var(--basic-text);
     width: 90%;
     margin-left: 5%;
 }
-main>section>h4{
+main>section>h4,main>section>article>h4{
     color: var(--texte-semi-claire);
     text-align: center;
     margin-left: 5%;
@@ -48,7 +50,7 @@ main>section>h4{
 }
 main>section>article>h4{
     color: var(--texte-claire) ;
-    margin: 0px;
+    margin: 0px 5%;
     font-size: var(--basic-text);
     padding-bottom: 20px; 
     
@@ -90,4 +92,10 @@ main>section>article>a>div>h4{
     color: var(--texte-claire) ;
     text-align: center;
     margin: 0;
+}
+main>section>article>ul{
+    padding: 0;
+}
+.text__saut-de-ligne{
+    padding-bottom: 15px;
 }
