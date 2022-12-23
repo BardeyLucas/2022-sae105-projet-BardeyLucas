@@ -6,6 +6,8 @@
     font-size: var(--basic-text);
     color: var(--texte-semi-claire);
 }
-#extrait__parametre{
-    
+#extrait__parametre>img{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
 }
