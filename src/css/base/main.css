@@ -1,4 +1,6 @@
+
 body{
+    
     margin: 0;
     text-decoration: none;
     background-color: var(--couleur-fonce);
@@ -65,7 +67,8 @@ main>section>h5,main>section>article>h5{
     margin: 0px 15% 0 15%;
 }
 .article__title{
-    padding-top: 110px;
+    margin: 0;
+    padding-top: 130px;
     text-align: center;
     font-size: var(--main-title);
 }

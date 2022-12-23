@@ -8,15 +8,15 @@ footer{
 .footer__bar{
     position: relative;
     top: 14px;
-    left :5%;
+    margin-left :5%;
+    margin-right: 0%;
     border-top: solid var(--texte-sombre) 1px;
     border-bottom: solid var(--texte-sombre) 1px;
     width: 90%;
     max-height: 37%;
-    margin-right: 0;
 }
 .footer__text{
-    width: 272px;
+    width: 80%;
 }
 .footer__bar>p{
     position: relative;
@@ -32,7 +32,8 @@ footer>div>p{
 }
 .footer__corectif{
     position: relative;
-    left :5%;
+    margin-left :5%;
+    margin-right: 0px;
     margin-top: 20px;
 }
 div>div>p+p{

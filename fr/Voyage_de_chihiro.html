@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{interaction : 0}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,6 @@
     <title>Tengu-road/Voyage-de-chihiro.fr</title>
     <link rel="stylesheet" href="../src/css/style.css"/>
     <script defer src="https://unpkg.com/alpinejs"></script>
-    <link rel="stylesheet" href="../src/css/style.css" />
 </head>
 <body>
     <header>
@@ -17,15 +16,15 @@
         <a class="header__language" href="../en/Voyage_de_chihiro_eng.html">
         <img class="language__image" src="../public/img/icones/France.webp" alt="changement de langue"/>
         </a>
-        <button class="header__open">
+        <button class="header__open" @click="interaction = 1">
             <img class="open__image" src="../public/img/icones/Agrendissement.png" alt="ouvrir le menu principal"/>
         </button>
-        <div class="header__menu">
+        <div class="header__menu" x-show="interaction === 1" >
             <div><img src="../public/img/icones/profil.png" alt="profil"/><p>Porfil</p></div>
             <div><img src="../public/img/icones/Parta_de_position.png" alt="commande vocal"/><p>Paramétre</p></div>
             <div><img src="../public/img/icones/Parametre.png" alt="paramétre"/><p>Partage de position</p></div>
             <div><img src="../public/img/icones/Aide.png" alt="aide"/><p>Aide</p></div>
-            <div><img src="../public/img/icones/CROIX.png" alt="fermeture du menu principale"/></div>
+            <div @click="interaction = 0"><img src="../public/img/icones/CROIX.png" alt="fermeture du menu principale"/></div>
         </div>
      </header>
     <main>

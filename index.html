@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{interaction : 0}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,6 @@
     <title>Tengu-Road.fr</title>
     <link rel="stylesheet" href="src/css/style.css"/>
     <script defer src="https://unpkg.com/alpinejs"></script>
-    <link rel="stylesheet" href="./src/css/style.css" />
 </head>
 <body>
 <header>
@@ -17,15 +16,15 @@
     <a class="header__language" href="./en/acceuil_eng.html">
         <img class="language__image" src="./public/img/icones/France.webp" alt="changement de langue"/>
     </a>
-    <button class="header__open">
+    <button class="header__open" @click="interaction = 1">
         <img class="open__image" src="./public/img/icones/Agrendissement.png" alt="ouvrir le menu principal"/>
     </button>
-    <div class="header__menu">
+    <div class="header__menu" x-show="interaction === 1" >
                 <div><img src="./public/img/icones/profil.png" alt="profil"/><p>Porfil</p></div>
                 <div><img src="./public/img/icones/Parta_de_position.png" alt="commande vocal"/><p>Paramétre</p></div>
                 <div><img src="./public/img/icones/Parametre.png" alt="paramétre"/><p>Partage de position</p></div>
                 <div><img src="./public/img/icones/Aide.png" alt="aide"/><p>Aide</p></div>
-                <div><img src="./public/img/icones/CROIX.png" alt="fermeture du menu principale"/></div>
+                <div @click="interaction = 0"><img src="./public/img/icones/CROIX.png" alt="fermeture du menu principale"/></div>
     </div>
  </header>
  <main>
@@ -35,14 +34,14 @@
             <div><img src="./public/img/icones/UNZOOM.png" alt="unzoom"/><p>zoom-</p></div>
             <div><img id="main__img--corectif1" src="./public/img/icones/Property1=LIGHT.png" alt="commande vocal"/><p>navigation vocal</p></div>
             <div>
-                <button>
+                <button @click="interaction = 2">
                 <img src="./public/img/icones/Agrendissement.png" alt="ouvrir le menu de la carte"/>
                 </button>
             </div>
         </div>
-        <div class="carte__menu--open">
+        <div class="carte__menu--open" x-show="interaction === 2" >
             <div class="menu__ligne">
-                <div><img src="./public/img/icones/RESTEAURANT.png" alt="restaurant"/><p>Réstaurant</p></div><div><img id="main__img--corectif2" src="./public/img/icones/Store.png" alt="magazin"/><p>Magazin</p></div><div><img id="main__img--corectif3" src="./public/img/icones/Hotel.png" alt="hotel"/><p>Hotel</p></div><div><img id="main__img--corectif4" src="./public/img/icones/Property1=LIGHT.png" alt="commande vocal"/><p>Navigation vocal</p></div><div><img src="./public/img/icones/CROIX.png" alt="quitter le menu de la carte"/></div>
+                <div><img src="./public/img/icones/RESTEAURANT.png" alt="restaurant"/><p>Réstaurant</p></div><div><img id="main__img--corectif2" src="./public/img/icones/Store.png" alt="magazin"/><p class="texte__parametre1">Magazin</p></div><div><img id="main__img--corectif3" src="./public/img/icones/Hotel.png" alt="hotel"/><p class="texte__parametre2">Hotel</p></div><div><img id="main__img--corectif4" src="./public/img/icones/Property1=LIGHT.png" alt="commande vocal"/><p>Navigation vocal</p></div><div @click="interaction = 0"><img src="./public/img/icones/CROIX.png" alt="quitter le menu de la carte"/></div>
             </div>
             <div class="menu__ligne">
                 <div><img src="./public/img/icones/ACTIVITY.png" alt="activité"/><p>Activité</p></div><div><img src="./public/img/icones/Médecine.png" alt="lieux médicaux"/><p>Point médicaux</p></div><div><img src="./public/img/icones/Parking.png" alt="parking"/><p>Parking</p></div><div><img src="./public/img/icones/profil.png" alt="profil"/><p>profil</p></div><div><img src="./public/img/icones/Property1=LOW.png" alt="partager sa position"/><p>Partage de position</p></div>
