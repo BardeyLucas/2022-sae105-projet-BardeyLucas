@@ -21,26 +21,32 @@ footer{
 .footer__bar>p{
     position: relative;
     margin-top: 5px;
+    cursor: pointer;
 }
 
 footer>p{
     margin: 0;
+    cursor: pointer;
 }
 footer>div>p{
     margin-top: 4px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 .footer__corectif{
     position: relative;
     margin-left :5%;
     margin-right: 0px;
     margin-top: 20px;
+    
 }
 div>div>p+p{
     margin-top: -13px;
     float: left;
     margin-left: 55px;  
+    cursor: pointer;
 }
 .bar__parametre{
     margin-top: 10px;
+    cursor: pointer;
 }

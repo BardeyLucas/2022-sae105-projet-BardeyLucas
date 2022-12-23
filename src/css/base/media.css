@@ -14,6 +14,7 @@ h1{
     text-align: center;
     font-size: calc(30px);
     transform: translate(0%, -25%);
+    cursor: default;
 }
 .header__language{
     display: block;
@@ -29,6 +30,7 @@ h1{
     position:relative;
     left: Calc(100% - 60px);
     top: -230px;
+    cursor: pointer;
 }
 .open__image{ 
 width: 40px;
@@ -43,11 +45,13 @@ width: 25px;
 margin-right: 15px;
 margin-left: 8px;
 margin-bottom: -18px;
+cursor: pointer;
 }
 footer>div>img{
     transform: translate(-75%, -15%);
 margin-left:    100%;
 margin-top: -100px;
 width: 50px;
+cursor: pointer;
 }
 

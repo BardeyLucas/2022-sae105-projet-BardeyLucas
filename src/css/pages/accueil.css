@@ -19,6 +19,7 @@ color: white;
     width: 20px;
     transform: translate(-50%, -16px);
     margin-left:  50%;
+    cursor: pointer;
 }
 .carte__menu>div>button{
     width: 20px;
@@ -27,6 +28,7 @@ color: white;
     padding: 0;
     transform: translate(-50%, 4px);
     margin-left:  50%;
+    cursor: pointer;
 }
 .carte__menu>div>button>img{
     width: 20px;
@@ -53,6 +55,7 @@ color: white;
     width: 20px;
     margin-left: 50%;
 transform: translate(-50%);
+cursor: pointer;
 }
 .menu__ligne>div>p{
     font-size: var(--menu-texte);

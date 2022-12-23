@@ -11,3 +11,11 @@
     margin-left: 5%;
     margin-top: 20px;
 }
+#extrait__parametre>img+p{
+    width: 80%;
+}
+#extrait__parametre>img+p,#extrait__parametre>img+p+p{
+margin-top: 20px;
+color: var(--texte-claire);
+font-size: var(--basic-texte);
+}

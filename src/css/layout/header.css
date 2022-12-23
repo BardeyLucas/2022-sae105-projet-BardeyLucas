@@ -15,6 +15,7 @@ button{
 header>button{
     border: none;
     padding: 0;
+
 }
 header>button>img{
     transform: translate(0%, 4%);
@@ -36,6 +37,7 @@ header>button>img{
 div>img{
     width: 40px;
     margin-top:20px;
+    cursor: pointer;
 }
 .header__menu>div>p{
     text-align: center;
