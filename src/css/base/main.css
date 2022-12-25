@@ -70,11 +70,18 @@ main>section>h5,main>section>article>h5{
     padding-bottom: 20px;
 }
 .main__description--var1{
-    margin: 0px 15% 0 15%;
+    margin: 0px 15%;
+}
+.main__description--var2{
+    margin: 0px 35%;
+}
+.main__description--var3{
+    margin: 0px 25%;
 }
 .article__title{
     margin: 0;
     padding-top: 30px;
+    padding-bottom: 20px;
     text-align: center;
     font-size: var(--main-title);
     cursor: default;
@@ -108,4 +115,7 @@ main>section>article>ul{
 }
 .text__saut-de-ligne{
     padding-bottom: 15px;
+}
+.text__saut-de-ligne--accentue{
+    padding-bottom: 30px;
 }

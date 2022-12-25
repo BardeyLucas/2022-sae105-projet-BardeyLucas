@@ -1,0 +1,74 @@
+.img__ruine{
+width: 90%;
+margin-left: 5%;
+}
+.img__baie{
+    width: 90%;
+    margin-left: 5%;
+}
+.img__usine{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+.img__docteur{
+    width: 70%;
+margin-left: 15%;
+margin-top: 20px;
+}
+.img__fukushima{
+    width: 90%;
+    margin-left: 5%;
+}
+.img__actualite{
+    width: 80%;
+margin-left: 10%;
+margin-top: 20px;
+}
+.img__duo{
+    width: 90%;
+margin-left: 5%;
+}
+.img__duo>img{
+    width: 40%;
+}
+.img__duo>img+img{
+    width: 37.9%;
+    margin-left: 22.1%;
+}
+.img__duo>h5{
+    width: 37%;
+    color: var(--text-of-legend);
+    font-size: var(--legend);
+}
+.img__duo>h5+h5{
+    margin-top: -30px;
+    margin-left: 62.1%;
+    margin-bottom: 20px;
+}
+.img__ministre{
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 20px;
+}
+.img__conference{
+width: 50%;
+margin-left: 25%;
+margin-top: 20px;
+}
+.img__centrale{
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 10px;
+}
+.texte__fin{
+    padding-bottom: 40px;
+}
+.Lien>p{
+    margin-left: 5%;
+    margin-bottom: 3px;
+}
+.Lien>p>a{
+    color: var(--det);
+    text-decoration: none;
+}
