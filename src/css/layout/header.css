@@ -66,8 +66,8 @@ header>button>img{
     height: 100px;
     z-index: 1;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    -webkit-animation: 2s linear forwards move-element;
-            animation: 2s linear forwards move-element;
+    -webkit-animation: 400ms linear forwards move-element;
+            animation: 400ms linear forwards move-element;
 }
   @-webkit-keyframes move-element { form {margin-top: 0px} to {margin-top: 100px} };
             @keyframes move-element { form {margin-top: 0px} to {margin-top: 100px} };
