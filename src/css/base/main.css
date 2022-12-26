@@ -1,6 +1,6 @@
 
 body{
-
+    font-family: var(Rubik Vinyl);
     margin: 0;
     text-decoration: none;
     background-color: var(--couleur-fonce);
@@ -57,7 +57,7 @@ main>section>h4,main>section>article>h4{
     font-size: var(--subtitle);
 }
 main>section>article>h4{
-    color: var(--texte-claire) ;
+    color: var(--texte-claire);
     margin: 0px 5%;
     font-size: var(--basic-text);
     padding-bottom: 20px; 

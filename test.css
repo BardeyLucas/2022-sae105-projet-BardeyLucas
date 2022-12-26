@@ -1,0 +1,213 @@
+@-moz-keyframes bouncing {
+    40%,70%,90% {
+       -moz-animation-timing-function: ease-out;
+       bottom: 0;
+    }
+    0% {
+       bottom: 400px;
+       left: 0;
+       -moz-animation-timing-function: ease-in;
+    }
+    55% {
+       bottom: 200px;
+       -moz-animation-timing-function: ease-in;
+    }
+    80% {
+       bottom: 100px;
+       -moz-animation-timing-function: ease-in;
+    }
+    95% {
+       bottom: 50px;
+       -moz-animation-timing-function: ease-in;
+    }
+    100% {
+       left: 400px;
+       bottom: 0;
+       -moz-animation-timing-function: ease-out;
+    }
+   }
+    
+   @-webkit-keyframes bouncing {
+    40%,70%,90% {
+       bottom: 0;
+       -webkit-animation-timing-function: ease-out;
+    }
+    0% {
+       bottom: 800px;
+       left: 0;
+       -webkit-animation-timing-function: ease-in;
+    }
+    55% {
+       bottom: 200px;
+       -webkit-animation-timing-function: ease-in;
+    }
+    80% {
+       bottom: 100px;
+       -webkit-animation-timing-function: ease-in;
+    }
+    95% {
+       bottom: 50px;
+       -webkit-animation-timing-function: ease-in;
+    }
+    100% {
+       left: 400px;
+       bottom: 0;
+       -webkit-animation-timing-function: ease-out;
+    }
+   }
+    
+   @-ms-keyframes bouncing {
+    40%,70%,90% {
+       bottom: 0;
+       -ms-animation-timing-function: ease-out;
+    }
+    0% {
+       bottom: 800px;
+       left: 0;
+       -ms-animation-timing-function: ease-in;
+    }
+    55% {
+       bottom: 200px;
+       -ms-animation-timing-function: ease-in;
+    }
+    80% {
+       bottom: 100px;
+       -ms-animation-timing-function: ease-in;
+    }
+    95% {
+       bottom: 50px;
+       -ms-animation-timing-function: ease-in;
+    }
+    100% {
+       left: 400px;
+       bottom: 0;
+       -ms-animation-timing-function: ease-out;
+    }
+   }
+    
+   @keyframes bouncing {
+    40%,70%,90% {
+       bottom: 0;
+       animation-timing-function: ease-out;
+    }
+    0% {
+       bottom: 800px;
+       left: 0;
+       animation-timing-function: ease-in;
+    }
+    55% {
+       bottom: 200px;
+       animation-timing-function: ease-in;
+    }
+    80% {
+       bottom: 100px;
+       animation-timing-function: ease-in;
+    }
+    95% {
+       bottom: 50px;
+       animation-timing-function: ease-in;
+    }
+    100% {
+       left: 400px;
+       bottom: 0;
+       animation-timing-function: ease-out;
+    }
+   }
+    
+    
+    
+    
+   @-moz-keyframes gliss {
+     0% {
+       bottom: 500px;
+       left:-500px;
+       -webkit-animation-timing-function: slideinleft;
+    }
+    
+    100% {
+       left: 250px;
+       bottom: 500px;
+       -webkit-animation-timing-function: slideinleft;
+    }
+   }
+    
+   @-webkit-keyframes gliss {
+     0% {
+       bottom: 500px;
+       left:-500px;
+       -webkit-animation-timing-function: slideinleft;
+    }
+    
+    100% {
+       left: 250px;
+       bottom: 500px;
+       -webkit-animation-timing-function: slideinleft;
+    }
+   }
+    
+   @-ms-keyframes gliss {
+     0% {
+       bottom: 500px;
+       left:-500px;
+       -webkit-animation-timing-function: slideinleft;
+    }
+    
+    100% {
+       left: 250px;
+       bottom: 500px;
+       -webkit-animation-timing-function: slideinleft;
+    }
+   }
+    
+   @keyframes gliss {
+     0% {
+       bottom: 500px;
+       left:-500px;
+       -webkit-animation-timing-function: slideinleft;
+    }
+    
+    100% {
+       left: 250px;
+       bottom: 500px;
+       -webkit-animation-timing-function: slideinleft;
+    }
+   }
+   .container {
+       position: relative;
+       width: 1600px;
+       height:800px;
+       Background-color: rgb(255,106,0);
+       color: rgb(33,0,127);
+   }
+     
+    
+   .ball {
+    
+     font-size:200px;
+     font-family:algerian;
+   position: absolute;
+        -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+       border-radius: 50%;
+       -ms-animation: 3.5s linear 0s normal forwards 1 bouncing ;
+       -webkit-animation: 3.5s linear 0s normal forwards 1 bouncing;
+       -moz-animation: 3.5s linear 0s normal forwards 1 bouncing ;
+     
+       animation: 3.5s linear 0s normal forwards 1 bouncing;
+   }
+    
+   .logo {
+    
+     font-size:200px;
+     font-family:algerian;
+   position: absolute;
+        -webkit-border-radius: 50%;
+       -moz-border-radius: 50%;
+       border-radius: 50%;
+       -ms-animation: 1s linear 3.5s normal forwards 1 gliss ;
+       -webkit-animation: 1s linear 3.5s normal forwards 1 gliss;
+       -moz-animation: 1s linear 3.5s normal forwards 1 gliss ;
+     
+       animation: 1s linear 3.5s normal forwards 1 gliss;
+   }
+   

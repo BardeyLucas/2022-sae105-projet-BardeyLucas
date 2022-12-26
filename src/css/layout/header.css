@@ -3,19 +3,55 @@ header{
     width: 100%;
     height: 132px;
 }
+
 .header__top{
     background-color: var(--rouge-fonce);
     width: 100%;
     height: 32px;
+    z-index: 3;
 }
+.header__texture{
+    position: relative;
+    background-color: var(--header);
+    border-bottom: solid var(--rouge-claire) 1px;
+    width: 100%;
+    height: 100px;
+    z-index: 2;
+}
+h1{
+    position: relative;
+    z-index: 3;
+    font-size: 40px;
+    margin-bottom: -10px;
+    font-family: bevan;
+    background: -webkit-linear-gradient(red, var(--rouge-fonce) 40%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -2px;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: var(--couleur-fonce);}
+h1>span{
+    margin-top: -10px;
+    background: -webkit-linear-gradient( var(--header) , var(--rouge-fonce) 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -1px;
+}
+.header__title{
+
+    line-height: 50px;
+    margin-top: -257px;
+    text-align: center;
+}
+
 button{
     background-color: var(--header);
-    /*border: none;*/
+        z-index: 3;
 }
 header>button{
+    margin-top: 150px;
     border: none;
     padding: 0;
-
 }
 header>button>img{
     transform: translate(0%, 4%);
@@ -24,17 +60,24 @@ header>button>img{
     position: relative;
     display: grid;
     color: rgb(256, 256, 256);
-    top: -220px;
     background-color: var(--header);
+    top: -322px;
     width: 100%;
     height: 100px;
-    z-index: 2;
+    z-index: 1;
     grid-template-columns: 20% 20% 20% 20% 20%;
+    -webkit-animation: 2s linear forwards move-element;
+            animation: 2s linear forwards move-element;
 }
+  @-webkit-keyframes move-element { form {margin-top: 0px} to {margin-top: 100px} };
+            @keyframes move-element { form {margin-top: 0px} to {margin-top: 100px} };
 .header__menu>div{
     text-align: center;
+    align-items: center;
 }
 div>img{
+    margin-left: 50%;
+    transform: translate(-50%);
     width: 40px;
     margin-top:20px;
     cursor: pointer;

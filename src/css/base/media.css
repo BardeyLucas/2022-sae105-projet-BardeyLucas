@@ -2,26 +2,17 @@
     position: relative;
     width: 86.94px;
     left: 55px;
-    top: 55px; 
+    top: -45px; 
     transform: translate(-50%, -50%);
     z-index: 2;
-}
-
-
-h1{
-    position: relative;
-    top: -119px;
-    text-align: center;
-    font-size: calc(30px);
-    transform: translate(0%, -25%);
-    cursor: default;
 }
 .header__language{
     display: block;
     position:relative;
     left: Calc(100% - 60px);
-    top: -235px;
+    top: -85px;
     width: 40px;
+    z-index: 2;
 }
 .language__image{
  width: 40px;    

@@ -35,11 +35,11 @@ color: white;
 }
 .carte__menu--open{
     background-color: var(--rouge-claire);
-    width: calc(90% - 10px);
-    height: 100px;
-    margin-left: 5%;
+    width: calc(90% - 9px);
+    margin-left: 50%;
     z-index: 2;
-    transform: translate(0, 95px);
+    height: 100px;
+    transform: translate(-50%, 95px);
     border: solid var(--rouge-fonce) 5px;
     margin-top: -110px;
 }
@@ -49,7 +49,7 @@ color: white;
     margin-left: 50%;
     transform: translate(-50%, 2px);
     margin-top: -20px;
-    width: 100%;
+    width: calc(90% - 10px);
 }
 .menu__ligne>div>img{
     width: 20px;
@@ -61,7 +61,7 @@ cursor: pointer;
     font-size: var(--menu-texte);
 margin-left: 50%;
 transform: translate(-50%);
-text-align: center;
+text-align:center;
 color: white;
 }
 .carte__menu>div>div{
@@ -141,4 +141,10 @@ color: white;
 }
 .main__correctif{
     padding-bottom: 10px;
+}
+#main__texte--correctif{
+    margin-top: -18px;
+}
+#main__texte--corectif1{
+    width: 50px;
 }

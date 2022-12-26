@@ -11,8 +11,9 @@
 <body>
 <header>
     <div class="header__top"></div>
+    <div class="header__texture"></div>
     <a class="header__lien" href="../index.html"><img class="header__logo" src="../public/img/icones/LOGO_ICONE.png" alt="icones du site"/></a>
-    <h1>TENGU<br/>ROAD</h1>
+    <div class="header__title"><h1>TENGU</br><span>ROAD</span></h1></div>
     <a class="header__language" href="./en/acceuil_eng.html">
         <img class="language__image" src="./public/img/icones/France.webp" alt="changement de langue"/>
     </a>
@@ -32,19 +33,19 @@
         <div class="carte__menu">
             <div><img src="./public/img/icones/ZOOM.png" alt="zoom"/><p>zoom+</p></div>
             <div><img src="./public/img/icones/UNZOOM.png" alt="unzoom"/><p>zoom-</p></div>
-            <div><img id="main__img--corectif1" src="./public/img/icones/Property1=LIGHT.png" alt="commande vocal"/><p>navigation vocal</p></div>
+            <div><img id="main__img--corectif1" src="./public/img/icones/Property1=LIGHT.png" alt="commande vocal"/><p id="main__texte--correctif">navigation vocal</p></div>
             <div>
                 <button @click="interaction = 2">
                 <img src="./public/img/icones/Agrendissement.png" alt="ouvrir le menu de la carte"/>
                 </button>
             </div>
         </div>
-        <div class="carte__menu--open" x-show="interaction === 2" >
+        <div class="carte__menu--open" x-show="interaction === 2">
             <div class="menu__ligne">
                 <div><img src="./public/img/icones/RESTEAURANT.png" alt="restaurant"/><p>Réstaurant</p></div><div><img id="main__img--corectif2" src="./public/img/icones/Store.png" alt="magazin"/><p class="texte__parametre1">Magazin</p></div><div><img id="main__img--corectif3" src="./public/img/icones/Hotel.png" alt="hotel"/><p class="texte__parametre2">Hotel</p></div><div><img id="main__img--corectif4" src="./public/img/icones/Property1=LIGHT.png" alt="commande vocal"/><p>Navigation vocal</p></div><div @click="interaction = 0"><img src="./public/img/icones/CROIX.png" alt="quitter le menu de la carte"/></div>
             </div>
             <div class="menu__ligne">
-                <div><img src="./public/img/icones/ACTIVITY.png" alt="activité"/><p>Activité</p></div><div><img src="./public/img/icones/Médecine.png" alt="lieux médicaux"/><p>Point médicaux</p></div><div><img src="./public/img/icones/Parking.png" alt="parking"/><p>Parking</p></div><div><img src="./public/img/icones/profil.png" alt="profil"/><p>profil</p></div><div><img src="./public/img/icones/Property1=LOW.png" alt="partager sa position"/><p>Partage de position</p></div>
+                <div><img src="./public/img/icones/ACTIVITY.png" alt="activité"/><p>Activité</p></div><div><img src="./public/img/icones/Médecine.png" alt="lieux médicaux"/><p>Point médicaux</p></div><div><img src="./public/img/icones/Parking.png" alt="parking"/><p>Parking</p></div><div><img src="./public/img/icones/profil.png" alt="profil"/><p>profil</p></div><div><img src="./public/img/icones/Property1=LOW.png" alt="partager sa position"/><p id="main__texte--corectif1">Partage de position</p></div>
             </div>
         </div>
         <img class="main__carte" src="public/img/carte.webp" alt="carte géographique"/>
