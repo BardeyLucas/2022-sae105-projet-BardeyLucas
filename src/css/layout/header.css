@@ -46,7 +46,7 @@ h1>span{
 
 button{
     background-color: var(--header);
-        z-index: 3;
+        z-index: 4;
 }
 header>button{
     margin-top: 150px;

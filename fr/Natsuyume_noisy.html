@@ -11,20 +11,21 @@
 <body class="natsuyume">
     <header>
         <div class="header__top"></div>
+        <div class="header__texture"></div>
         <a class="header__lien" href="../index.html"><img class="header__logo" src="../public/img/icones/LOGO_ICONE.png" alt="icones du site"/></a>
         <div class="header__title"><h1>TENGU</br><span>ROAD</span></h1></div>
         <a class="header__language" href="../en/Natsuyume_noisy_eng.html">
-        <img class="language__image" src="../public/img/icones/France.webp" alt="changement de langue"/>
+            <img class="language__image" src="../public/img/icones/France.webp" alt="changement de langue"/>
         </a>
         <button class="header__open" @click="interaction = 1">
             <img class="open__image" src="../public/img/icones/Agrendissement.png" alt="ouvrir le menu principal"/>
         </button>
         <div class="header__menu" x-show="interaction === 1" >
-            <div><img src="../public/img/icones/profil.png" alt="profil"/><p>Porfil</p></div>
-            <div><img src="../public/img/icones/Parta_de_position.png" alt="commande vocal"/><p>Paramétre</p></div>
-            <div><img src="../public/img/icones/Parametre.png" alt="paramétre"/><p>Partage de position</p></div>
-            <div><img src="../public/img/icones/Aide.png" alt="aide"/><p>Aide</p></div>
-            <div @click="interaction = 0"><img src="../public/img/icones/CROIX.png" alt="fermeture du menu principale"/></div>
+                    <div><img src="../public/img/icones/profil.png" alt="profil"/><p>Porfil</p></div>
+                    <div><img src="../public/img/icones/Parta_de_position.png" alt="commande vocal"/><p>Paramétre</p></div>
+                    <div><img src="../public/img/icones/Parametre.png" alt="paramétre"/><p>Partage de position</p></div>
+                    <div><img src="../public/img/icones/Aide.png" alt="aide"/><p>Aide</p></div>
+                    <div @click="interaction = 0"><img src="../public/img/icones/CROIX.png" alt="fermeture du menu principale"/></div>
         </div>
      </header>
     <main>
