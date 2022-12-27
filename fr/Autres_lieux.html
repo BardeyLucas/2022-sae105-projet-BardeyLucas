@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{interaction : 0}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tengu-road/Autres-projet.fr</title>
+    <link rel="stylesheet" href="../src/css/style.css"/>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body class="projet">
+    <header>
+        <div class="header__top"></div>
+        <div class="header__texture"></div>
+        <a class="header__lien" href="../index.html"><img class="header__logo" src="../public/img/icones/LOGO_ICONE.png" alt="icones du site"/></a>
+        <div class="header__title"><h1>TENGU</br><span>ROAD</span></h1></div>
+        <a class="header__language" href="../en/Autres_projet_eng.html">
+            <img class="language__image" src="../public/img/icones/France.webp" alt="changement de langue"/>
+        </a>
+        <button class="header__open" @click="interaction = 1">
+            <img class="open__image" src="../public/img/icones/Agrendissement.png" alt="ouvrir le menu principal"/>
+        </button>
+        <div class="header__menu" x-show="interaction === 1" >
+                    <div><img src="../public/img/icones/profil.png" alt="profil"/><p>Porfil</p></div>
+                    <div><img src="../public/img/icones/Parta_de_position.png" alt="commande vocal"/><p>Paramétre</p></div>
+                    <div><img src="../public/img/icones/Parametre.png" alt="paramétre"/><p>Partage de position</p></div>
+                    <div><img src="../public/img/icones/Aide.png" alt="aide"/><p>Aide</p></div>
+                    <div @click="interaction = 0"><img src="../public/img/icones/CROIX.png" alt="fermeture du menu principale"/></div>
+        </div>
+     </header>
+    <main>
+        <section class="main__haut">
+            <h2 class="article__title" id="article__title--frise">Je vous présente 8 autres lieux qui sont sujet à vous plaire si vous avez déjà aimé le Teamlab borderless</h2>
+        </section>
+        <img class="main__transition" src="../public/img/Transition.webp" alt="transition" />
+        <section class="main__bas" id="frise__parametre">
+            <article>
+                <img src="../public/img/Autres lieux/gaite-lyrique.jpg"/>
+                <div class="frise__parametre--1">
+                    <h3 class="--main-title">La Gaité Lyrique</h3>
+                    <h4 class="--basic-text">Salle de spectacles modérne</h4>
+                </div>
+                <div class="frise__parametre--2">
+                    <img src="../public/img/Autres lieux/decoration.svg"/>
+                </div>
+                <div class="frise__parametre--3"><h3>Mars 2011</h3></div>
+            </article>
+            <article>
+                <img src="../public/img/Autres lieux/atelier-lumieres.jpg"/>
+                <div class="frise__parametre--1">
+                    <h3 class="--main-title">Atelier des Lumières</h3>
+                    <h4 class="--basic-text">Centre d'art numérique</h4>
+                </div>
+                <div class="frise__parametre--2">
+                    <img src="../public/img/Autres lieux/decoration.svg"/>
+                </div>
+                <div class="frise__parametre--3"><h3>13 avril 2018</h3></div>
+            </article>
+            <article>
+                <img src="../public/img/Autres lieux/teamlab-shanghai.jpg"/>
+                <div class="frise__parametre--1">
+                    <h3 class="--main-title">Teamlab borderless Shanghai</h3>
+                    <h4 class="--basic-text">Musée d'art numérique</h4>
+                </div>
+                <div class="frise__parametre--2">
+                    <img src="../public/img/Autres lieux/decoration.svg"/>
+                </div>
+                <div class="frise__parametre--3"><h3>5 novembre 2019</h3></div>
+            </article>
+            <article>
+                <img src="../public/img/Autres lieux/bassins-lumieres.jpg"/>
+                <div class="frise__parametre--1">
+                    <h3 class="--main-title">Bassin des Lumières</h3>
+                    <h4 class="--basic-text">Centre d'art numérique</h4>
+                </div>
+                <div class="frise__parametre--2">
+                    <img src="../public/img/Autres lieux/decoration.svg"/>
+                </div>
+                <div class="frise__parametre--3"><h3>10 juin 2020</h3></div>
+            </article>
+            <article>
+                <img src="../public/img/Autres lieux/teamlab-nature.jpg"/>
+                <div class="frise__parametre--1">
+                    <h3 class="--main-title">Teamlab super nature</h3>
+                    <h4 class="--basic-text">Musée d'art numérique</h4>
+                </div>
+                <div class="frise__parametre--2">
+                    <img src="../public/img/Autres lieux/decoration.svg"/>
+                </div>
+                <div class="frise__parametre--3"><h3>15 juin 2020</h3></div>
+            </article>
+            <article>
+                <img src="../public/img/Autres lieux/teamlab-forest.jpg"/>
+                <div class="frise__parametre--1">
+                    <h3 class="--main-title">Teamlab Forest</h3>
+                    <h4 class="--basic-text">Musée d'art numérique</h4>
+                </div>
+                <div class="frise__parametre--2">
+                    <img src="../public/img/Autres lieux/decoration.svg"/>
+                </div>
+                <div class="frise__parametre--3"><h3>21 juillet 2020</h3></div>
+            </article>
+            <article>
+                <img src="../public/img/Autres lieux/nxt-museum.jpg"/>
+                <div class="frise__parametre--1">
+                    <h3 class="--main-title">Nxt Museum</h3>
+                    <h4 class="--basic-text">Musée d'art sensorielle</h4>
+                </div>
+                <div class="frise__parametre--2">
+                    <img src="../public/img/Autres lieux/decoration.svg"/>
+                </div>
+                <div class="frise__parametre--3"><h3>29 aout 2020</h3></div>
+            </article>
+            <article>
+                <img src="../public/img/Autres lieux/fabrique-lumieres.jpg"/>
+                <div class="frise__parametre--1">
+                    <h3 class="--main-title">Fabrique des lumières</h3>
+                    <h4 class="--basic-text">Centre d'art numérique</h4>
+                </div>
+                <div class="frise__parametre--2">
+                    <img src="../public/img/Autres lieux/decoration.svg"/>
+                </div>
+                <div class="frise__parametre--3"><h3>22 avril 2022</h3></div>
+            </article>
+            <div class="frise__parametre__4"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__bar">
+          <p>Service client</p>
+          <p>Nous contacter</p>
+        </div>
+        <p class="footer__corectif">Nos réseau</p>
+        <img class="footer__corectif" src="../public/img/icones/Youtube.png" alt="logo youtube"/><img class="footer__corectif" src="../public/img/icones/Instagram.png" alt="logo instagrame"/><img class="footer__corectif" src="../public/img/icones/tweeter.png" alt="logo tweeter"/><img class="footer__corectif" src="../public/img/icones/Facebook.png" alt="logo facebook"/>
+        <div class="footer__bar">
+            <div class="bar__parametre"><p>A propos</p><p>Section autres projets</p></div>
+            <p>Réaliser par Lucas Bardey du groupe A1</p>
+            <p class="footer__text">Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</p>
+            <img src="../public/img/icones/Frame6.png" alt="logo du MMI franche compté"/>
+        </div>
+    </footer>
+</body>
+</html>

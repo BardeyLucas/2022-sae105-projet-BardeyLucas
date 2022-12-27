@@ -18,6 +18,7 @@ h2{
     margin-left: 5%;
     margin-right: 5%;
     cursor: default;
+    text-align: center;
 }
 h3{
     color: var(--title_);
