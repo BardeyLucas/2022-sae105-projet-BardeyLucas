@@ -26,25 +26,23 @@ margin-left: 10%;
 margin-top: 20px;
 }
 .img__duo{
+    display: grid;
+    grid-template-columns: 50% 50%;
     width: 90%;
 margin-left: 5%;
 }
-.img__duo>img{
-    width: 40%;
+.img__duo div img{
+    width: 80%;
 }
-.img__duo>img+img{
-    width: 37.9%;
-    margin-left: 22.1%;
+.img__duo div+div img{
+    width: 75.8%;
 }
-.img__duo>h5{
-    width: 37%;
+.img__duo div h5{
+    width: 100%;
     color: var(--text-of-legend);
     font-size: var(--legend);
-}
-.img__duo>h5+h5{
-    margin-top: -30px;
-    margin-left: 62.1%;
-    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 0px;
 }
 .img__ministre{
     width: 30%;
