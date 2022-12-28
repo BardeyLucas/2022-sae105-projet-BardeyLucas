@@ -40,11 +40,12 @@ footer>div>p{
     margin-top: 20px;
     
 }
-div>div>p+p{
-    margin-top: -13px;
+div>div>a>p{
+    margin-top: -12px;
     float: left;
     margin-left: 55px;  
     cursor: pointer;
+    color: var(--texte-sombre);
 }
 .bar__parametre{
     margin-top: 10px;
