@@ -27,6 +27,11 @@ h3{
 h4,h5{
     cursor: default;
 }
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+}
 .main__haut{
 background-color: var(--rouge-claire);
 padding-bottom: 20px;
