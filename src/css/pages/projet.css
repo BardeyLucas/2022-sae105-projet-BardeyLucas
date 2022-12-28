@@ -1,0 +1,13 @@
+.section__parametre-autre-projet{
+    background-color: var(--rouge-claire);
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.section__parametre-autre-projet>article{
+    background-color:black;
+    border: solid var(--rouge-fonce) 5px;
+    width: 90%;
+    margin-left: 5%;
+    height: 100px;
+    margin-bottom: 50px;
+}
