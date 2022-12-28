@@ -50,3 +50,11 @@ div>div>p+p{
     margin-top: 10px;
     cursor: pointer;
 }
+.bar__parametre+p{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+img+.footer__bar{
+    border-bottom: none;
+    height: 80px;
+}
