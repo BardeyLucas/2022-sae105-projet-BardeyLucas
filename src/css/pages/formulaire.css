@@ -1,0 +1,27 @@
+.nous-contacté__formulaire>div{
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    top: 0px;
+    background-color: var(--couleur-fonce);
+    opacity: 0.8;
+}
+.nous-contacté__formulaire>div+div{
+    width: 80vw;
+    height: 60vh;
+    margin-top: 20vh;
+    margin-left: 10vw;
+    background-color: var(--rouge-claire);
+    border: Solid var(--texte-sombre) 3px;
+    opacity: 1;
+}
+/*
+-quitter
+-prénom
+-nom
+-courriel/téléphone
+-objet
+-message
+-accepter
+*/

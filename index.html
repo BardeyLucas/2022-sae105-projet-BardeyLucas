@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{interaction : 0}">
+<html lang="fr" x-data="{interaction : 3}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -117,7 +117,16 @@
     </a>
     </div>
 </section>
+</main>
 <footer>
+    <div x-show="interaction === 3" class="nous-contacté__formulaire">
+        <!--fond-->
+        <div></div>
+        <!--formulaire-->
+        <div>
+
+        </div>
+    </div>
     <div class="footer__bar">
         <p>Service client</p>
         <button @click="interaction = 3">Nous contacter</button>
@@ -131,6 +140,6 @@
           <img src="./public/img/icones/Frame6.png" alt="logo du MMI franche compté"/>
       </div>
 </footer>
-</main>
+</div>
 </body>
 </html>
