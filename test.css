@@ -1,0 +1,8 @@
+#message {
+    width: 95%;
+    height: 5em;
+    background: transparent;
+    color: black;
+    border: 1px solid black;
+    vertical-align:top;
+}

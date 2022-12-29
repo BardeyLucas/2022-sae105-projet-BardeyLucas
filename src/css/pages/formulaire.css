@@ -9,8 +9,8 @@
 }
 .nous-contacté__formulaire>div+div{
     width: 80vw;
-    height: 60vh;
-    margin-top: calc(20vh - 3px);
+    height: 80vh;
+    margin-top: calc(10vh - 3px);
     margin-left: calc(10vw - 3px);
     background-color: var(--rouge-claire);
     border: Solid var(--texte-sombre) 3px;
@@ -24,9 +24,6 @@
 .formulaire__echap>a>img{
     width: 3vh;
 }
-.formulaire__prenom{
-    margin-top: 2vh;
-}
 .formulaire__nom{
     margin-top: 2vh;
 }
@@ -39,6 +36,12 @@
 .formulaire__message{
     margin-top: 2vh;
 }
+#formulaire__message--correctif{
+    height: 30vh;
+}
+.formulaire__message input{
+    margin-top: -100px
+}
 .formulaire__envoyer{
     margin-top: 2vh;
     margin-left: calc(5vw - 3px);
@@ -49,6 +52,15 @@
     font-size: 1.5vh;
 }
 .nous-contacté__formulaire input{
+    background-color: var(--couleur-claire);
+    border: solid var(--couleur-fonce) 2px;
+    width: 70vw;
+    height: 2.5vh;
+    margin-top: 1vh;
+    margin-left: calc(5vw - 3px);
+    margin-right: calc(5vw - 3px);
+}
+.nous-contacté__formulaire textarea{
     background-color: var(--couleur-claire);
     border: solid var(--couleur-fonce) 2px;
     width: 70vw;
