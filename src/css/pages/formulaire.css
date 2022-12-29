@@ -10,33 +10,61 @@
 .nous-contacté__formulaire>div+div{
     width: 80vw;
     height: 60vh;
-    margin-top: 20vh;
-    margin-left: 10vw;
+    margin-top: calc(20vh - 3px);
+    margin-left: calc(10vw - 3px);
     background-color: var(--rouge-claire);
     border: Solid var(--texte-sombre) 3px;
     opacity: 1;
 }
 .formulaire__echap{
-    
+    margin: 0;
+    margin-left: calc(77vw - 3vh);
+    margin-top: 3vw;
+}
+.formulaire__echap>a>img{
+    width: 3vh;
 }
 .formulaire__prenom{
-    
+    margin-top: 2vh;
 }
 .formulaire__nom{
-    
+    margin-top: 2vh;
 }
 .formulaire__contacte{
-    
+    margin-top: 2vh; 
 }
 .formulaire__objet{
-    
+    margin-top: 2vh;
 }
 .formulaire__message{
-    
+    margin-top: 2vh;
 }
 .formulaire__envoyer{
-    
+    margin-top: 2vh;
+    margin-left: calc(5vw - 3px);
 }
+.nous-contacté__formulaire label{
+    color: var(--title_);
+    margin-left: 5vw;
+    font-size: 1.5vh;
+}
+.nous-contacté__formulaire input{
+    background-color: var(--couleur-claire);
+    border: solid var(--couleur-fonce) 2px;
+    width: 70vw;
+    height: 2.5vh;
+    margin-top: 1vh;
+    margin-left: calc(5vw - 3px);
+    margin-right: calc(5vw - 3px);
+}
+.nous-contacté__formulaire button{
+    border: solid var(--couleur-fonce) 1px;
+    padding: 4px 10px;
+    background-color: var(--det);
+    color: black;
+    font-weight:550;
+}
+
 /*
 -quitter
 -prénom
