@@ -16,6 +16,27 @@
     border: Solid var(--texte-sombre) 3px;
     opacity: 1;
 }
+.formulaire__echap{
+    
+}
+.formulaire__prenom{
+    
+}
+.formulaire__nom{
+    
+}
+.formulaire__contacte{
+    
+}
+.formulaire__objet{
+    
+}
+.formulaire__message{
+    
+}
+.formulaire__envoyer{
+    
+}
 /*
 -quitter
 -prénom
@@ -24,4 +45,14 @@
 -objet
 -message
 -accepter
+*/
+
+/*
+-echap
+-prenom
+-nom
+-contacte
+-objet
+-message
+-envoyer
 */
