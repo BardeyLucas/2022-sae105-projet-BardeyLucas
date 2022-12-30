@@ -1,23 +1,23 @@
-#miyazaki__parametre{
+#miyazaki__parametre, #miyazaki__parametre--bis{
     display: grid;
     grid-template-columns:50% 50%;
 }
-#miyazaki__parametre>h2{
+#miyazaki__parametre>h2, #miyazaki__parametre--bis>h2{
     width: 90%;
     text-align: center;
 }
-#miyazaki__parametre>div>img{
+#miyazaki__parametre>div>img, #miyazaki__parametre--bis>div>img{
     width: 80%;
     margin-right: -100px;
 }
-#miyazaki__parametre>div>p{
+#miyazaki__parametre>div>p, #miyazaki__parametre--bis>div>p{
     color: var(--texte-claire);
     font-size: var(--main-title);
     width: 80%;
     margin-left: 10%;
     text-align: center;
 }
-#miyazaki__parametre>div>p+p{
+#miyazaki__parametre>div>p+p #miyazaki__parametre--bis>div>p+p{
     margin-left: 10%;
     margin-top: 0px;
 }
