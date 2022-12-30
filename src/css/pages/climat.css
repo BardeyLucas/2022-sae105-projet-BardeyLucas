@@ -29,7 +29,8 @@ margin-top: 20px;
     display: grid;
     grid-template-columns: 50% 50%;
     width: 90%;
-margin-left: 5%;
+    margin-left: 5%;
+        overflow-x: hidden;
 }
 .img__duo div img{
     width: 80%;
@@ -45,8 +46,9 @@ margin-left: 5%;
     margin-top: 0px;
 }
 .img__ministre{
+    margin-left: 50%;
+    translate: -50%;
     width: 30%;
-    margin-left: 35%;
     margin-top: 20px;
 }
 .img__conference{

@@ -86,10 +86,15 @@ main>section>h5,main>section>article>h5{
     margin: 0px 15%;
 }
 .main__description--var2{
-    margin: 0px 35%;
+margin-left: 50%;
+translate: -50%;
+width: 30%;
 }
 .main__description--var3{
     margin: 0px 25%;
+}
+.main__description--var4{
+    margin: 0px 10%;
 }
 .article__title{
     margin: 0;
