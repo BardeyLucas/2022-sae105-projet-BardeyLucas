@@ -4,6 +4,7 @@ footer{
     background-color: var(--couleur-fonce);
     color: var(--texte-sombre);
     font-size: 11px;
+    font-family: lato;
 }
 .footer__bar{
     position: relative;

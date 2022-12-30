@@ -1,6 +1,6 @@
-
 body{
-    font-family: var(Rubik Vinyl);
+    font-family: lato;
+    font-weight: 400;
     margin: 0;
     text-decoration: none;
     background-color: var(--couleur-fonce);
@@ -20,7 +20,7 @@ h2{
     cursor: default;
     text-align: center;
     font-family: Russo One;
-    letter-spacing: 1px;
+    font-weight: 500;
 }
 h3{
     color: var(--title_);
@@ -30,9 +30,9 @@ h3{
     }
 h4,h5{
     cursor: default;
+    font-family: Ubuntu;
 }
 a:-webkit-any-link {
-    color: -webkit-link;
     cursor: pointer;
     text-decoration: none;
 }
@@ -53,11 +53,14 @@ ul{
     padding-bottom: 20px;
     background-color: var(--rouge-fonce);
 }
-main>section>p , main>section>article>p , main>section>article>ul>p {
+main>section>p , main>section>article>p , main>section>article>ul>p{
     color: var(--texte-claire);
     font-size: var(--basic-text);
     width: 90%;
     margin-left: 5%;
+}
+main>section>article>p>a{
+    color: var(--texte-claire);
 }
 main>section>h4,main>section>article>h4{
     color: var(--texte-semi-claire);
@@ -106,19 +109,24 @@ main>section>article>a>div{
     height: 80px;
     margin-left: 5%;
     margin-bottom: -70px;
-    transform: translate(0, -90px);
+    transform: translate(0, -89px);
 }
 main>section>article>a>div>h2{
-    color: var(--texte-claire) ;
+    color: var(--texte-claire);
     text-align: center;
     margin: 0;
     padding-top: 10px;
     padding-bottom: 5px;
+    font-family: lato;
+    font-weight: 900;
+    font-style: italic ;
 }
 main>section>article>a>div>h4{
     color: var(--texte-claire) ;
     text-align: center;
     margin: 0;
+    font-family: lato;
+    font-weight: 700;
 }
 main>section>article>ul{
     padding: 0;
@@ -128,4 +136,7 @@ main>section>article>ul{
 }
 .text__saut-de-ligne--accentue{
     padding-bottom: 30px;
+}
+a:-webkit-any-link{
+    color: var(--texte-claire);
 }
