@@ -19,10 +19,14 @@ h2{
     margin-right: 5%;
     cursor: default;
     text-align: center;
+    font-family: Russo One;
+    letter-spacing: 1px;
 }
 h3{
     color: var(--title_);
     cursor: default;
+    font-family: Lalezar;
+    letter-spacing: 0.5px;
     }
 h4,h5{
     cursor: default;
