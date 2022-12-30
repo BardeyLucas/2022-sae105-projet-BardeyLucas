@@ -36,7 +36,7 @@
 .formulaire__message{
     margin-top: 2vh;
 }
-#formulaire__message--correctif{
+#message{
     height: 30vh;
 }
 .formulaire__message input{
@@ -68,6 +68,7 @@
     margin-top: 1vh;
     margin-left: calc(5vw - 3px);
     margin-right: calc(5vw - 3px);
+    font-family: lato;
 }
 .nous-contacté__formulaire button{
     border: solid var(--couleur-fonce) 1px;
@@ -75,6 +76,8 @@
     background-color: var(--det);
     color: black;
     font-weight:550;
+    font-family: lato;
+    font-weight: 700;
 }
 
 /*
