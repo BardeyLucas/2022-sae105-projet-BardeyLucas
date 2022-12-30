@@ -87,7 +87,7 @@ main>section>h5,main>section>article>h5{
 }
 .main__description--var2{
 margin-left: 50%;
-translate: -50%;
+transform: translate(-50%);
 width: 30%;
 }
 .main__description--var3{
