@@ -1,0 +1,9 @@
+.propos__titre-taille-4{
+    text-align:left;
+}
+#a-propos__parametre p, #a-propos__parametre li{
+    padding-bottom: 20px;
+}
+.propos__espace{
+    padding-bottom: 20px;
+}

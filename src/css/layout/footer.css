@@ -50,19 +50,21 @@ footer>div>p{
     
 }
 div>div>a>p{
-    margin-top: -12px;
-    float: left;
-    margin-left: 55px;  
+    margin-top: -13px;
+    float: left; 
     cursor: pointer;
     color: var(--texte-sombre-lisible);
 }
+div>div>a+a>p{
+    margin-left: 30px;
+}
 .bar__parametre{
-    margin-top: 10px;
+    margin-top: 20px;
     cursor: pointer;
 }
 .bar__parametre+p{
-    margin-top: 20px;
-    margin-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
 .bar__parametre+p+p{
     margin-bottom: -10px;
