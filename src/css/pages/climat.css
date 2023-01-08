@@ -1,3 +1,4 @@
+/*paramétrage des images de la page*/
 .img__ruine{
 width: 90%;
 margin-left: 5%;
@@ -38,13 +39,6 @@ margin-top: 20px;
 .img__duo div+div img{
     width: 75.8%;
 }
-.img__duo div h5{
-    width: 100%;
-    color: var(--text-of-legend);
-    font-size: var(--legend);
-    text-align: center;
-    margin-top: 0px;
-}
 .img__ministre{
     margin-left: 50%;
     transform: translate(-50%);
@@ -59,6 +53,14 @@ margin-top: 20px;
 .img__centrale{
     width: 90%;
     margin-left: 5%;
+}
+/*paramétrage du contenu textuelle*/
+.img__duo div h5{
+    width: 100%;
+    color: var(--text-of-legend);
+    font-size: var(--legend);
+    text-align: center;
+    margin-top: 0px;
 }
 .texte__fin{
     padding-bottom: 40px;
