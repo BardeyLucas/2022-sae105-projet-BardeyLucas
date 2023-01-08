@@ -1,3 +1,4 @@
+/*paramétre image header*/
 .header__logo{
     position: relative;
     width: 86.94px;
@@ -29,6 +30,7 @@ width: 40px;
 header>div>ul>li>img{
 width: 40px;
 }
+/*paramétre image footer*/
 footer>img{
 position: relative;
 top: -15px;
