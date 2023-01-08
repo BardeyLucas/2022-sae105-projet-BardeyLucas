@@ -1,12 +1,15 @@
+/*paramétre du titre*/
 #article__title--frise{
     width: 75%;
     margin-left: 12.5%;
     margin-bottom: -20px;
 }
+/*paramétre généraux de la frise*/
 #frise__parametre{
     padding-bottom: 1px;
     padding-top: 20px;
 }
+/*parametre internet a chaque éléments*/
 #frise__parametre>article{
     margin-bottom: 20px;
 }
@@ -52,7 +55,6 @@
 .frise__parametre--2>img{
     margin-top: 10%;
     width: 80%;
-
 }
 .frise__parametre--3{
     position: relative;

@@ -1,7 +1,9 @@
+/*paramétre du titre*/
 .Projet__Title--background{
     background-color: var(--rouge-fonce);
     padding: 10px;
 }
+/*paramétre de positionnement des éléments*/
 .section__parametre--autre-projet{
     display: grid;
     width: 100%;
