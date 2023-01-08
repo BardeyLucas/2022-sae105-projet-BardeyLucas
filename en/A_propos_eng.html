@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{interaction : 0}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tengu-Road/about.com</title>
+    <link rel="stylesheet" href="../src/css/style.css"/>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body>
+<header>
+    <div class="header__top"></div>
+    <div class="header__texture"></div>
+    <a class="header__lien" href="acceuil_eng.html"><img class="header__logo" src="../public/img/icones/LOGO_ICONE.png" alt="site icon"/></a>
+    <div class="header__title"><h1>TENGU<br><span>ROAD</span></h1></div>
+    <a class="header__language" href="../fr/A_propos.html">
+        <img class="language__image" src="../public/img/icones/Anglais.webp" alt="language change"/>
+    </a>
+    <button class="header__open" @click="interaction = 1">
+        <img class="open__image" src="../public/img/icones/Agrendissement.png" alt="open the main menu"/>
+    </button>
+    <div class="header__menu" x-show="interaction === 1" >
+                <div><img src="../public/img/icones/profil.png" alt="profile"/><p>Porfile</p></div>
+                <div><img src="../public/img/icones/Parta_de_position.png" alt="Parameter"/><p>Parameter</p></div>
+                <div><img src="../public/img/icones/Parametre.png" alt="Sharing a position"/><p>Sharing a position</p></div>
+                <div><img src="../public/img/icones/Aide.png" alt="Help"/><p>Help</p></div>
+                <div @click="interaction = 0"><img src="../public/img/icones/CROIX.png" alt="close the main menu"/></div>
+    </div>
+</header>
+<main id="a-propos__parametre">
+    <section class="main__haut">
+        <article>
+            <h2 class="article__title">About tengu road</h2>
+            <p>Tengu road is a travel/mapping site (infrastructure database, mapping of Japan) for fans of East Asia. It is accessible free of charge to any Internet user with an Internet access and it is possible to create a member account, also free of charge, to take advantage of advanced features (to report unsuitable infrastructure, to write reviews, to post comments and to file reports).</p>
+            <p>Tengu-road.fr is hosted by Infomaniak whose head office is located at Les Acacias in the town of Carrouge in the canton of Geneva in Switzerland.</p>
+            <p>To contact us, go to<span @click="interaction = 3"><u> this form .</u></span></p>
+        </article>
+        <article>
+            <h3>Content</h3>
+            <p>The content present on Tengu-road.fr (image, video and cartography) are the intellectual property of their respective authors.</p>
+            <p>It is forbidden to retrieve data from the Tengu-road.fr website whether for private or professional use. No API is available.</p>
+            <p>The user is the only one responsible for the content (opinions etc.) that he puts online in the comments.</p>
+            <p>The Tengu-road.fr team reserves the right to delete any content (comment, message on the forum) that it considers inappropriate and that is contrary to the charter of good conduct.</p>
+            <p>In case of a problem, contact the moderation via this form. In the event of an unsatisfactory response, you may refer the matter to the CNIL.</p>
+        </article>
+        <article>
+            <h3>Personal data</h3>
+            <p>The personal data collected by Tengu-road.fr in the case of the creation of a member account or a guest account since the beta test version* of the site or in the future versions are in no case communicated to third parties, the passwords are encrypted and it is impossible to recover it if it is forgotten, it will be necessary to make a request of loss of password in this case.</p>
+            <p>(The beta test features are currently only accessible by the moderation team and other employees working on the tengu-road.fr website).</p>
+            <p>Tengu-road.com stores the user's IP address when he/she connects to the site, posts a comment, review or report on the site.</p>
+            <p>On Tengu-road.fr, the user has the right to access, rectify and delete data concerning him/her. Indeed, at any time, it is possible for a member to modify his comments, messages on the forum and to delete his account.</p>
+        </article>
+        <article>
+            <h3>Les cookies</h3>
+            <h4 class="propos__titre-taille-4">What are cookies?</h4>
+            <p>Cookies are small files deposited on the hard disk of the Internet user, during the consultation of certain websites, and which keep information for a later connection.</p>
+            <h4 class="propos__titre-taille-4">What are they used for?</h4>
+            <ul>
+                <li>-Firstly, identification cookies allow you to be identified as soon as you arrive on our site in order to automatically connect you to your user profile.</li>
+                <li>-Analytical cookies allow us to produce statistics on the number of visitors, the use of our site (section and content visited, itinerary, etc.) and the popularity of the places listed on our map. They will help us to better understand our users in order to improve and optimize our site for you.</li>
+                <li>-Your positioning cookies will be used to give your position on the cartography part of the site and therefore to find you more easily when you travel.</li>
+            </ul>
+        </article>
+    </section>
+        <img class="main__transition" src="../public/img/Transition.webp" alt="transition" />
+    <section class="main__bas"> 
+        <article>
+            <h3>Origin of the project</h3>
+            <p>The tengu road website was created for the MMi1 2022-23 individual project organised by the MMI department of the IUT Belfort Montbéliard.</p>
+            <p>The idea started with the research of the general theme of the site, and the answer was quickly found, Japan and its culture was the theme which polarized me the most. And it is while looking for a theme in connection that the idea came to me.</p>
+            <p>I wanted to create a travel and geolocation website and what better idea to get out of the game than by trying to reach a public often left out, but also their relatives.</p>
+            <p>That's why I created a geolocation site that is even more accessible than the others, a site that really indicates the lack of accessibility of the places presented to inform people with a temporary or permanent disability, firstly by talking directly about the different risks of each place in their respective articles/leaflets, but also in a more individual way by indicating directly to the account holder whether or not the place will be accessible to him/her, thanks to a small icon that appears in the corner of the articles, leaflets and thumbnails that are linked to them.</p>
+        </article>
+        <article class="propos__espace">
+            <h3>The creator</h3>
+            <p>Hello everyone !</p>
+            <p>My name is Lucas Bardey, I'm currently 18 years old and I'm a student in my first year of MMI.</p>
+            <p>My main passions are video games, anime, manga and walking in the forest/mountains.</p>
+            <p>And my goal for the future is to become a skilled level designer.</p>
+        </article>
+    </section> 
+</main>
+<footer>
+    <div x-show="interaction === 3" class="nous-contacté__formulaire" id="nous-contacté__formulaire--correctif">
+        <!--fond-->
+        <div></div>
+        <!--formulaire-->
+        <div>
+            <div @click="interaction = 0" class="formulaire__echap"><a><img src="../public/img/icones/CROIX.png" alt="close the main menu"/></a></div>
+            <div class="formulaire__prenom"><label for="prenom">First name :</label>
+                <input type="text" id="prenom" required minlength="1" maxlength="20"></div>
+            <div class="formulaire__nom"><label for="nom">Name :</label>
+                <input type="text" id="nom" required minlength="1" maxlength="20"></div>
+            <div class="formulaire__contacte"><label for="contacte">Email/Phone number :</label>
+                <input type="email" id="contacte" required minlength="1" maxlength="320"></div>
+            <div class="formulaire__objet"><label for="objet">Object :</label>
+                <input type="text" id="objet" required minlength="1" maxlength="50"></div>
+            <div class="formulaire__message"><label for="message">Message :</label>
+                <textarea id="message" required minlength="1" maxlength="1000"></textarea></div>
+            <div class="formulaire__envoyer"><button>Send</button></div>
+        </div>
+    </div>
+    <div class="footer__bar">
+        <p>Customer service</p>
+        <button @click="interaction = 3">Contact us</button>
+      </div>
+      <p class="footer__corectif">Our network</p>
+      <img class="footer__corectif" src="../public/img/icones/Youtube.png" alt="youtube logo"/><img class="footer__corectif" src="../public/img/icones/Instagram.png" alt="instagrame logo"/><img class="footer__corectif" src="../public/img/icones/tweeter.png" alt="tweeter logo"/><img class="footer__corectif" src="../public/img/icones/Facebook.png" alt="facebook logo"/>
+      <div class="footer__bar">
+          <div class="bar__parametre"><p>About us</p><a href="../fr/Autres_projet.html"><p>Other projects section</p></a></div>
+          <p>Directed by Lucas Bardey from group A1</p>
+          <p class="footer__text">Project realized within the framework of an educational exercise in the MMi department of Montbéliard</p>
+          <a href="http://mmimontbeliard.com/"><img src="../public/img/icones/Frame6.png" alt="logo of MMI franche compté"/></a>
+      </div>
+</footer>
