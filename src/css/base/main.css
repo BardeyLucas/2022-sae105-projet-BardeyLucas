@@ -62,14 +62,14 @@ main>section>p , main>section>article>p , main>section>article>ul>li{
 main>section>article>p>a{
     color: var(--texte-claire);
 }
-main>section>h4,main>section>article>h4{
+main>section>h4,main>section>article>h4 , main>section>a>h4{
     color: var(--texte-semi-claire);
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
     font-size: var(--subtitle);
 }
-main>section>article>h4{
+main>section>article>h4, main>section>a>h4{
     color: var(--texte-claire);
     margin: 0px 5%;
     font-size: var(--basic-text);
