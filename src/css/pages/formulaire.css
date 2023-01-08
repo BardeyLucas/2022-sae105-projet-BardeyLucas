@@ -1,3 +1,4 @@
+/*arriére plan du formulaire*/
 .nous-contacté__formulaire>div{
     position:fixed;
     width: 100%;
@@ -7,6 +8,7 @@
     background-color: var(--couleur-fonce);
     opacity: 0.8;
 }
+/*paramétre du formualaire*/
 .nous-contacté__formulaire>div+div{
     width: 80vw;
     height: 80vh;
@@ -46,6 +48,7 @@
     margin-top: 2vh;
     margin-left: calc(5vw - 3px);
 }
+/*paramétre des input*/
 .nous-contacté__formulaire label{
     color: var(--title_);
     margin-left: 5vw;
