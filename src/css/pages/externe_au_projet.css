@@ -3,6 +3,6 @@
     text-align: center;
 }
 .que-fait-tu-dans-mon-code{
-    margin-top:10vh;
-    width: 80vh;
+    margin-top:calc(50% - 40vw);
+    width: 80vw;
 }
