@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{interaction : 0}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tengu-Road/Spirited-Away.com</title>
+    <link rel="stylesheet" href="../src/css/style.css"/>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body>
+<header>
+    <div class="header__top"></div>
+    <div class="header__texture"></div>
+    <a class="header__lien" href="acceuil_eng.html"><img class="header__logo" src="../public/img/icones/LOGO_ICONE.png" alt="site icon"/></a>
+    <div class="header__title"><h1>TENGU<br><span>ROAD</span></h1></div>
+    <a class="header__language" href="../fr/Voyage_de_chihiro.html">
+        <img class="language__image" src="../public/img/icones/Anglais.webp" alt="language change"/>
+    </a>
+    <button class="header__open" @click="interaction = 1">
+        <img class="open__image" src="../public/img/icones/Agrendissement.png" alt="open the main menu"/>
+    </button>
+    <div class="header__menu" x-show="interaction === 1" >
+                <div><img src="../public/img/icones/profil.png" alt="profile"/><p>Porfile</p></div>
+                <div><img src="../public/img/icones/Parta_de_position.png" alt="Parameter"/><p>Parameter</p></div>
+                <div><img src="../public/img/icones/Parametre.png" alt="Sharing a position"/><p>Sharing a position</p></div>
+                <div><img src="../public/img/icones/Aide.png" alt="Help"/><p>Help</p></div>
+                <div @click="interaction = 0"><img src="../public/img/icones/CROIX.png" alt="close the main menu"/></div>
+    </div>
+</header>
+<main>
+    <section class="main__haut">
+        <h2 class="article__title">SPRIRITED AWAY</h2>
+        <h4>A touching journey to the kingdom of the yokai</h4>
+        <img class="img__chihiro" src="../public/img/Voyage-de-chihiro/chihiro.webp" alt="The promotional poster of the film, the journey of chihiro"/>
+        <h5 class="main__description--var1">The promotional poster of the film, the journey of chihiro</h5>
+        <p>Spririted Away is a Japanese animated film from studio ghibli directed by hayao miyazaki and released on July 20, 2001, it touches on the theme: Drama, fantasy, adventure and it was until 2020 the biggest success in the history of Japanese cinema with 23 million spectators in Japan and 274 million dollars in revenue and they even received an oscar for best animated film and the golden bear for best film in 2002.</p>
+        <article>
+            <h3>Synopsis</h3>
+            <p>The film tells the story of Chihiro, a little girl who, on her way to her new home with her parents, finds herself passing through a mysterious tunnel, at the end of which they discover an abandoned theme park. While walking through it, her parents find a well-stocked restaurant and tell themselves that they can eat there as long as they pay for it. Disagreeing with this, the little Chihiro leaves to explore the village until she meets a young man who advises her to leave before sunset, but on her return, her parents are transformed into pigs and the shadows start to come alive. Who are these supernatural beings and how can she save her parents? Only her journey will tell.</p>
+            <img class="img__discution" src="../public/img/Voyage-de-chihiro/Duo.webp" alt="Excerpt from the movie, spririted away introduce us to the characters of haku and chihiro"/>
+            <h5>Excerpt from the movie, Spririted away</h5>
+        </article>
+    </section>
+    <img class="main__transition" src="../public/img/Transition.webp" alt="transition"/>
+    <section class="main__bas">
+        <article>
+            <h3>Distribution</h3>
+            <ul>
+                <li>Director : Hayao Miyazaki</li>
+                <li>Screenplay : Hayao Miyazaki</li>
+                <li>Music : Joe Hisaishi</li>
+                <li>Director of animation : Masashi Andō</li>
+                <li>Photography : Atsushi Okui</li>
+                <li>Editing : Takeshi Seyama</li>
+                <li>Producer : Toshio Suzuki</li>
+            </ul>
+        </article>
+        <article>
+            <h3>Is it accessible?</h3>
+            <p>The film is recommended for young people from 8 years old and it seems to be accessible to everyone.</p>
+            <img class="img__bain-chaud" src="../public/img/Voyage-de-chihiro/Pond.webp" alt="Excerpt from the movie, spririted away show us the entrance to the Bath Palace"/>
+            <h5>Excerpt from the movie, Spririted away</h5> 
+        </article>
+        <article>
+            <h3>Conclusion</h3>
+            <p>This film is a masterpiece from the past that has not aged a bit and will surely please your children, so offer it to them without hesitation, such a masterpiece is bound to hit home.</p>
+            <img class="img__train" src="../public/img/Voyage-de-chihiro/Train.webp" alt="Extract from the movie, spririted away presents us a train and 2 faces in the middle of the ocean"/>
+            <h5>Excerpt from the movie, Spririted away</h5>
+            <p>If you want more information about the great height hayao miyazaki,</p>
+            <p>Read our other latest articles about this famous height!</p>
+        </article>
+        <article>
+            <a href="Miyazaki.html">
+            <img class="img__miyazaki" src="../public/img/Voyage-de-chihiro/Miyazaki.webp" alt="Hayao Miyazaki"/>
+            <div>
+            <h2>Hayao Miyazaki</h2>
+            <h4>Filmography of the author</h4>
+            </div>
+            </a>
+        </article>
+    </section>
+</main>
+<footer>
+    <div x-show="interaction === 3" class="nous-contacté__formulaire" id="nous-contacté__formulaire--correctif">
+        <!--fond-->
+        <div></div>
+        <!--formulaire-->
+        <div>
+            <div @click="interaction = 0" class="formulaire__echap"><a><img src="../public/img/icones/CROIX.png" alt="close the main menu"/></a></div>
+            <div class="formulaire__prenom"><label for="prenom">First name :</label>
+                <input type="text" id="prenom" required minlength="1" maxlength="20"></div>
+            <div class="formulaire__nom"><label for="nom">Name :</label>
+                <input type="text" id="nom" required minlength="1" maxlength="20"></div>
+            <div class="formulaire__contacte"><label for="contacte">Email/Phone number :</label>
+                <input type="email" id="contacte" required minlength="1" maxlength="320"></div>
+            <div class="formulaire__objet"><label for="objet">Object :</label>
+                <input type="text" id="objet" required minlength="1" maxlength="50"></div>
+            <div class="formulaire__message"><label for="message">Message :</label>
+                <textarea id="message" required minlength="1" maxlength="1000"></textarea></div>
+            <div class="formulaire__envoyer"><button>Send</button></div>
+        </div>
+    </div>
+    <div class="footer__bar">
+        <p>Customer service</p>
+        <button @click="interaction = 3">Contact us</button>
+      </div>
+      <p class="footer__corectif">Our network</p>
+      <img class="footer__corectif" src="../public/img/icones/Youtube.png" alt="youtube logo"/><img class="footer__corectif" src="../public/img/icones/Instagram.png" alt="instagrame logo"/><img class="footer__corectif" src="../public/img/icones/tweeter.png" alt="tweeter logo"/><img class="footer__corectif" src="../public/img/icones/Facebook.png" alt="facebook logo"/>
+      <div class="footer__bar">
+          <div class="bar__parametre" id="footer__parametre-lien"><a href="A_propos_eng.html"><p>About us</p></a><a href="../en/Autres_projet_eng.html"><p>Other projects section</p></a></div>
+          <p>Directed by Lucas Bardey from group A1</p>
+          <p class="footer__text">Project realized within the framework of an educational exercise in the MMi department of Montbéliard</p>
+          <a href="http://mmimontbeliard.com/"><img src="../public/img/icones/Frame6.png" alt="logo of MMI franche compté"/></a>
+      </div>
+</footer>
+</body>
+</html>

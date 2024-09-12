@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{interaction : 0}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tengu-road/Voyage-de-chihiro.fr</title>
+    <link rel="stylesheet" href="../src/css/style.css"/>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body>
+    <header>
+        <div class="header__top"></div>
+        <div class="header__texture"></div>
+        <a class="header__lien" href="../index.html"><img class="header__logo" src="../public/img/icones/LOGO_ICONE.png" alt="icones du site"/></a>
+        <div class="header__title"><h1>TENGU<br><span>ROAD</span></h1></div>
+        <a class="header__language" href="../en/Voyage_de_chihiro_eng.html">
+            <img class="language__image" src="../public/img/icones/France.webp" alt="changement de langue"/>
+        </a>
+        <button class="header__open" @click="interaction = 1">
+            <img class="open__image" src="../public/img/icones/Agrendissement.png" alt="ouvrir le menu principal"/>
+        </button>
+        <div class="header__menu" x-show="interaction === 1" >
+            <div><img src="./public/img/icones/profil.png" alt="profil"/><p>Profil</p></div>
+            <div><img src="../public/img/icones/Parta_de_position.png" alt="commande vocal"/><p>Partage de position</p></div>
+                    <div><img src="../public/img/icones/Parametre.png" alt="paramétre"/><p>Paramétre</p></div>
+                    <div><img src="../public/img/icones/Aide.png" alt="aide"/><p>Aide</p></div>
+                    <div @click="interaction = 0"><img src="../public/img/icones/CROIX.png" alt="fermeture du menu principale"/></div>
+        </div>
+     </header>
+    <main>
+        <section class="main__haut">
+            <h2 class="article__title">LE VOYAGE DE CHIHIRO</h2>
+            <h4>Un voyage attendrissant au royaume des yokai.</h4>
+            <img class="img__chihiro" src="../public/img/Voyage-de-chihiro/chihiro.webp" alt="L’affiche promotionelle du film, le voyage de chihiro"/>
+            <h5 class="main__description--var1">L’affiche promotionelle du film, le voyage de chihiro</h5>
+            <p>Le voyage de chihiro est un film d’animation japonaise du studio ghibli réalisé par hayao miyazaki est sortie le 20 juillet 2001, il touche pour thème: Drame, fantasy, aventure et il fut jusqu’en 2020 le plus grand succès de l’histoire du cinéma japonais avec 23 millions de spectateur au japon et 274 millions de dollars de recette et il reçut même un oscar du meilleur film d’animation et l’ours d’or du meilleur film en 2002.</p>
+            <article>
+                <h3>Synopsis</h3>
+                <p>Le film raconte l’histoire de Chihiro, une fillette qui en se rendant avec ses parents vers sa nouvelle maison se retrouve à passer un mystérieux tunnel, au bout, ils y découvrent un parc à thème abandonné. En s’y baladent, c’est parents trouvent un restaurant bien garnis et se dise qu’il peuvent y manger temps qu’il en paye la consommation ensuite, en désaccord avec ça, la petite chihiro part explorer le village jusqu'à rencontrer un jeune homme qui lui conseillera de partir avant le couché du soleil, mais à son retour ses parents furent transformé en porc et les ombre se mirent à prendre vie. Qui sont ces êtres surnaturels et comment pourrait-elle sauver ces parents ? Seul son voyage vous l’apprendra.</p>
+                <img class="img__discution" src="../public/img/Voyage-de-chihiro/Duo.webp" alt="Extrait du film, le voyage de chihiro"/>
+                <h5>Extrait du film, le voyage de chihiro</h5>
+            </article>
+        </section>
+        <img class="main__transition" src="../public/img/Transition.webp" alt="transition"/>
+        <section class="main__bas">
+            <article>
+                <h3>Distribution</h3>
+                <ul>
+                    <li>Réalisation : Hayao Miyazaki</li>
+                    <li>Scénario : Hayao Miyazaki</li>
+                    <li>Musique : Joe Hisaishi</li>
+                    <li>Directeur de l'animation : Masashi Andō</li>
+                    <li>Photographie : Atsushi Okui</li>
+                    <li> Montage : Takeshi Seyama</li>
+                    <li>Producteur : Toshio Suzuki</li>
+                </ul>
+            </article>
+            <article>
+                <h3>Est-ce accessible ?</h3>
+                <p>Le film est conseillé aux jeunes a partir de 8 ans et il semble être accessible à tout à chacun.</p>
+                <img class="img__bain-chaud" src="../public/img/Voyage-de-chihiro/Pond.webp" alt="Extrait du film, le voyage de chihiro"/>
+                <h5>Extrait du film, le voyage de chihiro</h5> 
+            </article>
+            <article>
+                <h3>Conclusion</h3>
+                <p>Ce film est un chef d'œuvre du passé qui n’a point vieilli d’une ride et qui plaira surement à vos enfant alors proposé le leur sans hésiter, un tel chef d'œuvre fera forcément mouche.</p>
+                <img class="img__train" src="../public/img/Voyage-de-chihiro/Train.webp" alt="Extrait du film, le voyage de chihiro"/>
+                <h5>Extrait du film, le voyage de chihiro</h5>
+                <p>Si vous voulez plus d’information le grand hauteur hayao miyazaki,</p>
+                <p>Lisez nos autres derniers articles sur cette hauteur célèbre !</p>
+            </article>
+            <article>
+                <a href="Miyazaki.html">
+                <img class="img__miyazaki" src="../public/img/Voyage-de-chihiro/Miyazaki.webp" alt="Hayao Miyazaki"/>
+                <div>
+                <h2>Hayao Miyazaki</h2>
+                <h4>Filmographie de l’auteur</h4>
+                </div>
+                </a>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div x-show="interaction === 3" class="nous-contacté__formulaire" id="nous-contacté__formulaire--correctif">
+            <!--fond-->
+            <div></div>
+            <!--formulaire-->
+            <div>
+                <div @click="interaction = 0" class="formulaire__echap"><a><img src="../public/img/icones/CROIX.png" alt="fermeture du menu principale"/></a></div>
+                <div class="formulaire__prenom"><label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" required minlength="1" maxlength="20"></div>
+                <div class="formulaire__nom"><label for="nom">Nom :</label>
+                    <input type="text" id="nom" required minlength="1" maxlength="20"></div>
+                    <div class="formulaire__contacte"><label for="contacte">Email/Numéro de téléphone :</label>
+                        <input type="email" id="contacte" required minlength="1" maxlength="320"></div>
+                <div class="formulaire__objet"><label for="objet">Objet :</label>
+                    <input type="text" id="objet" required minlength="1" maxlength="50"></div>
+                <div class="formulaire__message"><label for="message">Message :</label>
+                    <textarea id="message" required minlength="1" maxlength="1000"></textarea></div>
+                <div class="formulaire__envoyer"><button>Envoyer</button></div>
+            </div>
+        </div>
+        <div class="footer__bar">
+            <p>Service client</p>
+            <button @click="interaction = 3">Nous contacter</button>
+          </div>
+          <p class="footer__corectif">Nos réseau</p>
+          <img class="footer__corectif" src="../public/img/icones/Youtube.png" alt="logo youtube"/><img class="footer__corectif" src="../public/img/icones/Instagram.png" alt="logo instagrame"/><img class="footer__corectif" src="../public/img/icones/tweeter.png" alt="logo tweeter"/><img class="footer__corectif" src="../public/img/icones/Facebook.png" alt="logo facebook"/>
+          <div class="footer__bar">
+              <div class="bar__parametre" id="footer__parametre-lien"><a href="A_propos.html"><p>A propos</p></a><a href="Autres_projet.html"><p>Section autres projets</p></a></div>
+              <p>Réaliser par Lucas Bardey du groupe A1</p>
+              <p class="footer__text">Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</p>
+              <a href="http://mmimontbeliard.com/"><img src="../public/img/icones/Frame6.png" alt="logo du MMI franche compté"/></a>
+          </div>
+    </footer>
+</body>
+</html>

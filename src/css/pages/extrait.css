@@ -1,0 +1,15 @@
+/*paramétre des page du manga*/
+#extrait__parametre>img{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+/*paramétre des texte de bas de page*/
+#extrait__parametre>img+p{
+    width: 80%;
+}
+#extrait__parametre>img+p,#extrait__parametre>img+p+p{
+margin-top: 20px;
+color: var(--texte-claire);
+font-size: var(--basic-texte);
+}

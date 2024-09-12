@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{interaction : 0}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tengu-Road/French-Japanese-relationship.com</title>
+    <link rel="stylesheet" href="../src/css/style.css"/>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body>
+<header>
+    <div class="header__top"></div>
+    <div class="header__texture"></div>
+    <a class="header__lien" href="acceuil_eng.html"><img class="header__logo" src="../public/img/icones/LOGO_ICONE.png" alt="site icon"/></a>
+    <div class="header__title"><h1>TENGU<br><span>ROAD</span></h1></div>
+    <a class="header__language" href="../fr/Relation_franco-japonaise.html">
+        <img class="language__image" src="../public/img/icones/Anglais.webp" alt="language change"/>
+    </a>
+    <button class="header__open" @click="interaction = 1">
+        <img class="open__image" src="../public/img/icones/Agrendissement.png" alt="open the main menu"/>
+    </button>
+    <div class="header__menu" x-show="interaction === 1" >
+                <div><img src="../public/img/icones/profil.png" alt="profile"/><p>Porfile</p></div>
+                <div><img src="../public/img/icones/Parta_de_position.png" alt="Parameter"/><p>Parameter</p></div>
+                <div><img src="../public/img/icones/Parametre.png" alt="Sharing a position"/><p>Sharing a position</p></div>
+                <div><img src="../public/img/icones/Aide.png" alt="Help"/><p>Help</p></div>
+                <div @click="interaction = 0"><img src="../public/img/icones/CROIX.png" alt="close the main menu"/></div>
+    </div>
+</header>
+<main>
+    <section class="main__haut">
+        <article>
+        <h2 class="article__title">LINKS BETWEEN FRENCH AND JAPANESE</h2>
+        <h4>Between war and love, over 164 years of relationship.</h4>
+        <h3>SPECIAL EDITIONS</h3>
+        <p>The influence of our two cultures on the manga market.</p>
+        </article>
+        <article>
+        <h3>LITERATURE</h3>
+        <p>The manga, ah a subject time adored by our 2 nations and creating absolutely no conflict between these own communities.</p>
+        <img class="img__peinture" src="../public/img/Relation-FJ/PeintureNara.png" alt="Example of a narrative painting from the Nara period"/>
+        <h5>Example of a narrative painting from the Nara period</h5>
+        <p>Created in 1814 by Katsushika Hokusai and inspired by the narrative paintings of the Nara period. This type of literature took in 2 centenaries a very strong importance in our respective culture, even if in France, this said tsunami, arrived only very late in 1990 with the French translation of the novel akira to finally grow in the year 96 with the importation of a 40éne of series cult she that Nicky larson, slam dunk or detective conan. This development, although made difficult by the anti-manga crisis launched in 1990 by the media and certain politicians, contributed to creating strong links between the readers of these two countries and over the years several works were reciprocally produced in homage to our respective cultures.</p>
+        </article>
+    </section>
+        <img class="main__transition" src="../public/img/Transition.webp" alt="transition"/>
+    <section class="main__bas" id="natsuyume__parametre">    
+        <article>
+            <p class="text_corectif">So let's get into the brief and talk about some of the tributes made with this in mind.</p>
+            <h3>To begin with, the best known in France of the whole RADIANT list</h3>
+            <img class="img__radiant" src="../public/img/Relation-FJ/Radiant.png" alt="The promotional poster of the radiant series"/>
+            <h5 class="main__description--var1">The promotional poster of the radiant series</h5>
+        </article>
+        <article>
+            <p>Directed by Tony Valentin in 2013 and published by the ankama edition, this work touching the genre nekketsu, fantasy, adventure and comedy and witchcraft theme, has served as a standard bearer for all fans of manga budding try to realize the profession of those who made them dream, over the years and its adaptation into an animated series this manga has taken a certain fame and will undoubtedly leave a very wide open door to the French touch in this industry.</p>
+            <h3>Then to carry out on the other side of the globe for love of our country and its history The Case Study of Vanitas</h3>
+            <img class="img__vanitas" src="../public/img/Relation-FJ/Vanitas.png" alt="The promotional poster of the series The Memoirs of Vantas"/>
+            <h5 class="main__description--var1">The promotional poster of the series The Memoirs of Vantas</h5>
+        </article>
+        <article>
+            <p>Drawn by Jun Mochizuki, the writer already known for having realized pandora hearts, and published by squar enix, this story tells us the adventures of Noah a vampire and vanitas, a very strange man whose goal was to save all the vampires from the curse of the blue moon, but what does this have to do with our subject ? The answer is very simple, the entire work takes place in a fantasy France mixed with a touch of steampunk, travelling from a Paris shining with sumptuousness to the cold forests of the Vosges, and all this while filling the work with hundreds of historical references to French culture, a real tribute not to be missed.</p>
+            <h3>Stray dog</h3>
+            <img class="img__stray-dog" src="../public/img/Relation-FJ/Straydog.png" alt="The cover of the first volume of stray dog"/>
+            <h5 class="main__description--var1">The cover of the first volume of stray dog</h5>
+        </article>
+        <article>
+            <p>Not to be confused with bungo stray dog, Stray dog is a work written by the French author vanrah and published by glénat, which is freely inspired by the myth of the beast of gévaudan to make it more than touching by approaching the action, drama and fantasy genres.</p>
+            <h3>Nodame Cantabile</h3>
+            <img class="img__nodame" src="../public/img/Relation-FJ/NodameCantable.png" alt="The promotional poster of the Nodame Cantabile"/>
+            <h5 class="main__description--var1">The promotional poster of the Nodame Cantabile</h5>
+        </article>
+        <article>
+            <p>This manga from the early 2000's directed by ninomiya tomoko and published by kodansha tells the story of a young girl called Chiaki Shinichi, already an excellent pianist and violinist, who during a French concert, falls under the spell of the profession of conductor, dreaming of learning the teachings of a famous French conductor, she will find herself facing a wall, her phobic fear of aeroplanes and boats, but how will she be able to reach the profession of these dreams?</p>
+            <h3>City hall</h3>
+            <img class="img__city-hall" src="../public/img/Relation-FJ/Cityhall.png" alt="The cover of the first volume of city hall"/>
+            <h5 class="main__description--var1">The cover of the first volume of city hall</h5>
+        </article>
+        <article>
+            <p>This book, written by rémi guérin, drawn by guillaume lapeyre and published by ankama éditions has for synopsis : In the 20th century when handwriting gives life to everything you write, a terrible war in which handwriting was both its main weapon and reason for fighting caused its illegality, banning the production of paper and replacing it with digital writing, which seems to be harmless, However, an attack on a British minister occurred in the middle of London, caused by Lord Black Flow, the greatest criminal in history, who managed to obtain paper to carry out his misdeeds, and in order to stop these crimes, the Mayor of London called upon Jules Verne and a young student named Arthur Conan Doyle to lead the investigation.</p>
+            <h3>And finally, the most surprising, the manga adaptation of Les Miserables</h3>
+            <img class="img__les-miserable" src="../public/img/Relation-FJ/Miserable.png" alt="The cover of the first volume of Les Misérables the manga"/>
+            <h5 class="main__description--var1">The cover of the first volume of Les Misérables the manga</h5>
+        </article>
+        <article class="article__parametre">
+        <p>Both unimaginable and perfectly logical, this legendary work of Victor Hugo deserved to be exported beyond the limits of the novel and this is what Arai Takahiro has achieved with the help of his publisher (the Shogakukan) a work of undeniable beauty and strength, to be rediscovered in a bold and atypical format.</p>
+        <p>Between us, isn't it marvelous to see so much love between these 2 nations, personally, I remain fascinated and I hope that this handwritten waltz will continue until the end of time.</p>
+        </article>
+    </section>
+</main>
+<footer>
+    <div x-show="interaction === 3" class="nous-contacté__formulaire" id="nous-contacté__formulaire--correctif">
+        <!--fond-->
+        <div></div>
+        <!--formulaire-->
+        <div>
+            <div @click="interaction = 0" class="formulaire__echap"><a><img src="../public/img/icones/CROIX.png" alt="close the main menu"/></a></div>
+            <div class="formulaire__prenom"><label for="prenom">First name :</label>
+                <input type="text" id="prenom" required minlength="1" maxlength="20"></div>
+            <div class="formulaire__nom"><label for="nom">Name :</label>
+                <input type="text" id="nom" required minlength="1" maxlength="20"></div>
+            <div class="formulaire__contacte"><label for="contacte">Email/Phone number :</label>
+                <input type="email" id="contacte" required minlength="1" maxlength="320"></div>
+            <div class="formulaire__objet"><label for="objet">Object :</label>
+                <input type="text" id="objet" required minlength="1" maxlength="50"></div>
+            <div class="formulaire__message"><label for="message">Message :</label>
+                <textarea id="message" required minlength="1" maxlength="1000"></textarea></div>
+            <div class="formulaire__envoyer"><button>Send</button></div>
+        </div>
+    </div>
+    <div class="footer__bar">
+        <p>Customer service</p>
+        <button @click="interaction = 3">Contact us</button>
+      </div>
+      <p class="footer__corectif">Our network</p>
+      <img class="footer__corectif" src="../public/img/icones/Youtube.png" alt="youtube logo"/><img class="footer__corectif" src="../public/img/icones/Instagram.png" alt="instagrame logo"/><img class="footer__corectif" src="../public/img/icones/tweeter.png" alt="tweeter logo"/><img class="footer__corectif" src="../public/img/icones/Facebook.png" alt="facebook logo"/>
+      <div class="footer__bar">
+          <div class="bar__parametre" id="footer__parametre-lien"><a href="A_propos_eng.html"><p>About us</p></a><a href="../en/Autres_projet_eng.html"><p>Other projects section</p></a></div>
+          <p>Directed by Lucas Bardey from group A1</p>
+          <p class="footer__text">Project realized within the framework of an educational exercise in the MMi department of Montbéliard</p>
+          <a href="http://mmimontbeliard.com/"><img src="../public/img/icones/Frame6.png" alt="logo of MMI franche compté"/></a>
+      </div>
+</footer>
+</body>
+</html>

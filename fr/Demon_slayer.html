@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{interaction : 0}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tengu-road/Démon-slayer.fr</title>
+    <link rel="stylesheet" href="../src/css/style.css"/>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body class="demon">
+    <header>
+        <div class="header__top"></div>
+        <div class="header__texture"></div>
+        <a class="header__lien" href="../index.html"><img class="header__logo" src="../public/img/icones/LOGO_ICONE.png" alt="icones du site"/></a>
+        <div class="header__title"><h1>TENGU<br><span>ROAD</span></h1></div>
+        <a class="header__language" href="../en/Démon_slayer_eng.html">
+            <img class="language__image" src="../public/img/icones/France.webp" alt="changement de langue"/>
+        </a>
+        <button class="header__open" @click="interaction = 1">
+            <img class="open__image" src="../public/img/icones/Agrendissement.png" alt="ouvrir le menu principal"/>
+        </button>
+        <div class="header__menu" x-show="interaction === 1" >
+            <div><img src="./public/img/icones/profil.png" alt="profil"/><p>Profil</p></div>
+            <div><img src="../public/img/icones/Parta_de_position.png" alt="commande vocal"/><p>Partage de position</p></div>
+                    <div><img src="../public/img/icones/Parametre.png" alt="paramétre"/><p>Paramétre</p></div>
+                    <div><img src="../public/img/icones/Aide.png" alt="aide"/><p>Aide</p></div>
+                    <div @click="interaction = 0"><img src="../public/img/icones/CROIX.png" alt="fermeture du menu principale"/></div>
+        </div>
+     </header>
+    <main>
+    <section class="main__haut">
+        <article>
+        <h2 class="article__title" >DÉMON SLAYER</h2>
+        <h4>Peut-on suivre le chemin de la vengeance sans perdre celui de la bonté ?</h4>
+        <img class="img__affiche" src="../public/img/Demon-slayer/affiche-DS.webp" alt="L’affiche promotionelle de la série, Démon slayer"/>
+        <h5>L’affiche promotionelle de la série, Démon slayer</h5>
+        <p>Démon slayer est un manga iconique de notre décennie, débuté le 15 février 2016 dans le weekly shonen jump et écrit par l’autrice koyohagu gotoge il eût une très forte influence dans le marché en amenant une massive nouvelles vague de lecteur de tout bord, dû à ces ventes démentiel de 2019 à 2021 et pour dire en 2020, il a battu le record du monde de volume vendu en une seule année avec 82 345 447 copies vendu au total soit environs 43% de plus que l’ensemble des 9 autres manga les plus vendu cette année réunis.</p>
+        </article>
+        <article>
+        <h3>Synopsis</h3>
+        <img class="img__tanjiro" src="../public/img/Demon-slayer/tanjiro.webp" alt="Extrait de la série démon slayer présentant le protagoniste tanjiro"/>
+        <h5>Extrait de la série démon slayer présentant le protagoniste tangiro</h5>
+        <p>Démon slayer se passe lors japon du XX siècle et raconte l'histoire d’un jeune garçon appelé tanjiro vivant comment vendeur de charbon pour faire vivre sa famille,</p>
+        <p>un soir en rentrant d’une vente, il découvre sa famille ravagé par un démon, seul l’une de ses soeur semble encore respirer,  prenant son courage à 2 mains, il tenta de la ramener au médecin, sans savoir qu’elle était devenu une démone, en plein milieux du chemin, nezuko se mis à l'attaquer jusqu'à qu’un épéiste nommer chasseur de démon l'arrête, cet épéiste lui trouvant un calmant pour sa soeur. Tanjiro vas alors avoir un nouveau but, redonner à sa soeur son humanité perdu.</p>
+        <img class="img__nezuko" src="../public/img/Demon-slayer/nezuko.webp" alt="Extrait de la série démon slayer présentant l’une des personnages principale nezuko"/>
+        <h5>Extrait de la série démon slayer présentant la protagoniste nezuko</h5>
+        </article>
+    </section>
+        <img class="main__transition" src="../public/img/Transition.webp" alt="transition" />
+    <section class="main__bas">
+        <article>
+            <h3>Est-ce accessible ?</h3>
+            <p>Demon slayer est conseillé au jeunes a partir de 12 ans attention le contenu de ce livre est légèrement violent, à éviter pour les personne les plus sensibles</p>
+        </article>
+        <article>
+            <h3>Conclusion</h3>
+            <p>Ce manga terminé en 23 volumes depuis décembre 2020, a eu un fort impact sur le marché du en partie à une adaptation en animé exceptionnelle mais aussi à une histoire touchante et entraînante, malgré sa violence soutenable, ce livre permis de réunir ensemble les grand lecteur comme les néophyte, les hommes comme les femmes, les jeunes comme les anciens tous ensemble au tours d’une histoire commune, qui y’a t’il de plus merveilleux  ?</p>
+            <img class="img__glycine" src="../public/img/Demon-slayer/glycine.webp" alt="extrait de la série démon slayer"/>
+            <h5>extrait de la série démon slayer</h5>
+            <p>Vous pouvez découvrir le premier chapitre du manga ici</p>
+        </article>
+        <article>
+            <a href="extrait_de_demon_slayer_fr.html">
+            <img class="img__couverture" src="../public/img/Demon-slayer/poster-DS.webp" alt="poster démon slayer"/>
+            <div>
+            <h2>Extrait de démon slayer</h2>
+            <h4>extrait litéraire numérique</h4>
+        </div>
+        </a>
+        </article>
+    </section>
+    </main>
+    <footer>
+        <div x-show="interaction === 3" class="nous-contacté__formulaire" id="nous-contacté__formulaire--correctif">
+            <!--fond-->
+            <div></div>
+            <!--formulaire-->
+            <div>
+                <div @click="interaction = 0" class="formulaire__echap"><a><img src="../public/img/icones/CROIX.png" alt="fermeture du menu principale"/></a></div>
+                <div class="formulaire__prenom"><label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" required minlength="1" maxlength="20"></div>
+                <div class="formulaire__nom"><label for="nom">Nom :</label>
+                    <input type="text" id="nom" required minlength="1" maxlength="20"></div>
+                    <div class="formulaire__contacte"><label for="contacte">Email/Numéro de téléphone :</label>
+                        <input type="email" id="contacte" required minlength="1" maxlength="320"></div>
+                <div class="formulaire__objet"><label for="objet">Objet :</label>
+                    <input type="text" id="objet" required minlength="1" maxlength="50"></div>
+                <div class="formulaire__message"><label for="message">Message :</label>
+                    <textarea id="message" required minlength="1" maxlength="1000"></textarea></div>
+                <div class="formulaire__envoyer"><button>Envoyer</button></div>
+            </div>
+        </div>
+        <div class="footer__bar">
+            <p>Service client</p>
+            <button @click="interaction = 3">Nous contacter</button>
+          </div>
+          <p class="footer__corectif">Nos réseau</p>
+          <img class="footer__corectif" src="../public/img/icones/Youtube.png" alt="logo youtube"/><img class="footer__corectif" src="../public/img/icones/Instagram.png" alt="logo instagrame"/><img class="footer__corectif" src="../public/img/icones/tweeter.png" alt="logo tweeter"/><img class="footer__corectif" src="../public/img/icones/Facebook.png" alt="logo facebook"/>
+          <div class="footer__bar">
+              <div class="bar__parametre" id="footer__parametre-lien"><a href="A_propos.html"><p>A propos</p></a><a href="Autres_projet.html"><p>Section autres projets</p></a></div>
+              <p>Réaliser par Lucas Bardey du groupe A1</p>
+              <p class="footer__text">Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</p>
+              <a href="http://mmimontbeliard.com/"><img src="../public/img/icones/Frame6.png" alt="logo du MMI franche compté"/></a>
+          </div>
+    </footer>
+</body>
+</html>

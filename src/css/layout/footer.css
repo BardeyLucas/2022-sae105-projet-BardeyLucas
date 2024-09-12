@@ -1,0 +1,79 @@
+/*paramétres générales du footer*/
+footer{
+    width: 100%;
+    height: 210px;
+    background-color: var(--couleur-fonce);
+    color: var(--texte-sombre-lisible);
+    font-size: 11px;
+    font-family: lato;
+}
+/*paramétres local du footer*/
+.footer__bar{
+    position: relative;
+    top: 14px;
+    margin-left :5%;
+    margin-right: 0%;
+    border-top: solid var(--texte-sombre) 1px;
+    border-bottom: solid var(--texte-sombre) 1px;
+    width: 90%;
+    max-height: 37%;
+}
+.bar__parametre{
+    margin-top: 20px;
+    cursor: pointer;
+}
+/*paramétre éléments généraux du footer*/
+.footer__text{
+    width: 80%;
+}
+.footer__bar>p{
+    position: relative;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.footer__bar>button{
+    border: none;
+    padding: 0;
+    color: var(--texte-sombre-lisible);
+    background-color: var(--couleur-fonce);
+    font-size: 11px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+footer>p{
+    margin: 0;
+    cursor: pointer;
+}
+footer>div>p{
+    margin-top: 4px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+div>div>a>p{
+    margin-top: -13px;
+    float: left; 
+    cursor: pointer;
+    color: var(--texte-sombre-lisible);
+}
+div>div>a+a>p{
+    margin-left: 30px;
+}
+.bar__parametre+p{
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.bar__parametre+p+p{
+    margin-bottom: -10px;
+}
+img+.footer__bar{
+    border-bottom: none;
+    height: 80px;
+}
+/*correctif de positionnement*/
+.footer__corectif{
+    position: relative;
+    margin-left :5%;
+    margin-right: 0px;
+    margin-top: 20px;
+    
+}

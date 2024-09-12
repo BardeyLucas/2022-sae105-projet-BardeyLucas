@@ -1,0 +1,12 @@
+/*paramétre propre au titre*/
+.propos__titre-taille-4{
+    text-align:left;
+}
+/*paramétre propre au textes*/
+#a-propos__parametre p, #a-propos__parametre li{
+    padding-bottom: 20px;
+}
+/*paramétre de positionnement*/
+.propos__espace{
+    padding-bottom: 20px;
+}

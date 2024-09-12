@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Roboto:wght@500&family=Rubik+Vinyl&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import url('utils/variables.css');
+@import url('base/main.css');
+@import url('base/media.css');
+
+@import url('layout/header.css');
+@import url('layout/footer.css');
+
+@import url('pages/accueil.css');
+@import url('pages/chihiro.css');
+@import url('pages/climat.css');
+@import url('pages/demon.css');
+@import url('pages/fr-jp.css');
+@import url('pages/miyazaki.css');
+@import url('pages/natsuyume.css');
+@import url('pages/teamlab.css');
+@import url('pages/extrait.css');
+@import url('pages/frise.css');
+@import url('pages/projet.css');
+@import url('pages/formulaire.css');
+@import url('pages/a_propos.css');

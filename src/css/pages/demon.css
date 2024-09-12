@@ -1,0 +1,29 @@
+/*paramétrage des images de la page*/
+.img__affiche{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.img__tanjiro{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.img__nezuko{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+}
+.img__glycine{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+}
+.img__couverture{
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 20px;
+}

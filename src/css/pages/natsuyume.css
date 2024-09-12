@@ -1,0 +1,22 @@
+/*paramétrage des images et de la vidéo de la page*/
+#video__clip{
+    margin-left: 5%;
+    margin-top: 20px;
+    width: 90%;
+    height: 50.625vw;
+}
+.img__asaka{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+.img__shikura{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+.img__time-shadow{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+}

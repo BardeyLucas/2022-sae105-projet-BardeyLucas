@@ -1,0 +1,52 @@
+/*paramétrage des images de la page*/
+.img__peinture{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+.img__radiant{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 20px;
+}
+.img__vanitas{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 20px;
+}
+.img__stray-dog{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 20px;
+}
+.img__nodame{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 20px;
+}
+.img__city-hall{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 20px;
+}
+.img__les-miserable{
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 20px;
+}
+/*paramétre généraux des éléments de la page*/
+.article__parametre>p{
+    margin-bottom: 10px;
+}
+.article__parametre>p+p{
+    padding-bottom: 10px;
+}
+#natsuyume__parametre>article>h3{
+    text-align: center;
+    margin-right: 5%;
+}
+/*correctif de positionnement*/
+.text_corectif{
+    margin-top: 10px;
+    width: 72%;
+}

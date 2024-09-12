@@ -1,0 +1,167 @@
+/*paramétre du menu de la carte*/
+.carte__menu{
+    display: grid;
+    background-color: var(--rouge-claire);
+    border: solid var(--rouge-fonce) 3px;
+    transform: translate( calc(10% - 1px) , 41px);
+    width: 50.5%;
+    height: 50px;
+    grid-template-columns: 25% 25% 25% 25%;
+    z-index: 1 ;
+}
+.carte__menu>div>p{
+margin-top: -13px;
+text-align: center;
+font-size: var(--menu-texte);
+color: white;
+}
+.carte__menu>div>img{
+    width: 20px;
+    transform: translate(-50%, -16px);
+    margin-left:  50%;
+    cursor: pointer;
+}
+.carte__menu>div>button{
+    width: 20px;
+    height: 20px;
+    border: none;
+    padding: 0;
+    transform: translate(-50%, 4px);
+    margin-left:  50%;
+    cursor: pointer;
+}
+.carte__menu>div>button>img{
+    width: 20px;
+}
+.carte__menu--open{
+    background-color: var(--rouge-claire);
+    width: calc(90% - 9px);
+    margin-left: 50%;
+    z-index: 2;
+    height: 100px;
+    transform: translate(-50%, 95px);
+    border: solid var(--rouge-fonce) 5px;
+    margin-top: -110px;
+}
+.menu__ligne{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    margin-left: 50%;
+    transform: translate(-50%, 2px);
+    margin-top: -20px;
+    width: calc(90% - 10px);
+}
+.menu__ligne>div>img{
+    width: 20px;
+    margin-left: 50%;
+transform: translate(-50%);
+cursor: pointer;
+}
+.menu__ligne>div>p{
+    font-size: var(--menu-texte);
+margin-left: 50%;
+transform: translate(-50%);
+text-align:center;
+color: white;
+width: 60px;
+}
+.carte__menu>div>div{
+    width: 0;
+}
+.carte__menu>div>div>img{
+    width: 20px;
+}
+.carte__menu>div>div>p{
+    color: rgb(256,256,256);
+    font-weight: bold;
+    font-size: var(--menu-texte);
+    width: 50px;
+    text-align: center;
+}
+/*paramétre de la carte*/
+.main__carte{
+    width: 90%;
+    margin-top: -20px;
+    margin-left: calc(5% - 5px);
+    border: solid var(--couleur-fonce) 5px;
+}
+/*paramétre des vignettes*/
+.articles__img {
+    margin-left:5%;
+    width: 90%;
+    }
+.main__bas>h2 {
+    margin-top: -20px;
+    text-align: center;
+}
+.main__bas>div>a>div{
+    margin-top: -69px;
+    display: block;
+    z-index: 3;
+    background-color: var(--article-de-presentation);
+    border: solid var(--rouge-fonce) 3px;
+    margin-left: 5%;
+    width: calc(90% - 6px);
+    height: 80px;
+    text-align: center;
+    z-index: 5;
+    transform: translate(0%, -20px);
+}
+.main__bas>div>a>div>h2{
+    margin: 12px;
+    margin-bottom: 8px;
+    font-size: var(--main-title);
+    font-family: lato;
+    font-weight: 900;
+    font-style: italic;
+}
+.main__bas>div>a>div>h3{
+    margin: 0px;
+    font-size: var(--basic-text);
+    font-family: lato;
+    font-weight: 700;
+}
+#articles__img--test{
+    height: 200px;
+}
+#main__img--corectif1{
+    /*correctif lié a la navigation vocal du menu fermer*/
+    width: 12.53px;
+    margin-left: 3.735px;
+    margin-right: 3.735px;
+    margin-left: 50%;
+    transform: translate(-50%, -16px);
+}
+#main__texte--correctif{
+    width: 50px;
+    margin-left: 50%;
+    margin-top: -19px;
+    transform: translate(-50%);
+}
+/*correctif lié au magasins*/
+#main__img--corectif2{
+    transform: translate(-50%, -35%);
+}
+.texte__parametre1{
+    margin-top: -9px;
+}
+/*correctif lié a la navigation vocal du menu ouvert*/
+#main__img--corectif4{
+    width: 12.53px;
+    margin-left: 3.735px;
+    margin-right: 3.735px;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+/*correctif lié au hotels*/
+.texte__parametre2{
+    margin-top: -5px;
+}
+/*correctif lié au partage de position*/
+#main__texte--corectif1{
+    width: 80px;
+}
+/**/
+.main__correctif{
+    padding-bottom: 10px;
+}

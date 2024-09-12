@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{interaction : 0}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tengu-Road/Natsuyume-noisy.com</title>
+    <link rel="stylesheet" href="../src/css/style.css"/>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link href="https://unpkg.com/cloudinary-video-player@1.9.4/dist/cld-video-player.min.css" rel="stylesheet">
+        <script src="https://unpkg.com/cloudinary-video-player@1.9.4/dist/cld-video-player.min.js"
+                type="text/javascript"></script>
+</head>
+<body>
+<header>
+    <div class="header__top"></div>
+    <div class="header__texture"></div>
+    <a class="header__lien" href="acceuil_eng.html"><img class="header__logo" src="../public/img/icones/LOGO_ICONE.png" alt="site icon"/></a>
+    <div class="header__title"><h1>TENGU<br><span>ROAD</span></h1></div>
+    <a class="header__language" href="../fr/Natsuyume_noisy.html">
+        <img class="language__image" src="../public/img/icones/Anglais.webp" alt="language change"/>
+    </a>
+    <button class="header__open" @click="interaction = 1">
+        <img class="open__image" src="../public/img/icones/Agrendissement.png" alt="open the main menu"/>
+    </button>
+    <div class="header__menu" x-show="interaction === 1" >
+                <div><img src="../public/img/icones/profil.png" alt="profile"/><p>Porfile</p></div>
+                <div><img src="../public/img/icones/Parta_de_position.png" alt="Parameter"/><p>Parameter</p></div>
+                <div><img src="../public/img/icones/Parametre.png" alt="Sharing a position"/><p>Sharing a position</p></div>
+                <div><img src="../public/img/icones/Aide.png" alt="Help"/><p>Help</p></div>
+                <div @click="interaction = 0"><img src="../public/img/icones/CROIX.png" alt="close the main menu"/></div>
+    </div>
+</header>
+<main>
+    <section class="main__haut">
+        <article>
+        <h2 class="article__title">NATSUME NOISY</h2>
+            <h4>When the most beautiful moments would have deserved to be frozen in time.</h4>
+            <video width=100vw id="video__clip" controls muted
+            class="cld-video-player cld-video-player-skin-dark"></video>
+            <script>
+                var cld = cloudinary.videoPlayer('video__clip', {
+                        cloud_name: 'dw2ddj0fk', //remplacer par votre id cloudinary 
+                        sourceTypes: ['hls', 'dash', 'webm/vp9', 'mp4/h265', 'mp4']
+                });
+                cld.source('natsuyume-noisy_lspczq'); //à remplacer après avoir uploader une vidéo
+            </script>
+            <h5>official clip of natsume noisy music</h5>
+            <p class="text__saut-de-ligne">Natsume noisy is a J-pop music released on 10/08/2022, performed by singer Asaka and created and written by shikura chiyomaru.</p>
+            <p>This music was made to serve as a second theme song for the series time shadow along with Voice and dreamer also made by the same duo to serve as background music, time shadow being a series with drama/mystery/romance/supernatural genres and crime/family/time travel themes.</p>
+        </article>
+        <article>
+            <h3>But who are asaka and shikura chiyomaru?</h3>
+            <img class="img__asaka" src="../public/img/Natsume-noisy/ASAKA.png" alt="Photograph of the singer Asaka"/>
+            <h5>Photograph of the singer Asaka</h5>
+            <p>Asaka is a 23 years old Japanese pop singer, chorus and lyricist, belonging to the group "Okunai Katsudou Circle", and passionate about cosplay and anime, she has produced 2 albums "HEART TOUCH" and "19BOX" but also 10 other musics.</p>
+            <img class="img__shikura" src="../public/img/Natsume-noisy/SHIKURA.png" alt="Photograph of composer shikura chiyomaru"/>
+            <h5>Photograph of composer shikura chiyomaru</h5>
+            <p>Shikura Chiyomaru is a 52 year old Japanese Author, Composer, Musician, Lyricist, part of the MAGES agency and the DystopiaGround group. He is mainly known for having directed several credits and ost for the steins gate series.</p>
+        </article>
+    </section>
+    <img class="main__transition" src="../public/img/Transition.webp" alt="transition"/>
+    <section class="main__bas">
+        <article>
+            <h3>Is it accessible?</h3>
+            <p>Yes for all hearing people.</p>
+        </article>
+        <article>
+            <h3>Marketing</h3>
+            <p>Nowadays, a lot of music bands like J Pop promote their albums by making theme music for animation studios, in the case of our music, it was made as one of the theme music for the anime adaptation of Time Shadow, unfortunately, from a worldwide point of view, this choice was a big mistake as the series was only broadcasted in Japan.</p>
+        </article>
+        <article>
+            <h3>Conclusion</h3>
+            <p>Natsume noisy will be able to please everyone but only time shadow fans can really be attracted by the music because it was not created by a music group but only by a duo, giving it as only possibility of affect, its link with this series.</p>
+            <img class="img__time-shadow" src="../public/img/Natsume-noisy/Time-shadow.png" alt="The promotional poster of the series time shadow"/>
+            <h5>The promotional poster of the series time shadow</h5>
+        </article>
+    </section>
+</main>
+<footer>
+    <div x-show="interaction === 3" class="nous-contacté__formulaire" id="nous-contacté__formulaire--correctif">
+        <!--fond-->
+        <div></div>
+        <!--formulaire-->
+        <div>
+            <div @click="interaction = 0" class="formulaire__echap"><a><img src="../public/img/icones/CROIX.png" alt="close the main menu"/></a></div>
+            <div class="formulaire__prenom"><label for="prenom">First name :</label>
+                <input type="text" id="prenom" required minlength="1" maxlength="20"></div>
+            <div class="formulaire__nom"><label for="nom">Name :</label>
+                <input type="text" id="nom" required minlength="1" maxlength="20"></div>
+            <div class="formulaire__contacte"><label for="contacte">Email/Phone number :</label>
+                <input type="email" id="contacte" required minlength="1" maxlength="320"></div>
+            <div class="formulaire__objet"><label for="objet">Object :</label>
+                <input type="text" id="objet" required minlength="1" maxlength="50"></div>
+            <div class="formulaire__message"><label for="message">Message :</label>
+                <textarea id="message" required minlength="1" maxlength="1000"></textarea></div>
+            <div class="formulaire__envoyer"><button>Send</button></div>
+        </div>
+    </div>
+    <div class="footer__bar">
+        <p>Customer service</p>
+        <button @click="interaction = 3">Contact us</button>
+      </div>
+      <p class="footer__corectif">Our network</p>
+      <img class="footer__corectif" src="../public/img/icones/Youtube.png" alt="youtube logo"/><img class="footer__corectif" src="../public/img/icones/Instagram.png" alt="instagrame logo"/><img class="footer__corectif" src="../public/img/icones/tweeter.png" alt="tweeter logo"/><img class="footer__corectif" src="../public/img/icones/Facebook.png" alt="facebook logo"/>
+      <div class="footer__bar">
+          <div class="bar__parametre" id="footer__parametre-lien"><a href="A_propos_eng.html"><p>About us</p></a><a href="../en/Autres_projet_eng.html"><p>Other projects section</p></a></div>
+          <p>Directed by Lucas Bardey from group A1</p>
+          <p class="footer__text">Project realized within the framework of an educational exercise in the MMi department of Montbéliard</p>
+          <a href="http://mmimontbeliard.com/"><img src="../public/img/icones/Frame6.png" alt="logo of MMI franche compté"/></a>
+      </div>
+</footer>
+</body>
+</html>

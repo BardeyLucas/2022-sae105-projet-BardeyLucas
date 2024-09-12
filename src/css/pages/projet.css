@@ -1,0 +1,55 @@
+/*paramétre du titre*/
+.Projet__Title--background{
+    background-color: var(--rouge-fonce);
+    padding: 10px;
+}
+/*paramétre de positionnement des éléments*/
+.section__parametre--autre-projet{
+    display: grid;
+    width: 100%;
+    background-color: var(--rouge-fonce);
+    padding-top: 30px;
+    padding-bottom: 10px;
+    grid-template-columns: 50% 50%;
+
+}
+.section__parametre--autre-projet>h3{
+    position: relative;
+    z-index: 2;
+    margin: 0 5%;
+    font-size: 0.8em;
+    text-align: center;
+    margin-bottom: 2vh;
+    background-color: var(--rouge-claire);
+}
+.section__parametre--autre-projet>a{
+    background-color:var(--rouge-claire);
+    border: solid var(--couleur-fonce) 5px;
+    width: 85%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 100px;
+    margin-bottom: 50px;
+}
+.section__parametre--autre-projet>a>h3{
+text-align: center;
+margin-left: 0%;
+}
+#Projet__position--var{
+    margin-left: 100%;
+    transform: translate(-50%);
+    padding-bottom: -100px;
+}
+#Projet__Text--position1>h3{
+    margin-top: 10px;
+}
+#Projet__Text--position1>h4{
+    margin-top: -15px;
+}
+#Projet__Text--position2>h3{
+    margin-top: 10px;
+    text-align: center;
+}
+#Projet__Text--position2>h4{
+    margin-top: -15px;
+}

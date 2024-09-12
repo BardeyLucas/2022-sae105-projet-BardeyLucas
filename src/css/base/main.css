@@ -1,0 +1,163 @@
+/*paramétre généralisé*/
+body{
+    font-family: lato;
+    font-weight: 400;
+    margin: 0;
+    text-decoration: none;
+    background-color: var(--couleur-fonce);
+}
+/* Fond de la page */
+.main__haut{
+    background-color: var(--rouge-claire);
+    padding-bottom: 20px;
+    }
+    .main__bas{
+    background-color: var(--rouge-fonce);
+    margin-top: -25px;
+    margin-bottom: -10px;
+    }
+    .main__transition{
+        width:100%;
+        padding-bottom: 20px;
+        background-color: var(--rouge-fonce);
+    }
+/*paramétre éléments généraux*/
+p{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    cursor: default;
+}
+section>button{
+    background-color: var(--rouge-claire);
+}
+h2{
+    color: var(--title_);
+    margin-left: 5%;
+    margin-right: 5%;
+    cursor: default;
+    text-align: center;
+    font-family: Russo One;
+    font-weight: 500;
+}
+h3{
+    color: var(--title_);
+    cursor: default;
+    font-family: Lalezar;
+    letter-spacing: 0.5px;
+    }
+h4,h5{
+    cursor: default;
+    font-family: Ubuntu;
+}
+ul{
+    list-style-type: none;
+}
+/*paramétre des titres*/
+.article__title{
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: var(--main-title);
+    cursor: default;
+}
+.Title__Variante{
+    margin-top: 0;
+    padding-top: 30px;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    color: var(--texte-semi-claire);
+}
+/*paramétre éléments ciblé*/
+main>section>p , main>section>article>p , main>section>article>ul>li{
+    color: var(--texte-claire);
+    font-size: var(--basic-text);
+    width: 90%;
+    margin-left: 5%;
+}
+main>section>article>p>a{
+    color: var(--texte-claire);
+}
+main>section>h4,main>section>article>h4 , main>section>a>h4{
+    color: var(--texte-semi-claire);
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: var(--subtitle);
+}
+main>section>article>h4, main>section>a>h4{
+    color: var(--texte-claire);
+    margin: 0px 5%;
+    font-size: var(--basic-text);
+    padding-bottom: 20px; 
+    
+}
+main>section>h5,main>section>article>h5{
+    color: var(--text-of-legend);
+    margin: 0px 5% 0 5%;
+    font-size: var(--legend);
+    padding-bottom: 20px;
+}
+main>section>article>h3{
+    margin-left: 5%;
+}
+main>section>article>a>div{
+    background-color: var(--article-de-presentation);
+    border: solid var(--rouge-fonce) 3px;
+    width: calc(90% - 6px);
+    height: 80px;
+    margin-left: 5%;
+    margin-bottom: -70px;
+    transform: translate(0, -89px);
+}
+main>section>article>a>div>h2{
+    color: var(--texte-claire);
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-family: lato;
+    font-weight: 900;
+    font-style: italic ;
+}
+main>section>article>a>div>h4{
+    color: var(--texte-claire) ;
+    text-align: center;
+    margin: 0;
+    font-family: lato;
+    font-weight: 700;
+}
+main>section>article>ul{
+    padding: 0;
+}
+/*Positionnement des déscriptions*/
+.main__description--var1{
+    margin: 0px 15%;
+}
+.main__description--var2{
+margin-left: 50%;
+transform: translate(-50%);
+width: 30%;
+}
+.main__description--var3{
+    margin: 0px 25%;
+}
+.main__description--var4{
+    margin: 0px 10%;
+}
+/*Les saut de lignes (inférieur)*/
+.text__saut-de-ligne{
+    padding-bottom: 15px;
+}
+.text__saut-de-ligne--accentue{
+    padding-bottom: 30px;
+}
+/*correctif des liens*/
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none;
+}
+a:-webkit-any-link{
+    color: var(--texte-claire);
+}

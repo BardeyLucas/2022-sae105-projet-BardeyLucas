@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{interaction : 0}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tengu-Road/Climate-damage.com</title>
+    <link rel="stylesheet" href="../src/css/style.css"/>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body>
+<header>
+    <div class="header__top"></div>
+    <div class="header__texture"></div>
+    <a class="header__lien" href="acceuil_eng.html"><img class="header__logo" src="../public/img/icones/LOGO_ICONE.png" alt="site icon"/></a>
+    <div class="header__title"><h1>TENGU<br><span>ROAD</span></h1></div>
+    <a class="header__language" href="../fr/Degat_climatique.html">
+        <img class="language__image" src="../public/img/icones/Anglais.webp" alt="language change"/>
+    </a>
+    <button class="header__open" @click="interaction = 1">
+        <img class="open__image" src="../public/img/icones/Agrendissement.png" alt="open the main menu"/>
+    </button>
+    <div class="header__menu" x-show="interaction === 1" >
+                <div><img src="../public/img/icones/profil.png" alt="profile"/><p>Porfile</p></div>
+                <div><img src="../public/img/icones/Parta_de_position.png" alt="Parameter"/><p>Parameter</p></div>
+                <div><img src="../public/img/icones/Parametre.png" alt="Sharing a position"/><p>Sharing a position</p></div>
+                <div><img src="../public/img/icones/Aide.png" alt="Help"/><p>Help</p></div>
+                <div @click="interaction = 0"><img src="../public/img/icones/CROIX.png" alt="close the main menu"/></div>
+    </div>
+</header>
+<main>
+    <section class="main__haut">
+        <article>
+            <h2 class="article__title">Japan's major environmental disasters</h2>
+            <h4>Disasters that will impact the country for centuries to come</h4>
+            <img class="img__ruine" src="../public/img/catastrophes/ruine-fukushima.jpg" alt="Photograph of the ruins of Fukushima city 10 years after the disaster source: South China Morning Post"/>
+            <h5>Photographie de Fukushima en 2018</h5>
+            <p class="text__saut-de-ligne">Today we are going to talk about the two biggest man-made environmental disasters in Japan. Both were as dramatic for humans as for animals and nature.</p>
+            <p>What are their reasons? their impacts? and what solution will the state find to limit these dramas and prevent their recurrence? we will tell you everything in this article</p>
+        </article>
+        <article>
+            <h3>Poisoning of Minamata Bay</h3>
+            <img class="img__baie" src="../public/img/catastrophes/baie.jpg" alt="Vintage photograph of Minamata Bay"/>
+            <h5>Photograph of Minamata Bay</h5>
+            <p>The Minamata Bay disaster, being at the origin of the disease of the same name, was caused another time following the discharge of heavy metals from a petrochemical factory which was facing this bay, having by this excessive pollution, intoxicated with mercury fauna, flora, but especially population, but these effects were not instantaneous.</p>
+            <img class="img__usine" src="../public/img/catastrophes/usine.jpeg" alt="Vintage photograph of the Minamata factories"/>
+            <h5>Vintage photograph of the Minamata factories</h5>
+            <p class="text__saut-de-ligne">In fact, the company had been dumping all this waste in its bay since 1932, but it was only in 1949 that the first descriptions of the disease were reported [Severe neurological problems].</p>
+            <p class="text__saut-de-ligne">From 1949 to 1969, mainly due to the consumption of contaminated fish, there were already 900 deaths and 2,200 official illnesses, not counting the approximately 10,000 people who were bribed to stop their legal proceedings in the face of this mass poisoning.</p>
+            <p>Over the years, new symptoms seem to appear on the newborns of the intoxicated, despite the presence or not of neurological symptoms in the mothers who give birth during these dramas, they still end up having children with congenital malformations, handicaps or even children who die from birth.</p>
+            <img class="img__docteur" src="../public/img/catastrophes/docteur-hajime-hosokawa.jpg" alt="table represent doctor hajime hosokawa"/>
+            <h5 class="main__description--var1">Photograph by Dr Hajime Hosokawa</h5>
+            <p class="text__saut-de-ligne">In 1959, Dr. Hajime Hosokawa began to investigate the phenomenon of Minamatian cats that sometimes went crazy and jumped into the sea to drown. And very quickly, following these experiments, he acquired a certainty, these cats were made mad by the pollution with mercury.</p>
+            <p class="text__saut-de-ligne">Step by step, this scientist made the connection with the health problems of the locals, but unfortunately, the company that caused the disaster managed to discredit the man's leadership, and it continued to pollute until 1966 when it totalled almost 400 tonnes of mercury spilled.</p>
+            <p>And the Japanese state only started to offer compensation to the victims in 1996. In 2009, 53 years after the official start of the disease, 13,000 patients were finally recognised by the state. But 25,000 people are still waiting for recognition to finally receive compensation for their medical follow-up. Will justice finally give them the compensation they deserve? Let's hope so, but it is true that over the years, this possibility seems more and more disparate.</p>
+        </article>
+        <article>
+            <h3>The Fukushima nuclear accident</h3>
+            <img class="img__fukushima" src="../public/img/catastrophes/FUKUSHIMA.jpg" alt="Extract from a sky NEWS HD report on the Fukushima nuclear accident"/>
+            <h5>Extract from a sky NEWS HD report on the Fukushima nuclear accident</h5>
+            <p class="text__saut-de-ligne">The Fukushima disaster, both much more recent and much better known worldwide, was caused by the earthquake of 11 March 2011 which in turn caused a tsunami which in combination with the previous earthquakes destroyed the cooling system of the reactors.</p>
+            <p>And it is all these factors that eventually lead to three reactors going into a total meltdown, causing them to release large amounts of radioactivity. The contamination from this accident was considered to be the largest marine radioactive pollution in the world with an impact of about 30Km not counting the travel of the particles.</p>
+            <img class="img__actualite" src="../public/img/catastrophes/actualite.jpeg" alt="Extract from a report on TF1's LE22h on the future of Fukushima after the disaster"/>
+            <h5 class="main__description--var4">Extract from a report on TF1's LE22h on the future of Fukushima after the disaster</h5>
+            <p>But let's not dwell on this well-known and recognised fact.</p>
+            <p class="text__saut-de-ligne">If you want to know more, see these reports here:</p>
+            <div class="Lien">
+            <p><a href="https://www.arte.tv/fr/videos/102704-000-A/dossier-fukushima-10-ans-apres-la-catastrophe/">Arte: summary of the disaster</a></p>
+            <p><a href="https://www.arte.tv/fr/videos/109920-000-A/japon-le-defi-du-retour-a-fukushima/">Arte: the challenge of returning to Fukushima</a></p>
+            <p><a href="https://www.dailymotion.com/video/x1idftc">Arte: The chronicles of disaster</a></p>
+            <p><a href="https://www.dailymotion.com/video/x2j79hc">INA.fr : period report</a></p>
+            <p><a href="https://www.ina.fr/ina-eclaire-actu/video/4416337001002/seisme-au-japon">INA.fr : Effects in the surrounding areas</a></p>
+            </div>
+        </article>
+    </section>
+        <img class="main__transition" src="../public/img/Transition.webp" alt="transition" />
+    <section class="main__bas">
+        <article>
+            <h3>La politique environnemental japonaise </h3>
+            <div class="img__duo"><div><img src="../public/img/catastrophes/dirigeant-japon-1950.jpg" alt="Photograph of Shōwa Tennō, the 124th Emperor of Japan"></div><div><img src="../public/img/catastrophes/Ministre-japon-1950.jfif" alt="Photographie de Shōwa Tennō, le 124éme empereur du japon"/></div></div>
+            <div class="img__duo"><div><h5>Shōwa Tennō, the 124th emperor of Japan</h5></div><div><h5>Shigeru Yoshida, Japanese Prime Minister from 1948 to 1954</h5></div></div>
+            <p>Japan began its environmental policy in 1950 with the drafting of white papers and the recognition in 1956 of Minamata disease, but it was not until 1967 that the first pollution control laws were passed.</p>
+            <img class="img__ministre" src="../public/img/catastrophes/ministre-japon-1970.jpg" alt="Photograph of Eisaku Satō, Japanese Prime Minister from 1964 to 1974"/>
+            <h5 class="main__description--var2">Eisaku Satō, Japanese Prime Minister from 1964 to 1974</h5>
+            <p>In 1970, Japan created its pollution control headquarters and it was at this time that Japan began to draft numerous environmental laws to combat these inhumane phenomena</p>
+            <img class="img__conference" src="../public/img/catastrophes/conference.jpeg" alt="Logo of the global conference on biodiversity in Nagoya"/>
+            <h5 class="main__description--var3">Logo of the global conference on biodiversity in Nagoya</h5>
+            <p class="text__saut-de-ligne">In 2010, Japan even hosted the Nagoya World Conference on Biodiversity and reiterated its commitment at COP 21 in 2015.</p>
+            <p class="text__saut-de-ligne--accentue">But in 2019, on the sidelines of the COP 25, several ecological associations denounced the fact that despite the so-called consideration of the Japanese authorities for ecology, coal had become in the meantime the largest financier of coal plants (an extremely polluting energy), proving their very low ambitions at this level.</p>
+            <img class="img__centrale" src="../public/img/catastrophes/centrale.jpg" alt="Photograph of a coal-fired power station"/>
+            <h5>Photograph of a coal-fired power station</h5>
+        </article>
+        <article>
+            <p class="text__saut-de-ligne">So to conclude, Japan has had a very strong evolution from the point of view of environmental disasters, mainly passive in the 50's and seeking to cover up the dramas to hide their own inaction on this subject, they will then seek to move things from the 70's and towards the 2011's when the second tragedy will happen, the country will communicate much more and above all, they will do everything they can to protect their inhabitants as much as possible from the aftermath of this tragedy.</p>
+            <p class="text__saut-de-ligne">And today, now that the place is predominantly asthenic, they are still trying to reclaim their land despite the concerns of their people. Unfortunately, as the years go by, politicians' interest in ecology seems to be waning.</p>
+            <p class="texte__fin">But from a disaster management perspective, they do not seem to have lost their effectiveness since Fukushima.</p>
+        </article>
+    </section>
+</main>
+<footer>
+    <div x-show="interaction === 3" class="nous-contacté__formulaire" id="nous-contacté__formulaire--correctif">
+        <!--fond-->
+        <div></div>
+        <!--formulaire-->
+        <div>
+            <div @click="interaction = 0" class="formulaire__echap"><a><img src="../public/img/icones/CROIX.png" alt="close the main menu"/></a></div>
+            <div class="formulaire__prenom"><label for="prenom">First name :</label>
+                <input type="text" id="prenom" required minlength="1" maxlength="20"></div>
+            <div class="formulaire__nom"><label for="nom">Name :</label>
+                <input type="text" id="nom" required minlength="1" maxlength="20"></div>
+            <div class="formulaire__contacte"><label for="contacte">Email/Phone number :</label>
+                <input type="email" id="contacte" required minlength="1" maxlength="320"></div>
+            <div class="formulaire__objet"><label for="objet">Object :</label>
+                <input type="text" id="objet" required minlength="1" maxlength="50"></div>
+            <div class="formulaire__message"><label for="message">Message :</label>
+                <textarea id="message" required minlength="1" maxlength="1000"></textarea></div>
+            <div class="formulaire__envoyer"><button>Send</button></div>
+        </div>
+    </div>
+    <div class="footer__bar">
+        <p>Customer service</p>
+        <button @click="interaction = 3">Contact us</button>
+      </div>
+      <p class="footer__corectif">Our network</p>
+      <img class="footer__corectif" src="../public/img/icones/Youtube.png" alt="youtube logo"/><img class="footer__corectif" src="../public/img/icones/Instagram.png" alt="instagrame logo"/><img class="footer__corectif" src="../public/img/icones/tweeter.png" alt="tweeter logo"/><img class="footer__corectif" src="../public/img/icones/Facebook.png" alt="facebook logo"/>
+      <div class="footer__bar">
+          <div class="bar__parametre" id="footer__parametre-lien"><a href="A_propos_eng.html"><p>About us</p></a><a href="../en/Autres_projet_eng.html"><p>Other projects section</p></a></div>
+          <p>Directed by Lucas Bardey from group A1</p>
+          <p class="footer__text">Project realized within the framework of an educational exercise in the MMi department of Montbéliard</p>
+          <a href="http://mmimontbeliard.com/"><img src="../public/img/icones/Frame6.png" alt="logo of MMI franche compté"/></a>
+      </div>
+</footer>
+</body>
+</html>

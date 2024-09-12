@@ -1,0 +1,75 @@
+/*paramétrage des images de la page*/
+.img__ruine{
+width: 90%;
+margin-left: 5%;
+}
+.img__baie{
+    width: 90%;
+    margin-left: 5%;
+}
+.img__usine{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+.img__docteur{
+    width: 70%;
+margin-left: 15%;
+margin-top: 20px;
+}
+.img__fukushima{
+    width: 90%;
+    margin-left: 5%;
+}
+.img__actualite{
+    width: 80%;
+margin-left: 10%;
+margin-top: 20px;
+}
+.img__duo{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 90%;
+    margin-left: 5%;
+        overflow-x: hidden;
+}
+.img__duo div img{
+    width: 80%;
+}
+.img__duo div+div img{
+    width: 75.8%;
+}
+.img__ministre{
+    margin-left: 50%;
+    transform: translate(-50%);
+    width: 30%;
+    margin-top: 20px;
+}
+.img__conference{
+width: 50%;
+margin-left: 25%;
+margin-top: 20px;
+}
+.img__centrale{
+    width: 90%;
+    margin-left: 5%;
+}
+/*paramétrage du contenu textuelle*/
+.img__duo div h5{
+    width: 100%;
+    color: var(--text-of-legend);
+    font-size: var(--legend);
+    text-align: center;
+    margin-top: 0px;
+}
+.texte__fin{
+    padding-bottom: 40px;
+}
+.Lien>p{
+    margin-left: 5%;
+    margin-bottom: 3px;
+}
+.Lien>p>a{
+    color: var(--det);
+    text-decoration: none;
+}

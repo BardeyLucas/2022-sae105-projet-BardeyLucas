@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{interaction : 0}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tengu-Road/Miyazaki.com</title>
+    <link rel="stylesheet" href="../src/css/style.css"/>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body>
+<header>
+    <div class="header__top"></div>
+    <div class="header__texture"></div>
+    <a class="header__lien" href="acceuil_eng.html"><img class="header__logo" src="../public/img/icones/LOGO_ICONE.png" alt="site icon"/></a>
+    <div class="header__title"><h1>TENGU<br><span>ROAD</span></h1></div>
+    <a class="header__language" href="../fr/Miyazaki.html">
+        <img class="language__image" src="../public/img/icones/Anglais.webp" alt="language change"/>
+    </a>
+    <button class="header__open" @click="interaction = 1">
+        <img class="open__image" src="../public/img/icones/Agrendissement.png" alt="open the main menu"/>
+    </button>
+    <div class="header__menu" x-show="interaction === 1" >
+                <div><img src="../public/img/icones/profil.png" alt="profile"/><p>Porfile</p></div>
+                <div><img src="../public/img/icones/Parta_de_position.png" alt="Parameter"/><p>Parameter</p></div>
+                <div><img src="../public/img/icones/Parametre.png" alt="Sharing a position"/><p>Sharing a position</p></div>
+                <div><img src="../public/img/icones/Aide.png" alt="Help"/><p>Help</p></div>
+                <div @click="interaction = 0"><img src="../public/img/icones/CROIX.png" alt="close the main menu"/></div>
+    </div>
+</header>
+<main>
+    <section class="main__haut">
+        <h2 class="article__title">THE COMPLETE FILMOGRAPHY OF HAYAO MIYAZAKI</h2>
+        <div id="miyazaki__parametre">
+        <div><img src="../public/img/miyazaki/doggie.png" alt="the poster of Doggie March"/><p>Doggie March</p><p>1963</p></div>
+        <div><img src="../public/img/miyazaki/ken.png" alt="the poster of Ken the Wolf Boy"/><p>Ken the Wolf Boy</p><p>1963</p></div>
+        <div><img src="../public/img/miyazaki/Gulliver.png" alt="the poster of Le voyages de Gulliver's Travels Beyond the Moon"/><p>Gulliver's Travels Beyond the Moon</p><p>1964</p></div>
+        <div><img src="../public/img/miyazaki/horus.png" alt="the poster of Horus, Prince of the Sun"/><p>Horus, Prince of the Sun</p><p>1968</p></div>
+        <div><img src="../public/img/miyazaki/chat.png" alt="the poster of Puss 'n Boots"/><p>Puss 'n Boots</p><p>1969</p></div>
+        <div><img src="../public/img/miyazaki/fantome.png" alt="the poster of Flying Phantom Ship"/><p>Flying Phantom Ship</p><p>1969</p></div>
+        <div><img src="../public/img/miyazaki/pirate.png" alt="the poster of Animal Treasure Island"/><p>Animal Treasure Island</p><p>1971</p></div>
+        <div><img src="../public/img/miyazaki/ali-baba.png" alt="the poster of Alibaba and the Forty Thieves"/><p>Alibaba and the Forty Thieves</p><p>1971</p></div>
+        <div><img src="../public/img/miyazaki/lupin.png" alt="the poster of Lupin the 3rd Part I: The Classic Adventures"/><p>Lupin the 3rd Part I: The Classic Adventures</p><p>1971</p></div>
+        <div><img src="../public/img/miyazaki/panda.png" alt="the poster of Panda! Go, Panda!"/><p>Panda! Go, Panda!</p><p>1972</p></div>
+        <div><img src="../public/img/miyazaki/heidi.png" alt="the poster of Heidi, Girl of the Alps"/><p>Heidi, Girl of the Alps</p><p>1974</p></div>
+        <div><img src="../public/img/miyazaki/conan.png" alt="the poster of Future Boy Conan"/><p>Future Boy Conan</p><p>1978</p></div>
+        <div><img src="../public/img/miyazaki/anne.png" alt="the poster of Anne of Green Gables"/><p>Anne of Green Gables</p><p>1979</p></div>
+        <div><img src="../public/img/miyazaki/lupin-film.png" alt="the poster of The Castle of Cagliostro"/><p>The Castle of Cagliostro</p><p>1979</p></div>
+        <div><img src="../public/img/miyazaki/sherlook.png" alt="the poster of Sherlock Hound"/><p>Sherlock Hound</p><p>1981</p></div>
+        <div><img src="../public/img/miyazaki/nausicaa.png" alt="the poster of Nausicaä of the Valley of the Wind"/><p>Nausicaä of the Valley of the Wind</p><p>1984</p></div>
+        <div><img src="../public/img/miyazaki/ciel.png" alt="the poster of Castle in the Sky"/><p>Castle in the Sky</p><p>1986</p></div>
+        <div><img src="../public/img/miyazaki/totoro.png" alt="the poster of My Neighbor Totoro"/><p>My Neighbor Totoro</p><p>1988</p></div>
+        <div><img src="../public/img/miyazaki/kiki.png" alt="the poster of Kiki's Delivery Service"/><p>Kiki's Delivery Service</p><p>1989</p></div>
+        <div><img src="../public/img/miyazaki/poroporo.png" alt="the poster of Only Yesterday"/><p>Only Yesterday</p><p>1991</p></div>
+        <div><img src="../public/img/miyazaki/porco.png" alt="the poster of Porco rosso"/><p>Porco rosso</p><p>1992</p></div>
+        <div><img src="../public/img/miyazaki/mononoke.png" alt="the poster of Princesse Mononoke"/><p>Princesse Mononoke</p><p>1997</p></div>
+        </div>-->
+    </section>
+    <img class="main__transition" src="../public/img/Transition.webp" alt="transition"/>
+    <section class="main__bas">
+        <div id="miyazaki__parametre--bis">
+            <div><img src="../public/img/miyazaki/chihiro.png" alt="the poster of Spirited Away"/><p>Spirited Away</p><p>2001</p></div>
+            <div><img src="../public/img/miyazaki/chateau.png" alt="the poster of Howl's Moving Castle"/><p>Howl's Moving Castle</p><p>2004</p></div>
+            <div><img src="../public/img/miyazaki/ponyo.png" alt="the poster of Ponyo"/><p>Ponyo</p><p>2008</p></div>
+            <div><img src="../public/img/miyazaki/arrietty.png" alt="the poster of Arrietty the Borrower"/><p>Arrietty the Borrower</p><p>2010</p></div>
+            <div><img src="../public/img/miyazaki/coquelicots.png" alt="the poster of From Up on Poppy Hill"/><p>From Up on Poppy Hill</p><p>2011</p></div>
+            <div><img src="../public/img/miyazaki/vent.png" alt="the poster of The Wind Rises"/><p>The Wind Rises</p><p>2013</p></div>
+            <div><img src="../public/img/miyazaki/kaguya.png" alt="the poster of The Tale of the Princess Kaguya"/><p>The Tale of the Princess Kaguya</p><p>2014</p></div>
+            <div><img src="../public/img/miyazaki/chenille.png" alt="Boro the Caterpillar"/><p>Boro the Caterpillar</p><p>2018</p></div>
+        </div>
+        <div class="miyazaki__parametre--specifique">
+            <img src="../public/img/miyazaki/next.png" alt="the poster of How Do You Live"/><p>How Do You Live</p><p>coming soon</p></div>
+    </section>
+</main>
+<footer>
+    <div x-show="interaction === 3" class="nous-contacté__formulaire" id="nous-contacté__formulaire--correctif">
+        <!--fond-->
+        <div></div>
+        <!--formulaire-->
+        <div>
+            <div @click="interaction = 0" class="formulaire__echap"><a><img src="../public/img/icones/CROIX.png" alt="close the main menu"/></a></div>
+            <div class="formulaire__prenom"><label for="prenom">First name :</label>
+                <input type="text" id="prenom" required minlength="1" maxlength="20"></div>
+            <div class="formulaire__nom"><label for="nom">Name :</label>
+                <input type="text" id="nom" required minlength="1" maxlength="20"></div>
+            <div class="formulaire__contacte"><label for="contacte">Email/Phone number :</label>
+                <input type="email" id="contacte" required minlength="1" maxlength="320"></div>
+            <div class="formulaire__objet"><label for="objet">Object :</label>
+                <input type="text" id="objet" required minlength="1" maxlength="50"></div>
+            <div class="formulaire__message"><label for="message">Message :</label>
+                <textarea id="message" required minlength="1" maxlength="1000"></textarea></div>
+            <div class="formulaire__envoyer"><button>Send</button></div>
+        </div>
+    </div>
+    <div class="footer__bar">
+        <p>Customer service</p>
+        <button @click="interaction = 3">Contact us</button>
+      </div>
+      <p class="footer__corectif">Our network</p>
+      <img class="footer__corectif" src="../public/img/icones/Youtube.png" alt="youtube logo"/><img class="footer__corectif" src="../public/img/icones/Instagram.png" alt="instagrame logo"/><img class="footer__corectif" src="../public/img/icones/tweeter.png" alt="tweeter logo"/><img class="footer__corectif" src="../public/img/icones/Facebook.png" alt="facebook logo"/>
+      <div class="footer__bar">
+          <div class="bar__parametre" id="footer__parametre-lien"><a href="A_propos_eng.html"><p>About us</p></a><a href="../en/Autres_projet_eng.html"><p>Other projects section</p></a></div>
+          <p>Directed by Lucas Bardey from group A1</p>
+          <p class="footer__text">Project realized within the framework of an educational exercise in the MMi department of Montbéliard</p>
+          <a href="http://mmimontbeliard.com/"><img src="../public/img/icones/Frame6.png" alt="logo of MMI franche compté"/></a>
+      </div>
+</footer>
+</body>
+</html>

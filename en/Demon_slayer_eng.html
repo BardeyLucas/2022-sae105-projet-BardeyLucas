@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{interaction : 0}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tengu-Road/Demon-slayer.com</title>
+    <link rel="stylesheet" href="../src/css/style.css"/>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body>
+<header>
+    <div class="header__top"></div>
+    <div class="header__texture"></div>
+    <a class="header__lien" href="acceuil_eng.html"><img class="header__logo" src="../public/img/icones/LOGO_ICONE.png" alt="site icon"/></a>
+    <div class="header__title"><h1>TENGU<br><span>ROAD</span></h1></div>
+    <a class="header__language" href="../fr/Démon_slayer.html">
+        <img class="language__image" src="../public/img/icones/Anglais.webp" alt="language change"/>
+    </a>
+    <button class="header__open" @click="interaction = 1">
+        <img class="open__image" src="../public/img/icones/Agrendissement.png" alt="open the main menu"/>
+    </button>
+    <div class="header__menu" x-show="interaction === 1" >
+                <div><img src="../public/img/icones/profil.png" alt="profile"/><p>Porfile</p></div>
+                <div><img src="../public/img/icones/Parta_de_position.png" alt="Parameter"/><p>Parameter</p></div>
+                <div><img src="../public/img/icones/Parametre.png" alt="Sharing a position"/><p>Sharing a position</p></div>
+                <div><img src="../public/img/icones/Aide.png" alt="Help"/><p>Help</p></div>
+                <div @click="interaction = 0"><img src="../public/img/icones/CROIX.png" alt="close the main menu"/></div>
+    </div>
+</header>
+<main>
+    <section class="main__haut">
+        <article>
+        <h2 class="article__title" >DEMON SLAYER</h2>
+        <h4>Can one follow the path of vengeance without losing the path of goodness?</h4>
+        <img class="img__affiche" src="../public/img/Demon-slayer/affiche-DS.webp" alt="The promotional poster of the series, Demon Slayer"/>
+        <h5>The promotional poster of the series, Demon Slayer</h5>
+        <p>Demon Slayer is an iconic manga of our decade, debuting on February 15, 2016 in the weekly shonen jump and written by the author koyohagu gotoge it has had a very strong influence in the market bringing a massive new wave of readers from all walks of life, due to its insane sales from 2019 to 2021 and to say in 2020, it has beaten the world record of volume sold in a single year with 82,345,447 copies sold in total that's about 43% more than all of the other 9 best selling manga of that year combined.</p>
+        </article>
+        <article>
+        <h3>Synopsis</h3>
+        <img class="img__tanjiro" src="../public/img/Demon-slayer/tanjiro.webp" alt="Extract from the demon slayer series presenting the protagonist tanjiro"/>
+        <h5>Extract from the demon slayer series presenting the protagonist tanjiro</h5>
+        <p>Demon Slayer is set in 20th century Japan and tells the story of a young boy called tanjiro who lives as a coal seller to support his family,</p><p>one evening while returning from a sale, he discovers his family ravaged by a demon, only one of his sisters still seems to breathe,  Tanjiro tried to bring her back to the doctor, without knowing that she had become a demon, in the middle of the way, nezuko started to attack her until a swordsman named demon hunter stopped him, this swordsman found him a sedative for his sister. Tanjiro will then have a new goal, to give back to his sister her lost humanity.</p>
+        <img class="img__nezuko" src="../public/img/Demon-slayer/nezuko.webp" alt="Extract from the demon slayer series presenting one of the main characters nezuko"/>
+        <h5>Extract from the demon slayer series presenting one of the main characters nezuko</h5>
+        </article>
+    </section>
+        <img class="main__transition" src="../public/img/Transition.webp" alt="transition" />
+    <section class="main__bas">
+        <article>
+            <h3>Is it accessible?</h3>
+            <p>Demon Slayer is recommended for young people aged 12 and over. Beware that the content of this book is slightly violent, to be avoided by the most sensitive people.</p>
+        </article>
+        <article>
+            <h3>Conclusion</h3>
+            <p>This manga finished in 23 volumes since December 2020, has had a strong impact on the market due in part to an exceptional anime adaptation but also to a touching and compelling story, despite its sustainable violence, this book allowed to bring together great readers as well as neophytes, men as well as women, young people as well as old people, all together to the tours of a common story, what's more wonderful ?</p>
+            <img class="img__glycine" src="../public/img/Demon-slayer/glycine.webp" alt="from the demon slayer series"/>
+            <h5>from the demon slayer series</h5>
+            <p>You can discover the first chapter of the manga here</p>
+        </article>
+        <article>
+            <a href="extrait_de_demon_slayer_fr.html">
+            <img class="img__couverture" src="../public/img/Demon-slayer/poster-DS.webp" alt="poster démon slayer"/>
+            <div>
+            <h2>Extract from demon slayer</h2>
+            <h4>digital library extract</h4>
+        </div>
+        </a>
+        </article>
+    </section>
+</main>
+<footer>
+    <div x-show="interaction === 3" class="nous-contacté__formulaire" id="nous-contacté__formulaire--correctif">
+        <!--fond-->
+        <div></div>
+        <!--formulaire-->
+        <div>
+            <div @click="interaction = 0" class="formulaire__echap"><a><img src="../public/img/icones/CROIX.png" alt="close the main menu"/></a></div>
+            <div class="formulaire__prenom"><label for="prenom">First name :</label>
+                <input type="text" id="prenom" required minlength="1" maxlength="20"></div>
+            <div class="formulaire__nom"><label for="nom">Name :</label>
+                <input type="text" id="nom" required minlength="1" maxlength="20"></div>
+            <div class="formulaire__contacte"><label for="contacte">Email/Phone number :</label>
+                <input type="email" id="contacte" required minlength="1" maxlength="320"></div>
+            <div class="formulaire__objet"><label for="objet">Object :</label>
+                <input type="text" id="objet" required minlength="1" maxlength="50"></div>
+            <div class="formulaire__message"><label for="message">Message :</label>
+                <textarea id="message" required minlength="1" maxlength="1000"></textarea></div>
+            <div class="formulaire__envoyer"><button>Send</button></div>
+        </div>
+    </div>
+    <div class="footer__bar">
+        <p>Customer service</p>
+        <button @click="interaction = 3">Contact us</button>
+      </div>
+      <p class="footer__corectif">Our network</p>
+      <img class="footer__corectif" src="../public/img/icones/Youtube.png" alt="youtube logo"/><img class="footer__corectif" src="../public/img/icones/Instagram.png" alt="instagrame logo"/><img class="footer__corectif" src="../public/img/icones/tweeter.png" alt="tweeter logo"/><img class="footer__corectif" src="../public/img/icones/Facebook.png" alt="facebook logo"/>
+      <div class="footer__bar">
+          <div class="bar__parametre" id="footer__parametre-lien"><a href="A_propos_eng.html"><p>About us</p></a><a href="../en/Autres_projet_eng.html"><p>Other projects section</p></a></div>
+          <p>Directed by Lucas Bardey from group A1</p>
+          <p class="footer__text">Project realized within the framework of an educational exercise in the MMi department of Montbéliard</p>
+          <a href="http://mmimontbeliard.com/"><img src="../public/img/icones/Frame6.png" alt="logo of MMI franche compté"/></a>
+      </div>
+</footer>
+</body>
+</html>

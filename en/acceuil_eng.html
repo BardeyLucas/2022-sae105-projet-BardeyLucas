@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{interaction : 0}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tengu-Road.com</title>
+    <link rel="stylesheet" href="../src/css/style.css"/>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body>
+<header>
+    <div class="header__top"></div>
+    <div class="header__texture"></div>
+    <a class="header__lien" href="acceuil_eng.html"><img class="header__logo" src="../public/img/icones/LOGO_ICONE.png" alt="site icon"/></a>
+    <div class="header__title"><h1>TENGU<br><span>ROAD</span></h1></div>
+    <a class="header__language" href="../index.html">
+        <img class="language__image" src="../public/img/icones/Anglais.webp" alt="language change"/>
+    </a>
+    <button class="header__open" @click="interaction = 1">
+        <img class="open__image" src="../public/img/icones/Agrendissement.png" alt="open the main menu"/>
+    </button>
+    <div class="header__menu" x-show="interaction === 1" >
+                <div><img src="../public/img/icones/profil.png" alt="profile"/><p>Porfile</p></div>
+                <div><img src="../public/img/icones/Parta_de_position.png" alt="Parameter"/><p>Parameter</p></div>
+                <div><img src="../public/img/icones/Parametre.png" alt="Sharing a position"/><p>Sharing a position</p></div>
+                <div><img src="../public/img/icones/Aide.png" alt="Help"/><p>Help</p></div>
+                <div @click="interaction = 0"><img src="../public/img/icones/CROIX.png" alt="close the main menu"/></div>
+    </div>
+ </header>
+ <main>
+    <section class="main__haut">
+        <div class="carte__menu">
+            <div><img src="../public/img/icones/ZOOM.png" alt="zoom"/><p>zoom+</p></div>
+            <div><img src="../public/img/icones/UNZOOM.png" alt="unzoom"/><p>zoom-</p></div>
+            <div><img id="main__img--corectif1" src="../public/img/icones/Property1=LIGHT.png" alt="voice navigation"/><p id="main__texte--correctif">voice navigation</p></div>
+            <div>
+                <button @click="interaction = 2">
+                <img src="../public/img/icones/Agrendissement.png" alt="open the map menu"/>
+                </button>
+            </div>
+        </div>
+        <div class="carte__menu--open" x-show="interaction === 2">
+            <div class="menu__ligne">
+                <div><img src="../public/img/icones/RESTEAURANT.png" alt="restaurant"/><p>Restaurant</p></div><div><img id="main__img--corectif2" src="../public/img/icones/Store.png" alt="store"/><p class="texte__parametre1">store</p></div><div><img id="main__img--corectif3" src="../public/img/icones/Hotel.png" alt="hotel"/><p class="texte__parametre2">Hotel</p></div><div><img id="main__img--corectif4" src="../public/img/icones/Property1=LIGHT.png" alt="voice control"/><p>voice control</p></div><div @click="interaction = 0"><img src="../public/img/icones/CROIX.png" alt="exit the map menu"/></div>
+            </div>
+            <div class="menu__ligne">
+                <div><img src="../public/img/icones/ACTIVITY.png" alt="activity"/><p>Activity</p></div><div><img src="../public/img/icones/Médecine.png" alt="medical locations"/><p>Medical point</p></div><div><img src="../public/img/icones/Parking.png" alt="parking"/><p>Parking</p></div><div><img src="../public/img/icones/profil.png" alt="profile"/><p>profile</p></div><div><img src="../public/img/icones/Property1=LOW.png" alt="share its position"/><p id="main__texte--corectif1">share its position</p></div>
+            </div>
+        </div>
+        <img class="main__carte" src="../public/img/carte.webp" alt="geographical map"/>
+    </section>
+    <img class="main__transition" src="../public/img/TransitionBis.webp" alt="transition"/>
+    <section class="main__bas">
+    <h2>Our latest articles</h2>
+    <div>
+        <a href="TeamLab_Borderless_eng.html">
+        <img class="articles__img" src="../public/img/TeamLab.webp" alt="teamlab image"/>
+    <div>
+        <h2>TeamLab Borderless</h2>
+        <h3>Digital Art Museum</h3>
+    </div>
+        </a>
+    </div>
+    <div>
+        <a href="Demon_slayer_eng.html">
+        <img class="articles__img" src="../public/img/Demon.webp" alt="demon slayer image"/>
+    <div>
+        <h2>Demon slayer</h2>
+        <h3>Japanese literature</h3>
+    </div>
+        </a>
+    </div>
+    <div>
+        <a href="Voyage_de_chihiro_eng.html">
+        <img class="articles__img" src="../public/img/chihiro.webp" alt="Spirited Away image"/>
+    <div>
+        <h2>Spirited Away</h2>
+        <h3>Japanese animation</h3>
+    </div>
+        </a>
+    </div>
+    <div>
+        <a href="Miyazaki_eng.html">
+        <img class="articles__img" src="../public/img/Miyazaki.webp" alt="Miyazaki image"/>
+    <div>
+        <h2>Hayao Miyazaki</h2>
+        <h3>Filmography of the author</h3>
+    </div>
+        </a>
+    </div>
+    <div>
+        <a href="Natsuyume_noisy_eng.html">
+        <img class="articles__img" src="../public/img/time_shadow.webp" alt="image of the series related to music natsuyume noisy"/>
+    <div>
+        <h2>Natsuyume noisy</h2>
+        <h3>JPOP Music</h3>
+    </div>
+        </a>
+    </div>
+    <div>
+        <a href="Relation_franco-japonaise_eng.html">
+        <img class="articles__img" src="../public/img/Franco_Japonais.webp" alt="image of the French-Japanese relationship"/>
+    <div>
+        <h2>French-Japanese links</h2>
+        <h3>special edition: manga</h3>
+    </div>
+    </a>
+    </div>
+    <div class="main__correctif">
+        <a href="Degat_climatique_eng.html">
+        <img class="articles__img" src="../public/img/tsunamiruinenavire.webp" alt="image of environmental damage"/>
+        <div>
+        <h2>Climate damage in Japan</h2>
+        <h3>Resource on ecology</h3>
+        </div>
+    </a>
+    </div>
+</section>
+</main>
+<footer>
+    <div x-show="interaction === 3" class="nous-contacté__formulaire" id="nous-contacté__formulaire--correctif">
+        <!--fond-->
+        <div></div>
+        <!--formulaire-->
+        <div>
+            <div @click="interaction = 0" class="formulaire__echap"><a><img src="../public/img/icones/CROIX.png" alt="close the main menu"/></a></div>
+            <div class="formulaire__prenom"><label for="prenom">First name :</label>
+                <input type="text" id="prenom" required minlength="1" maxlength="20"></div>
+            <div class="formulaire__nom"><label for="nom">Name :</label>
+                <input type="text" id="nom" required minlength="1" maxlength="20"></div>
+            <div class="formulaire__contacte"><label for="contacte">Email/Phone number :</label>
+                <input type="email" id="contacte" required minlength="1" maxlength="320"></div>
+            <div class="formulaire__objet"><label for="objet">Object :</label>
+                <input type="text" id="objet" required minlength="1" maxlength="50"></div>
+            <div class="formulaire__message"><label for="message">Message :</label>
+                <textarea id="message" required minlength="1" maxlength="1000"></textarea></div>
+            <div class="formulaire__envoyer"><button>Send</button></div>
+        </div>
+    </div>
+    <div class="footer__bar">
+        <p>Customer service</p>
+        <button @click="interaction = 3">Contact us</button>
+      </div>
+      <p class="footer__corectif">Our network</p>
+      <img class="footer__corectif" src="../public/img/icones/Youtube.png" alt="youtube logo"/><img class="footer__corectif" src="../public/img/icones/Instagram.png" alt="instagrame logo"/><img class="footer__corectif" src="../public/img/icones/tweeter.png" alt="tweeter logo"/><img class="footer__corectif" src="../public/img/icones/Facebook.png" alt="facebook logo"/>
+      <div class="footer__bar">
+          <div class="bar__parametre" id="footer__parametre-lien"><a href="A_propos_eng.html"><p>About us</p></a><a href="../en/Autres_projet_eng.html"><p>Other projects section</p></a></div>
+          <p>Directed by Lucas Bardey from group A1</p>
+          <p class="footer__text">Project realized within the framework of an educational exercise in the MMi department of Montbéliard</p>
+          <a href="http://mmimontbeliard.com/"><img src="../public/img/icones/Frame6.png" alt="logo of MMI franche compté"/></a>
+      </div>
+</footer>
+</body>
+</html>

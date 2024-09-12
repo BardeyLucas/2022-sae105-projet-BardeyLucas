@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{interaction : 0}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tengu-road/Dégat-climatique.fr</title>
+    <link rel="stylesheet" href="../src/css/style.css"/>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body class="climat">
+    <header>
+        <div class="header__top"></div>
+        <div class="header__texture"></div>
+        <a class="header__lien" href="../index.html"><img class="header__logo" src="../public/img/icones/LOGO_ICONE.png" alt="icones du site"/></a>
+        <div class="header__title"><h1>TENGU<br><span>ROAD</span></h1></div>
+        <a class="header__language" href="../en/Degat_climatique_eng.html">
+            <img class="language__image" src="../public/img/icones/France.webp" alt="changement de langue"/>
+        </a>
+        <button class="header__open" @click="interaction = 1">
+            <img class="open__image" src="../public/img/icones/Agrendissement.png" alt="ouvrir le menu principal"/>
+        </button>
+        <div class="header__menu" x-show="interaction === 1" >
+            <div><img src="./public/img/icones/profil.png" alt="profil"/><p>Profil</p></div>
+            <div><img src="../public/img/icones/Parta_de_position.png" alt="commande vocal"/><p>Partage de position</p></div>
+                    <div><img src="../public/img/icones/Parametre.png" alt="paramétre"/><p>Paramétre</p></div>
+                    <div><img src="../public/img/icones/Aide.png" alt="aide"/><p>Aide</p></div>
+                    <div @click="interaction = 0"><img src="../public/img/icones/CROIX.png" alt="fermeture du menu principale"/></div>
+        </div>
+     </header>
+    <main>
+        <section class="main__haut">
+            <article>
+                <h2 class="article__title">Les catastrophes environnementales majeures du japon</h2>
+                <h4>Des catastrophe qui impacteront le pays pendant des centenaines d'années</h4>
+                <img class="img__ruine" src="../public/img/catastrophes/ruine-fukushima.jpg" alt="Photographie des ruines de la ville de fukushima 10 ans aprés la catastrophe source: South China Morning Post"/>
+                <h5>Photographie de Fukushima en 2018</h5>
+                <p class="text__saut-de-ligne">Nous allons parler aujourd’hui des 2 plus grandes catastrophes environnementales japonaises causées par les hommes. Toutes 2 furent aussi dramatiques pour les hommes que pour la faune et la flore.</p>
+                <p>Quelles sont leurs raisons ? leurs impacts? et quelle solution trouvera l’état pour limiter ces drames et empêcher leurs récidives? nous allons tout vous dire dans cette article</p>
+            </article>
+            <article>
+                <h3>Empoisonnement de la baie de Minamata</h3>
+                <img class="img__baie" src="../public/img/catastrophes/baie.jpg" alt="Photographie d'époque de la baie de Minamata"/>
+                <h5>Photographie de la baie de Minamata</h5>
+                <p>La catastrophe de la baie de Minamata, étant à l'origine de la maladie du même nom, fut causé autrefois a la suite de rejet de métaux lourd de la part d’une usine pétrochimique qui faisait face à cette baie, ayant par cette pollution excessive, intoxiqué au mercure faune, flore, mais surtout population, mais ces effets ne furent pas instantané.</p>
+                <img class="img__usine" src="../public/img/catastrophes/usine.jpeg" alt="Photographie d'époque des usines de Minamata"/>
+                <h5>Photographie historique des usine de Minamata</h5>
+                <p class="text__saut-de-ligne">Car en réalité, l’entreprise déversait déjà tous ces déchets dans sa baie depuis 1932, mais ce fut seulement en 1949 que les premières description de la maladie furent remontées [Des problèmes neurologiques graves].</p>
+                <p class="text__saut-de-ligne">De 1949 à 1969, notamment dût à la consommation de poissons contaminés, il fut déjà décompté 900 décès et 2200 malades officiels sans compter les envirrons 10 000 personnes qui furent soudoyées pour arréter leurs poursuite judiciaire face à cet empoisonnement de masse.</p>
+                <p>Au fil des années, de nouveaux symptômes semblent apparaître sur les nouveaux nés, malgré la présence ou non de symptômes neurologique chez les mére qui donnent naissance durant ce drame, elle finirent malgré tout par avoir des enfants avec des malformations congénitales, handicapés voir même des enfants mourant dès leur naissance.</p>
+                <img class="img__docteur" src="../public/img/catastrophes/docteur-hajime-hosokawa.jpg" alt="tableau représentent le docteur hajime hosokawa"/>
+                <h5 class="main__description--var1">Photographie du docteur Hajime Hosokawa</h5>
+                <p class="text__saut-de-ligne">En 1959, le docteur Hajime Hosokawa se mit a enquêter sur le phénomène des chats Minamatien qui ce mettait parfois à perdre les pédales et à sauter en pleine mer pour s’y noyer. Et très vite, suite à ces expériences, il acquis une certitudes, ces chats étaient rendu fou par la pollution au mercure.</p>
+                <p class="text__saut-de-ligne">Pas à pas, ce scientifique fit le lien avec les problèmes de santé des locaux, mais malheureusement, la compagnie qui causa la catastrophe réussit à discréditer les dirigeants de l’homme, et elle continuait à polluer jusqu'en 1966 où elle totalisait au total presque 400 tonnes de mercure déversé.</p>
+                <p>Et l’état japonais se mit en marche pour proposer d’indemniser les victimes qu'à partir de 1996. En 2009, 53 ans après le début officiel de la maladie, 13 000 malades furent enfin reconnus par l'État. mais 25000 personnes sont toujours en attente de reconnaissance pour enfin se faire indemniser leur suivi médical. La justice leur donnera-t-elle enfin la rétribution qu’ils méritent ? Espérons le mais il est vrai qu’au fil des années, cette possibilité semble de plus en plus disparate.</p>
+            </article>
+            <article>
+                <h3>L'accident nucléaire de Fukushima</h3>
+                <img class="img__fukushima" src="../public/img/catastrophes/FUKUSHIMA.jpg" alt="Extrait d'un reportage de sky NEWS HD sur l'accident nucléaire de Fukushima"/>
+                <h5>Extrait d'un reportage de sky NEWS HD sur l'accident nucléaire de Fukushima</h5>
+                <p class="text__saut-de-ligne">La catastrophe de Fukushima, à la fois bien plus récente et bien plus connue mondialement, fut causée par le séisme du 11 mars 2011 qui causa à son tour, créa un tsunami qui en combinaison avec les précédents tremblements détruisit le système de refroidissement des réacteurs.</p>
+                <p>Et ce sont tous ces facteurs qui amènent finalement 3 réacteurs à entrer en état de fusion total, les faisant rejeter d'importants rejets radioactifs. La contamination dût à cet accident fut considéré comme la plus grande pollution radioactive marine au monde avec un impact sur environ 30Km sans compter le voyage des particules.</p>
+                <img class="img__actualite" src="../public/img/catastrophes/actualite.jpeg" alt="Extrait d'un reportage du LE22h de TF1 sur l'avenir de Fukushima après la catastrophe"/>
+                <h5 class="main__description--var4">Extrait d'un reportage du LE22h de TF1 sur l'avenir de Fukushima après la catastrophe</h5>
+                <p>Pour plus d’informations.</p>
+                <p class="text__saut-de-ligne">Si vous voulez en savoir plus, allez voir ces reportages ici :</p>
+                <div class="Lien">
+                <p><a href="https://www.arte.tv/fr/videos/102704-000-A/dossier-fukushima-10-ans-apres-la-catastrophe/">Arte : résumé de la catastrophe</a></p>
+                <p><a href="https://www.arte.tv/fr/videos/109920-000-A/japon-le-defi-du-retour-a-fukushima/">Arte : le défi du retour vers Fukushima</a></p>
+                <p><a href="https://www.dailymotion.com/video/x1idftc">Arte : Les chroniques du désastre</a></p>
+                <p><a href="https://www.dailymotion.com/video/x2j79hc">INA.fr : reportage d'époque</a></p>
+                <p><a href="https://www.ina.fr/ina-eclaire-actu/video/4416337001002/seisme-au-japon">INA.fr : Les effets dans les zones environnantes</a></p>
+                </div>
+            </article>
+        </section>
+            <img class="main__transition" src="../public/img/Transition.webp" alt="transition" />
+        <section class="main__bas">
+            <article>
+                <h3>La politique environnemental japonaise </h3>
+                <div class="img__duo"><div><img src="../public/img/catastrophes/dirigeant-japon-1950.jpg" alt="Photographie de Shōwa Tennō, le 124éme empereur du japon"></div><div><img src="../public/img/catastrophes/Ministre-japon-1950.jfif" alt="Photographie de Shigeru Yoshida, premier ministre japonais de l'an 1948 à 1954"/></div></div>
+                <div class="img__duo"><div><h5>Shōwa Tennō, le 124éme empereur du japon</h5></div><div><h5>Shigeru Yoshida, premier ministre japonais de 1948 à 1954</h5></div></div>
+                <p>Le japon commença sa politique environnementale en 1950 avec la rédaction de livres blanc et la reconnaissance en 1956 de la maladie de Minamata, mais c’est seulement en 1967 que les premières lois sur le contrôle de la pollution passèrent.</p>
+                <img class="img__ministre" src="../public/img/catastrophes/ministre-japon-1970.jpg" alt="Photographie de Eisaku Satō, premier ministre japonais de l'an 1964 à 1974"/>
+                <h5 class="main__description--var2">Eisaku Satō, premier ministre japonais de 1964 à 1974</h5>
+                <p>En 1970, le japon créera son siège du contrôle de la pollution et c’est à ce moment que le japon se mit à rédiger de très nombreuses lois environnementale pour lutter contre ces phénomènes inhumain</p>
+                <img class="img__conference" src="../public/img/catastrophes/conference.jpeg" alt="Logo de la conférence mondiale sur la biodiversité de nagoya"/>
+                <h5 class="main__description--var3">Logo de la conférence mondiale sur la biodiversité de nagoya</h5>
+                <p class="text__saut-de-ligne">En 2010 le japon sera même l'hôte de la conférence mondiale sur la biodiversité de nagoya et il ira jusqu'à réitérer ces engagement lors de la COP 21 de 2015</p>
+                <p class="text__saut-de-ligne--accentue">Mais en 2019 en marge de la COP 25, plusieurs association écologique ont dénoncé le fait que malgré les soit disante considérations des autorités japonaise pour l’écologie, le charbon était devenu entre temps le plus grand financeur des usines à charbon (une énergie extrêmement polluante), prouvant leurs très faibles ambitions à ce niveau.</p>
+                <img class="img__centrale" src="../public/img/catastrophes/centrale.jpg" alt="Photographie d'une centrale a charbon"/>
+                <h5>Photographie d'une centrale à charbon</h5>
+            </article>
+            <article>
+                <p class="text__saut-de-ligne">Alors pour conclure, le japon a eu une très forte évolution au point de vue des catastrophes environnementale, principalement passif dans les année 50 et cherchant à camoufler les drames pour cacher leurs propre inaction à ce sujet, ils chercherons ensuite à faire bouger les choses a partir des années 70 et vers les années 2011 ou le second drame arrivera, le pays communiquera beaucoup plus et surtout, il feront tout leur possible pour protéger leurs habitant au maximum du contrecoup de cette tragédie.</p>
+                <p class="text__saut-de-ligne">Et aujourd’hui, maintenant que le lieu est majoritairement assainit, il retente malgré tout de récupérer leurs terres malgré l’inquiétude de leur peuple. malheureusement au fil des années, l'intérêt des politiques pour l’écologie semble de plus en plus se perdre.</p>
+                <p class="texte__fin">Mais d’un point de vue de la gestion des catastrophes, ils ne semblent pas avoir perdu de leur efficacité depuis Fukushima.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div x-show="interaction === 3" class="nous-contacté__formulaire" id="nous-contacté__formulaire--correctif">
+            <!--fond-->
+            <div></div>
+            <!--formulaire-->
+            <div>
+                <div @click="interaction = 0" class="formulaire__echap"><a><img src="../public/img/icones/CROIX.png" alt="fermeture du menu principale"/></a></div>
+                <div class="formulaire__prenom"><label for="prenom">Prénom :</label>
+                    <input type="text" id="prenom" required minlength="1" maxlength="20"></div>
+                <div class="formulaire__nom"><label for="nom">Nom :</label>
+                    <input type="text" id="nom" required minlength="1" maxlength="20"></div>
+                    <div class="formulaire__contacte"><label for="contacte">Email/Numéro de téléphone :</label>
+                        <input type="email" id="contacte" required minlength="1" maxlength="320"></div>
+                <div class="formulaire__objet"><label for="objet">Objet :</label>
+                    <input type="text" id="objet" required minlength="1" maxlength="50"></div>
+                <div class="formulaire__message"><label for="message">Message :</label>
+                    <textarea id="message" required minlength="1" maxlength="1000"></textarea></div>
+                <div class="formulaire__envoyer"><button>Envoyer</button></div>
+            </div>
+        </div>
+        <div class="footer__bar">
+            <p>Service client</p>
+            <button @click="interaction = 3">Nous contacter</button>
+          </div>
+          <p class="footer__corectif">Nos réseau</p>
+          <img class="footer__corectif" src="../public/img/icones/Youtube.png" alt="logo youtube"/><img class="footer__corectif" src="../public/img/icones/Instagram.png" alt="logo instagrame"/><img class="footer__corectif" src="../public/img/icones/tweeter.png" alt="logo tweeter"/><img class="footer__corectif" src="../public/img/icones/Facebook.png" alt="logo facebook"/>
+          <div class="footer__bar">
+              <div class="bar__parametre" id="footer__parametre-lien"><a href="A_propos.html"><p>A propos</p></a><a href="Autres_projet.html"><p>Section autres projets</p></a></div>
+              <p>Réaliser par Lucas Bardey du groupe A1</p>
+              <p class="footer__text">Projet réalisé dans le cadre d’un exercice pédagogique au département MMi de Montbéliard</p>
+              <a href="http://mmimontbeliard.com/"><img src="../public/img/icones/Frame6.png" alt="logo du MMI franche compté"/></a>
+          </div>
+    </footer>
+</body>
+</html>
